@@ -1,6 +1,6 @@
 package de.p2pfood.app.ui.list
 
-import androidx.compose.foundation.ScrollbarStyle
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -8,16 +8,18 @@ import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.foundation.rememberScrollbarAdapter
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScrollbar
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Badge
 import androidx.compose.material3.CardDefaults
@@ -51,17 +53,7 @@ fun RestaurantListScreen(
             state = listState,
             modifier = Modifier
                 .fillMaxSize()
-                .verticalScrollbar(
-                    rememberScrollbarAdapter(listState),
-                    style = ScrollbarStyle(
-                        minimalHeight = 16.dp,
-                        thickness = 3.dp,
-                        shape = RoundedCornerShape(2.dp),
-                        hoverDurationMillis = 300,
-                        unhoverColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.25f),
-                        hoverColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.55f),
-                    ),
-                ),
+                .padding(end = 6.dp),
             contentPadding = PaddingValues(12.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
@@ -69,6 +61,31 @@ fun RestaurantListScreen(
                 RestaurantCard(restaurant) { onOpenDetail(restaurant.id) }
             }
         }
+        ThinScrollbar(listState, Modifier.align(Alignment.CenterEnd))
+    }
+}
+
+@Composable
+private fun ThinScrollbar(listState: LazyListState, modifier: Modifier = Modifier) {
+    val layoutInfo = listState.layoutInfo
+    val itemCount = layoutInfo.totalItemsCount
+    if (itemCount == 0) return
+    val visible = layoutInfo.visibleItemsInfo
+    if (visible.isEmpty()) return
+    val viewport = (layoutInfo.viewportEndOffset - layoutInfo.viewportStartOffset).toDouble()
+    val avgItem = visible.map { it.size }.average()
+    val total = itemCount * avgItem
+    if (total <= viewport) return
+    val fraction = (viewport / total).toFloat().coerceIn(0.05f, 1f)
+    val offset = (listState.firstVisibleItemIndex * avgItem + listState.firstVisibleItemScrollOffset).toFloat()
+    val thumbTop = (offset / total.toFloat()).coerceIn(0f, 1f - fraction)
+    Canvas(modifier = modifier.fillMaxHeight().width(3.dp)) {
+        val thumbHeight = size.height * fraction
+        drawRect(
+            color = androidx.compose.material3.MaterialTheme.colorScheme.primary.copy(alpha = 0.55f),
+            topLeft = Offset(0f, size.height * thumbTop),
+            size = Size(size.width, thumbHeight),
+        )
     }
 }
 
