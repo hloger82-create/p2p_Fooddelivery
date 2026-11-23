@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "vibe/**"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pipeline-and-data-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r tools/requirements.txt
+
+      - name: Syntax-check research pipeline
+        run: python3 -m py_compile tools/research_pipeline.py tools/validate_data.py
+
+      - name: Validate region/restaurant data against schemas
+        run: python3 tools/validate_data.py
+
+  android-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: android-actions/setup-android-sdk@v3
+        with:
+          accept-android-sdk-licenses: true
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build debug APK
+        run: gradle :app:assembleDebug --no-daemon
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-debug
+          path: app/build/outputs/apk/debug/app-debug.apk

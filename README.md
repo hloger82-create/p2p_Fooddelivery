@@ -53,6 +53,15 @@ Voraussetzung: Android Studio / JDK 17.
 ./gradlew :app:assembleDebug
 ```
 
+Hinweis: Das Gradle-Wrapper-Jar ist nicht eingecheckt. Einmalig lokal erzeugen mit `gradle wrapper` (in Android Studio: Gradle-Task `wrapper` ausfuehren) — danach steht `./gradlew` zur Verfuegung. CI nutzt `gradle/actions/setup-gradle` und kommt ohne Wrapper aus.
+
+## CI
+
+`.github/workflows/ci.yml` laeuft bei Push/PR auf `main` und `vibe/**`:
+
+- `pipeline-and-data-check`: Syntax-Check der Pipeline (`py_compile`) + Validierung aller Regions-/Restaurant-Daten gegen die JSON-Schemas (`tools/validate_data.py`)
+- `android-build`: JDK 17 + Android SDK, `gradle :app:assembleDebug`, APK als Build-Artefakt
+
 ## Neue Region hinzufuegen
 
 1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, postcodePrefixes, platformBlocklist).
