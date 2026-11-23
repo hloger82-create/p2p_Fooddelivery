@@ -1,8 +1,10 @@
 package de.p2pfood.app.ui.home
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.weight
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Surface
 import androidx.compose.ui.unit.dp
@@ -83,10 +85,12 @@ fun HomeScreen(
                     text = { Text(stringResource(R.string.tab_map)) },
                 )
             }
-            when (selectedTab) {
-                0 -> RestaurantListScreen(state.filtered, onOpenDetail)
-                1 -> state.region?.let { region ->
-                    MapScreen(region, state.filtered, onOpenDetail)
+            Box(Modifier.weight(1f).fillMaxWidth()) {
+                when (selectedTab) {
+                    0 -> RestaurantListScreen(state.filtered, onOpenDetail)
+                    1 -> state.region?.let { region ->
+                        MapScreen(region, state.filtered, onOpenDetail)
+                    }
                 }
             }
         }
