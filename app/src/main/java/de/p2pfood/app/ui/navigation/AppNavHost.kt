@@ -2,6 +2,8 @@ package de.p2pfood.app.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -33,8 +35,8 @@ fun AppNavHost(container: AppContainer) {
             val id = backStackEntry.arguments?.getString("restaurantId").orEmpty()
             RestaurantDetailScreen(
                 viewModel = viewModel(
-                    factory = androidx.lifecycle.viewmodel.viewModelFactory {
-                        androidx.lifecycle.viewmodel.initializer { detailViewModel(container, id) }
+                    factory = viewModelFactory {
+                        initializer { detailViewModel(container, id) }
                     },
                 ),
                 onBack = { navController.popBackStack() },

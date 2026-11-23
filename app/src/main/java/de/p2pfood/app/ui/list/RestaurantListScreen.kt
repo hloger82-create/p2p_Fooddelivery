@@ -2,17 +2,20 @@ package de.p2pfood.app.ui.list
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Badge
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -51,8 +54,15 @@ fun RestaurantListScreen(
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun RestaurantCard(restaurant: Restaurant, onClick: () -> Unit) {
-    ElevatedCard(onClick = onClick, modifier = Modifier.fillMaxWidth()) {
-        Column(Modifier.padding(14.dp)) {
+    ElevatedCard(
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+        elevation = CardDefaults.elevatedCardElevation(
+            defaultElevation = 3.dp,
+            pressedElevation = 6.dp,
+        ),
+    ) {
+        Column(Modifier.padding(12.dp)) {
             Text(restaurant.name, style = MaterialTheme.typography.titleMedium)
             val cityLine = listOfNotNull(restaurant.address.postcode, restaurant.address.city)
                 .joinToString(" ")
@@ -72,12 +82,14 @@ fun RestaurantCard(restaurant: Restaurant, onClick: () -> Unit) {
                 restaurant.cuisines.forEach { cuisine ->
                     AssistChip(
                         onClick = {},
+                        modifier = Modifier.height(26.dp),
                         label = { Text(cuisine.label(), style = MaterialTheme.typography.labelSmall) },
                     )
                 }
                 restaurant.orderTypes.forEach { orderType ->
                     AssistChip(
                         onClick = {},
+                        modifier = Modifier.height(26.dp),
                         label = { Text(orderType.label(), style = MaterialTheme.typography.labelSmall) },
                     )
                 }
