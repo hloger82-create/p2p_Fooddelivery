@@ -26,6 +26,10 @@ python3 tools/research_pipeline.py \
 
 Nur OSM-Daten ohne Website-Analyse: `--skip-website-check`.
 
+Falls die Overpass-Hauptinstanz (overpass-api.de) mit 504/Timeout antwortet: anderes Endpunkt mitgeben, z. B.
+`--overpass https://overpass.kumi.systems/api/interpreter` — ohne Angabe werden die Fallback-Instanzen
+(kumi.systems, nchc.org.tw, private.coffee) automatisch durchprobiert, jeweils mit Retry.
+
 ## Output
 
 `candidates.json` enthaelt pro Kandidat OSM-Daten, Analyse-Ergebnis, Checks, Begruendungen und Status (`auto_accept` / `review` / `reject`).

@@ -29,6 +29,11 @@ from datetime import date
 import requests
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_FALLBACKS = [
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.nchc.org.tw/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+]
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = (
     "p2p-fooddelivery-research/0.1 "
@@ -256,35 +261,45 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     return result
 
 
-def overpass_candidates(region: dict, limit: int) -> list:
+def build_overpass_query(region: dict, limit: int, query_timeout: int = 25) -> str:
     if region.get("bbox"):
         south, west, north, east = region["bbox"]
         area = f"({south},{west},{north},{east})"
-    elif region.get("osmAreaName"):
-        area = f'area["name"="{region["osmAreaName"]}"]["boundary"="administrative"]->.a;(area.a);'
-        area = None
-    else:
-        raise SystemExit("region.json braucht bbox oder osmAreaName")
-    if area is None:
-        query = (
-            f'[out:json][timeout:60];area["name"="{region["osmAreaName"]}"]["boundary"="administrative"]->.a;'
-            f'(node["amenity"~"^(restaurant|fast_food)$"](area.a);way["amenity"~"^(restaurant|fast_food)$"](area.a););'
-            f'out tags center {limit};'
-        )
-    else:
-        query = (
-            f'[out:json][timeout:60];'
+        return (
+            f'[out:json][timeout:{query_timeout}];'
             f'(node["amenity"~"^(restaurant|fast_food)$"]{area};way["amenity"~"^(restaurant|fast_food)$"]{area};);'
             f'out tags center {limit};'
         )
-    resp = requests.post(
-        OVERPASS_URL,
-        data={"data": query},
-        headers={"User-Agent": USER_AGENT},
-        timeout=90,
-    )
-    resp.raise_for_status()
-    return resp.json().get("elements", [])
+    if region.get("osmAreaName"):
+        return (
+            f'[out:json][timeout:{query_timeout}];area["name"="{region["osmAreaName"]}"]["boundary"="administrative"]->.a;'
+            f'(node["amenity"~"^(restaurant|fast_food)$"](area.a);way["amenity"~"^(restaurant|fast_food)$"](area.a););'
+            f'out tags center {limit};'
+        )
+    raise SystemExit("region.json braucht bbox oder osmAreaName")
+
+
+def overpass_candidates(region: dict, limit: int, overpass_url: str) -> list:
+    query = build_overpass_query(region, limit)
+    endpoints = [overpass_url] + [u for u in OVERPASS_FALLBACKS if u != overpass_url]
+    last_exc = None
+    for endpoint in endpoints:
+        for attempt in (1, 2):
+            try:
+                resp = requests.post(
+                    endpoint,
+                    data={"data": query},
+                    headers={"User-Agent": USER_AGENT},
+                    timeout=60,
+                )
+                resp.raise_for_status()
+                print(f"  Overpass OK via {endpoint}")
+                return resp.json().get("elements", [])
+            except requests.RequestException as e:
+                last_exc = e
+                print(f"  Overpass {endpoint} Versuch {attempt} fehlgeschlagen: {e}")
+                time.sleep(5)
+    raise last_exc
 
 
 def geocode(session: requests.Session, address: str, delay: float):
@@ -357,6 +372,7 @@ def main():
     ap.add_argument("--max", type=int, default=60, help="max. OSM-Kandidaten")
     ap.add_argument("--delay", type=float, default=1.0, help="Sekunden Pause zwischen Requests pro Domain")
     ap.add_argument("--skip-website-check", action="store_true", help="nur OSM-Daten, keine Website-Analyse")
+    ap.add_argument("--overpass", default=OVERPASS_URL, help="Overpass-API-Endpunkt (Fallbacks werden automatisch probiert)")
     args = ap.parse_args()
 
     with open(args.region, encoding="utf-8") as f:
@@ -368,7 +384,7 @@ def main():
     session.blocklist = blocklist
 
     print(f"[1/3] Overpass-Abfrage fuer Region '{region['id']}' (max {args.max}) ...")
-    elements = overpass_candidates(region, args.max)
+    elements = overpass_candidates(region, args.max, args.overpass)
     print(f"      {len(elements)} OSM-Elemente gefunden")
 
     candidates = []
