@@ -1,0 +1,1 @@
+-keep class de.p2pfood.app.data.model.** { *; }

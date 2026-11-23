@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">P2P Food</string>
+    <string name="tab_list">Liste</string>
+    <string name="tab_map">Karte</string>
+    <string name="filter_cuisine">Küche</string>
+    <string name="filter_order">Bestellmöglichkeit</string>
+    <string name="filter_delivers">Liefert</string>
+    <string name="empty_list">Keine Restaurants gefunden – Filter anpassen?</string>
+    <string name="action_to_restaurant">Zum Restaurant</string>
+    <string name="action_call">Anrufen</string>
+    <string name="about">Über die App</string>
+    <string name="osm_attribution">© OpenStreetMap-Mitwirkende</string>
+    <string name="disclaimer">Preise, Verfügbarkeit und Liefergebiete richten sich nach dem jeweiligen Restaurant. Diese App vermittelt nur Links und verkauft selbst nichts.</string>
+    <string name="financing">Finanzierung: freiwillige Spenden und klar gekennzeichnete Featured-Einträge der Restaurants. Keine Plattform-Provisionen, kein Tracking.</string>
+    <string name="verification_open">Verifizierung offen</string>
+    <string name="delivers">Liefert</string>
+    <string name="pickup">Abholung</string>
+    <string name="opening_hours">Öffnungszeiten</string>
+    <string name="delivery_areas">Liefergebiet</string>
+    <string name="min_order">Mindestbestellwert</string>
+    <string name="delivery_fee">Liefergebühr</string>
+    <string name="phone_label">Telefon</string>
+    <string name="back">Zurück</string>
+    <string name="restaurant_not_found">Restaurant nicht gefunden.</string>
+</resources>

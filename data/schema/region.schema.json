@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hloger82-create/p2p_Fooddelivery/data/schema/region.schema.json",
+  "title": "RegionConfig",
+  "type": "object",
+  "required": ["id", "name", "centerLat", "centerLon"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "country": { "type": "string", "default": "DE" },
+    "centerLat": { "type": "number" },
+    "centerLon": { "type": "number" },
+    "zoom": { "type": "number", "default": 12.0 },
+    "bbox": {
+      "type": ["array", "null"],
+      "description": "[south, west, north, east] fuer Overpass-Abfragen",
+      "items": { "type": "number" },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "osmAreaName": { "type": ["string", "null"] },
+    "postcodePrefixes": { "type": "array", "items": { "type": "string" } },
+    "platformBlocklist": { "type": "array", "items": { "type": "string" } }
+  }
+}

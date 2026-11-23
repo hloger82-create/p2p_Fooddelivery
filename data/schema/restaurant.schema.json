@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hloger82-create/p2p_Fooddelivery/data/schema/restaurant.schema.json",
+  "title": "RestaurantDataset",
+  "type": "object",
+  "required": ["regionId", "restaurants"],
+  "properties": {
+    "regionId": { "type": "string" },
+    "generatedAt": { "type": "string", "format": "date" },
+    "notes": { "type": "string" },
+    "restaurants": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/restaurant" }
+    }
+  },
+  "$defs": {
+    "restaurant": {
+      "type": "object",
+      "required": ["id", "regionId", "name", "address", "orderTypes", "cuisines", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "regionId": { "type": "string" },
+        "name": { "type": "string", "minLength": 1 },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": { "type": ["string", "null"] },
+            "postcode": { "type": ["string", "null"] },
+            "city": { "type": ["string", "null"] }
+          }
+        },
+        "lat": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+        "lon": { "type": ["number", "null"], "minimum": -180, "maximum": 180 },
+        "phone": { "type": ["string", "null"] },
+        "website": { "type": ["string", "null"], "format": "uri" },
+        "orderUrl": { "type": ["string", "null"], "format": "uri" },
+        "orderTypes": {
+          "type": "array",
+          "items": { "enum": ["WEBSHOP", "FORM", "PHONE", "PICKUP"] },
+          "minItems": 1
+        },
+        "cuisines": {
+          "type": "array",
+          "items": {
+            "enum": ["PIZZA", "ITALIAN", "DOENER", "TURKISH", "ASIAN", "SUSHI", "BURGER", "AMERICAN", "GRILL", "CHINESE", "VIETNAMESE", "THAI", "INDIAN", "MEXICAN", "GREEK", "OTHER"]
+          }
+        },
+        "openingHours": { "type": ["string", "null"] },
+        "delivers": { "type": "boolean" },
+        "pickup": { "type": "boolean" },
+        "deliveryAreas": { "type": "array", "items": { "type": "string" } },
+        "minOrderValue": { "type": ["number", "null"], "minimum": 0 },
+        "deliveryFee": { "type": ["number", "null"], "minimum": 0 },
+        "status": { "enum": ["verified", "pending_review", "rejected"] },
+        "lastVerified": { "type": ["string", "null"], "format": "date" },
+        "source": { "type": "string" },
+        "notes": { "type": ["string", "null"] }
+      }
+    }
+  }
+}
