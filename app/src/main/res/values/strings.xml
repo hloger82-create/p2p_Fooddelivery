@@ -23,4 +23,5 @@
     <string name="phone_label">Telefon</string>
     <string name="back">Zurück</string>
     <string name="restaurant_not_found">Restaurant nicht gefunden.</string>
+    <string name="map_no_coords">Keine Koordinaten hinterlegt — bitte Recherche-Pipeline (Geocoding) laufen lassen.</string>
 </resources>

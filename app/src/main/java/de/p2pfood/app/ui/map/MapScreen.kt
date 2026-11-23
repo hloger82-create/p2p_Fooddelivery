@@ -1,5 +1,11 @@
 package de.p2pfood.app.ui.map
 
+import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,13 +18,16 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import de.p2pfood.app.R
+import de.p2pfood.app.data.model.Cuisine
 import de.p2pfood.app.data.model.RegionConfig
 import de.p2pfood.app.data.model.Restaurant
+import de.p2pfood.app.ui.components.color
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
@@ -39,11 +48,14 @@ fun MapScreen(
             controller.setCenter(GeoPoint(region.centerLat, region.centerLon))
         }
     }
+    val markerIcons = remember { mutableMapOf<Cuisine, Drawable>() }
 
     DisposableEffect(Unit) {
         mapView.onResume()
         onDispose { mapView.onPause() }
     }
+
+    val withCoords = restaurants.filter { it.lat != null && it.lon != null }
 
     Box(Modifier.fillMaxSize()) {
         AndroidView(
@@ -51,22 +63,38 @@ fun MapScreen(
             factory = { mapView },
             update = { mv ->
                 mv.overlays.removeAll(mv.overlays.filterIsInstance<Marker>())
-                restaurants
-                    .filter { it.lat != null && it.lon != null }
-                    .forEach { r ->
-                        val marker = Marker(mv).apply {
-                            position = GeoPoint(r.lat!!, r.lon!!)
-                            title = r.name
-                            setOnMarkerClickListener { _, _ ->
-                                onSelect(r.id)
-                                true
-                            }
+                withCoords.forEach { r ->
+                    val cuisine = r.cuisines.firstOrNull() ?: Cuisine.OTHER
+                    val icon = markerIcons.getOrPut(cuisine) { markerIcon(context, cuisine.color()) }
+                    val marker = Marker(mv).apply {
+                        position = GeoPoint(r.lat!!, r.lon!!)
+                        title = r.name
+                        setIcon(icon)
+                        setAnchor(0.5f, 0.5f)
+                        setOnMarkerClickListener { _, _ ->
+                            onSelect(r.id)
+                            true
                         }
-                        mv.overlays.add(marker)
                     }
+                    mv.overlays.add(marker)
+                }
                 mv.invalidate()
             },
         )
+        if (withCoords.isEmpty()) {
+            Text(
+                stringResource(R.string.map_no_coords),
+                style = MaterialTheme.typography.bodySmall,
+                modifier = Modifier
+                    .align(Alignment.Center)
+                    .padding(12.dp)
+                    .background(
+                        MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
+                        RoundedCornerShape(6.dp),
+                    )
+                    .padding(8.dp),
+            )
+        }
         Text(
             text = stringResource(R.string.osm_attribution),
             style = MaterialTheme.typography.labelSmall,
@@ -80,4 +108,23 @@ fun MapScreen(
                 .padding(4.dp),
         )
     }
+}
+
+private fun markerIcon(context: Context, color: androidx.compose.ui.graphics.Color): Drawable {
+    val size = 72
+    val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+    val canvas = Canvas(bitmap)
+    val radius = size / 2f - 6f
+    val fill = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        this.color = color.toArgb()
+        style = Paint.Style.FILL
+    }
+    val stroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
+        this.color = android.graphics.Color.WHITE
+        style = Paint.Style.STROKE
+        strokeWidth = 6f
+    }
+    canvas.drawCircle(size / 2f, size / 2f, radius, fill)
+    canvas.drawCircle(size / 2f, size / 2f, radius, stroke)
+    return BitmapDrawable(context.resources, bitmap)
 }

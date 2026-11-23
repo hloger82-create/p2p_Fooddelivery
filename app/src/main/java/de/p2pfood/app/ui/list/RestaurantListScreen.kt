@@ -1,5 +1,6 @@
 package de.p2pfood.app.ui.list
 
+import androidx.compose.foundation.ScrollbarStyle
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,6 +14,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollbarAdapter
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScrollbar
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Badge
 import androidx.compose.material3.CardDefaults
@@ -34,19 +39,35 @@ fun RestaurantListScreen(
     restaurants: List<Restaurant>,
     onOpenDetail: (String) -> Unit,
 ) {
+    val listState = rememberLazyListState()
     if (restaurants.isEmpty()) {
         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             Text(stringResource(R.string.empty_list))
         }
         return
     }
-    LazyColumn(
-        modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(12.dp),
-        verticalArrangement = Arrangement.spacedBy(10.dp),
-    ) {
-        items(restaurants, key = { it.id }) { restaurant ->
-            RestaurantCard(restaurant) { onOpenDetail(restaurant.id) }
+    Box(Modifier.fillMaxSize()) {
+        LazyColumn(
+            state = listState,
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScrollbar(
+                    rememberScrollbarAdapter(listState),
+                    style = ScrollbarStyle(
+                        minimalHeight = 16.dp,
+                        thickness = 3.dp,
+                        shape = RoundedCornerShape(2.dp),
+                        hoverDurationMillis = 300,
+                        unhoverColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.25f),
+                        hoverColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.55f),
+                    ),
+                ),
+            contentPadding = PaddingValues(12.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            items(restaurants, key = { it.id }) { restaurant ->
+                RestaurantCard(restaurant) { onOpenDetail(restaurant.id) }
+            }
         }
     }
 }
