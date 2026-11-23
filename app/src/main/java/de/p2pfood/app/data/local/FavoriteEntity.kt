@@ -23,7 +23,7 @@ interface FavoriteDao {
     suspend fun isFavorite(id: String): Boolean
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun add(id: String)
+    suspend fun add(favorite: FavoriteEntity)
 
     @Query("DELETE FROM favorites WHERE restaurantId = :id")
     suspend fun remove(id: String)

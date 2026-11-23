@@ -3,6 +3,7 @@ package de.p2pfood.app.data.repository
 import android.content.Context
 import de.p2pfood.app.data.AppJson
 import de.p2pfood.app.data.local.FavoriteDao
+import de.p2pfood.app.data.local.FavoriteEntity
 import de.p2pfood.app.data.local.RestaurantDao
 import de.p2pfood.app.data.local.toEntity
 import de.p2pfood.app.data.local.toModel
@@ -55,6 +56,6 @@ class RestaurantRepository(
         favoriteDao.observeAll().map { it.toSet() }
 
     suspend fun toggleFavorite(id: String) {
-        if (favoriteDao.isFavorite(id)) favoriteDao.remove(id) else favoriteDao.add(id)
+        if (favoriteDao.isFavorite(id)) favoriteDao.remove(id) else favoriteDao.add(FavoriteEntity(id))
     }
 }
