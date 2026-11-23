@@ -46,6 +46,10 @@ fun MapScreen(
             setMultiTouchControls(true)
             controller.setZoom(region.zoom)
             controller.setCenter(GeoPoint(region.centerLat, region.centerLon))
+            region.bbox?.let { (south, west, north, east) ->
+                setScrollableAreaLimitLatitude(north, south, 100000)
+                setScrollableAreaLimitLongitude(west, east, 100000)
+            }
         }
     }
     val markerIcons = remember { mutableMapOf<Cuisine, Drawable>() }
