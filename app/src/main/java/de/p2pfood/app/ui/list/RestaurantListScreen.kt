@@ -79,10 +79,11 @@ private fun ThinScrollbar(listState: LazyListState, modifier: Modifier = Modifie
     val fraction = (viewport / total).toFloat().coerceIn(0.05f, 1f)
     val offset = (listState.firstVisibleItemIndex * avgItem + listState.firstVisibleItemScrollOffset).toFloat()
     val thumbTop = (offset / total.toFloat()).coerceIn(0f, 1f - fraction)
+    val thumbColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.55f)
     Canvas(modifier = modifier.fillMaxHeight().width(3.dp)) {
         val thumbHeight = size.height * fraction
         drawRect(
-            color = androidx.compose.material3.MaterialTheme.colorScheme.primary.copy(alpha = 0.55f),
+            color = thumbColor,
             topLeft = Offset(0f, size.height * thumbTop),
             size = Size(size.width, thumbHeight),
         )
