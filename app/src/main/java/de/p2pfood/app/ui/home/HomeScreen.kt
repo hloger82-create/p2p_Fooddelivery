@@ -1,7 +1,11 @@
 package de.p2pfood.app.ui.home
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Surface
+import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -48,15 +52,22 @@ fun HomeScreen(
         },
     ) { padding ->
         Column(Modifier.padding(padding)) {
-            FilterBar(
-                cuisines = state.restaurants.flatMap { it.cuisines }.distinct().sorted(),
-                selectedCuisines = state.selectedCuisines,
-                onToggleCuisine = viewModel::toggleCuisine,
-                selectedOrderTypes = state.selectedOrderTypes,
-                onToggleOrderType = viewModel::toggleOrderType,
-                deliversOnly = state.deliversOnly,
-                onDeliversOnly = viewModel::setDeliversOnly,
-            )
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                tonalElevation = 2.dp,
+                shadowElevation = 2.dp,
+            ) {
+                FilterBar(
+                    cuisines = state.restaurants.flatMap { it.cuisines }.distinct().sorted(),
+                    selectedCuisines = state.selectedCuisines,
+                    onToggleCuisine = viewModel::toggleCuisine,
+                    selectedOrderTypes = state.selectedOrderTypes,
+                    onToggleOrderType = viewModel::toggleOrderType,
+                    deliversOnly = state.deliversOnly,
+                    onDeliversOnly = viewModel::setDeliversOnly,
+                )
+            }
+            HorizontalDivider(thickness = 1.dp)
             TabRow(selectedTabIndex = selectedTab) {
                 Tab(
                     selected = selectedTab == 0,
