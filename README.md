@@ -36,12 +36,16 @@ python3 tools/research_pipeline.py \
   --max 60 --delay 1.0
 ```
 
-Ergebnis: `auto_accept` / `review` / `reject` pro Kandidat mit Begruendung. Manuell gepruefte Eintraege uebernehmen:
+Ergebnis: `candidates.json` mit `auto_accept` / `review` / `reject` pro Kandidat. Uebernahme in den Datensatz (inkl. Koordinaten, Duplikat-Erkennung):
 
 ```bash
-# data/regions/hannover/restaurants.json bearbeiten, dann in die App kopieren:
+python3 tools/merge_candidates.py --candidates data/regions/hannover/candidates.json \
+    --out data/regions/hannover/restaurants.json --region data/regions/hannover/region.json
+python3 tools/validate_data.py
 cp data/regions/hannover/restaurants.json app/src/main/assets/regions/hannover/restaurants.json
 ```
+
+Neue Eintraege haben Status `pending_review` — nach manueller Endpruefung (Impressum, Region, eigener Kanal ohne Plattform-Redirect) auf `verified` setzen. Die App holt sich frische Daten zur Laufzeit zusaetzlich ueber `datasetUrl` in `region.json`.
 
 Rechtlicher Rahmen der Pipeline (robots.txt, Rate-Limit, keine Plattform-Inhalte, keine personenbezogenen Daten): siehe `docs/LEGAL.md` und `tools/README.md`.
 

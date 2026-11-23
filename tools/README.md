@@ -28,7 +28,20 @@ Nur OSM-Daten ohne Website-Analyse: `--skip-website-check`.
 
 ## Output
 
-`candidates.json` enthaelt pro Kandidat OSM-Daten, Analyse-Ergebnis, Checks, Begruendungen und Status. Daraus werden manuell gepruefte Eintraege in `data/regions/<region>/restaurants.json` uebernommen (und in die App-Assets kopiert).
+`candidates.json` enthaelt pro Kandidat OSM-Daten, Analyse-Ergebnis, Checks, Begruendungen und Status (`auto_accept` / `review` / `reject`).
+
+## Merge in den Datensatz
+
+```bash
+python3 tools/merge_candidates.py \
+  --candidates data/regions/hannover/candidates.json \
+  --out data/regions/hannover/restaurants.json \
+  --region data/regions/hannover/region.json
+python3 tools/validate_data.py
+cp data/regions/hannover/restaurants.json app/src/main/assets/regions/hannover/restaurants.json
+```
+
+Das Merge-Tool uebernimmt alle Kandidaten (ausser `reject` / ohne Website), inkl. Koordinaten, Bestellarten, Telefon, Liefer-PLZ. Status bleibt `pending_review` — manuelle Endpruefung (Impressum, Region, eigener Kanal) vor dem Umstellen auf `verified` nicht vergessen (siehe `docs/LEGAL.md`). Duplikate werden anhand der Website-Domain erkannt.
 
 ## Rechtlicher Rahmen
 
