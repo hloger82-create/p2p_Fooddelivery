@@ -43,8 +43,6 @@ fun MapScreen(
     val mapView = remember {
         MapView(context).apply {
             clipToOutline = true
-            setZOrderOnTop(false)
-            setZOrderMediaOverlay(false)
             setTileSource(TileSourceFactory.MAPNIK)
             setMultiTouchControls(true)
             controller.setZoom(region.zoom)
