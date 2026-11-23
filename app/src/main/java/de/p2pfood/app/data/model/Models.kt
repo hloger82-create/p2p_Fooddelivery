@@ -82,4 +82,5 @@ data class RegionConfig(
     val osmAreaName: String? = null,
     val postcodePrefixes: List<String> = emptyList(),
     val platformBlocklist: List<String> = emptyList(),
+    val datasetUrl: String? = null,
 )

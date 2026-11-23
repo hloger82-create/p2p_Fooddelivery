@@ -22,5 +22,6 @@
     "pizzeria.de",
     "online-pizza.de",
     "webimbiss.de"
-  ]
+  ],
+  "datasetUrl": "https://raw.githubusercontent.com/hloger82-create/p2p_Fooddelivery/main/data/regions/hannover/restaurants.json"
 }

@@ -13,22 +13,29 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Size
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Badge
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import de.p2pfood.app.R
@@ -39,6 +46,8 @@ import de.p2pfood.app.ui.components.label
 @Composable
 fun RestaurantListScreen(
     restaurants: List<Restaurant>,
+    favoriteIds: Set<String>,
+    onToggleFavorite: (String) -> Unit,
     onOpenDetail: (String) -> Unit,
 ) {
     val listState = rememberLazyListState()
@@ -58,7 +67,12 @@ fun RestaurantListScreen(
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             items(restaurants, key = { it.id }) { restaurant ->
-                RestaurantCard(restaurant) { onOpenDetail(restaurant.id) }
+                RestaurantCard(
+                    restaurant = restaurant,
+                    isFavorite = restaurant.id in favoriteIds,
+                    onToggleFavorite = { onToggleFavorite(restaurant.id) },
+                    onClick = { onOpenDetail(restaurant.id) },
+                )
             }
         }
         ThinScrollbar(listState, Modifier.align(Alignment.CenterEnd))
@@ -92,7 +106,12 @@ private fun ThinScrollbar(listState: LazyListState, modifier: Modifier = Modifie
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun RestaurantCard(restaurant: Restaurant, onClick: () -> Unit) {
+fun RestaurantCard(
+    restaurant: Restaurant,
+    isFavorite: Boolean,
+    onToggleFavorite: () -> Unit,
+    onClick: () -> Unit,
+) {
     ElevatedCard(
         onClick = onClick,
         modifier = Modifier.fillMaxWidth(),
@@ -102,7 +121,20 @@ fun RestaurantCard(restaurant: Restaurant, onClick: () -> Unit) {
         ),
     ) {
         Column(Modifier.padding(12.dp)) {
-            Text(restaurant.name, style = MaterialTheme.typography.titleMedium)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    restaurant.name,
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.weight(1f),
+                )
+                IconButton(onClick = onToggleFavorite, modifier = Modifier.size(32.dp)) {
+                    Icon(
+                        imageVector = if (isFavorite) Icons.Default.Star else Icons.Default.StarBorder,
+                        contentDescription = stringResource(R.string.favorites),
+                        tint = if (isFavorite) Color(0xFFFFC107) else MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
             val cityLine = listOfNotNull(restaurant.address.postcode, restaurant.address.city)
                 .joinToString(" ")
             val addressLine = listOfNotNull(restaurant.address.street, cityLine.takeIf { it.isNotBlank() })

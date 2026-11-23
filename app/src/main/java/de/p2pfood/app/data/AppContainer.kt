@@ -13,12 +13,13 @@ class AppContainer(context: Context) {
         appContext,
         AppDatabase::class.java,
         "p2pfood.db",
-    ).build()
+    ).fallbackToDestructiveMigration().build()
 
     val regionCatalog = RegionCatalog(appContext)
 
     val restaurantRepository = RestaurantRepository(
         dao = database.restaurantDao(),
+        favoriteDao = database.favoriteDao(),
         catalog = regionCatalog,
         context = appContext,
     )

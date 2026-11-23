@@ -24,4 +24,8 @@
     <string name="back">Zurück</string>
     <string name="restaurant_not_found">Restaurant nicht gefunden.</string>
     <string name="map_no_coords">Keine Koordinaten hinterlegt — bitte Recherche-Pipeline (Geocoding) laufen lassen.</string>
+    <string name="search_hint">Name oder Küche suchen…</string>
+    <string name="postcode_hint">PLZ</string>
+    <string name="favorites">Favoriten</string>
+    <string name="toggle_theme">Hell/Dunkel wechseln</string>
 </resources>

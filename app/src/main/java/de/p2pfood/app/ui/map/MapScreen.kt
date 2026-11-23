@@ -7,11 +7,19 @@ import android.graphics.Paint
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -28,11 +36,13 @@ import de.p2pfood.app.data.model.Cuisine
 import de.p2pfood.app.data.model.RegionConfig
 import de.p2pfood.app.data.model.Restaurant
 import de.p2pfood.app.ui.components.color
+import de.p2pfood.app.ui.components.label
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun MapScreen(
     region: RegionConfig,
@@ -86,6 +96,35 @@ fun MapScreen(
                 mv.invalidate()
             },
         )
+        val legendCuisines = withCoords.flatMap { it.cuisines }.distinct().sorted()
+        if (legendCuisines.isNotEmpty()) {
+            Surface(
+                modifier = Modifier
+                    .align(Alignment.TopStart)
+                    .padding(8.dp),
+                tonalElevation = 2.dp,
+                shadowElevation = 2.dp,
+                shape = RoundedCornerShape(8.dp),
+            ) {
+                FlowRow(
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .widthIn(max = 200.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(4.dp),
+                ) {
+                    legendCuisines.forEach { cuisine ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(4.dp),
+                        ) {
+                            Box(Modifier.size(10.dp).background(cuisine.color(), CircleShape))
+                            Text(cuisine.label(), style = MaterialTheme.typography.labelSmall)
+                        }
+                    }
+                }
+            }
+        }
         if (withCoords.isEmpty()) {
             Text(
                 stringResource(R.string.map_no_coords),

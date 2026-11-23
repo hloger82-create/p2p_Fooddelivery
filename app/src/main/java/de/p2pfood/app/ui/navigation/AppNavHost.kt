@@ -17,7 +17,7 @@ import de.p2pfood.app.ui.home.HomeScreen
 import de.p2pfood.app.ui.home.homeViewModelFactory
 
 @Composable
-fun AppNavHost(container: AppContainer) {
+fun AppNavHost(container: AppContainer, onToggleTheme: () -> Unit) {
     val navController = rememberNavController()
 
     NavHost(navController = navController, startDestination = "home") {
@@ -25,6 +25,7 @@ fun AppNavHost(container: AppContainer) {
             HomeScreen(
                 onOpenDetail = { id -> navController.navigate("detail/$id") },
                 onOpenAbout = { navController.navigate("about") },
+                onToggleTheme = onToggleTheme,
                 viewModel = viewModel(factory = homeViewModelFactory(container)),
             )
         }
