@@ -10,7 +10,11 @@ class P2pFoodApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        Configuration.getInstance().load(this, getSharedPreferences("osmdroid", Context.MODE_PRIVATE))
-        Configuration.getInstance().userAgentValue = packageName
+        try {
+            Configuration.getInstance().load(this, getSharedPreferences("osmdroid", Context.MODE_PRIVATE))
+            Configuration.getInstance().userAgentValue = packageName
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 }
