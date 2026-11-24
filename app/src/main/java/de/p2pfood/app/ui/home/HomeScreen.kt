@@ -81,33 +81,36 @@ fun HomeScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(horizontal = 12.dp, vertical = 6.dp),
-                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            .padding(horizontal = 12.dp, vertical = 4.dp),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp),
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
                         OutlinedTextField(
                             value = state.filters.query,
                             onValueChange = viewModel::setQuery,
-                            modifier = Modifier.weight(1f).height(48.dp),
+                            modifier = Modifier.weight(1f).height(40.dp),
                             singleLine = true,
-                            placeholder = { Text(stringResource(R.string.search_hint)) },
-                            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                            textStyle = MaterialTheme.typography.bodySmall,
+                            placeholder = { Text(stringResource(R.string.search_hint), style = MaterialTheme.typography.bodySmall) },
+                            leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, modifier = Modifier.size(18.dp)) },
                         )
                         OutlinedTextField(
                             value = state.filters.postcode,
                             onValueChange = viewModel::setPostcode,
-                            modifier = Modifier.width(96.dp).height(48.dp),
+                            modifier = Modifier.width(84.dp).height(40.dp),
                             singleLine = true,
-                            placeholder = { Text(stringResource(R.string.postcode_hint)) },
+                            textStyle = MaterialTheme.typography.bodySmall,
+                            placeholder = { Text(stringResource(R.string.postcode_hint), style = MaterialTheme.typography.bodySmall) },
                             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                         )
                         IconButton(
                             onClick = viewModel::toggleFavoritesOnly,
-                            modifier = Modifier.size(40.dp),
+                            modifier = Modifier.size(36.dp),
                         ) {
                             Icon(
                                 imageVector = if (state.filters.favoritesOnly) Icons.Default.Star else Icons.Default.StarBorder,
                                 contentDescription = stringResource(R.string.favorites),
+                                modifier = Modifier.size(20.dp),
                                 tint = if (state.filters.favoritesOnly) {
                                     MaterialTheme.colorScheme.primary
                                 } else {
