@@ -31,8 +31,9 @@ import requests
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 OVERPASS_FALLBACKS = [
     "https://overpass.kumi.systems/api/interpreter",
-    "https://overpass.nchc.org.tw/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter",
+    "https://overpass.osm.ch/api/interpreter",
 ]
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = (
@@ -261,7 +262,7 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     return result
 
 
-def build_overpass_query(region: dict, limit: int, query_timeout: int = 25) -> str:
+def build_overpass_query(region: dict, limit: int, query_timeout: int = 15) -> str:
     if region.get("bbox"):
         south, west, north, east = region["bbox"]
         area = f"({south},{west},{north},{east})"
@@ -284,21 +285,28 @@ def overpass_candidates(region: dict, limit: int, overpass_url: str) -> list:
     endpoints = [overpass_url] + [u for u in OVERPASS_FALLBACKS if u != overpass_url]
     last_exc = None
     for endpoint in endpoints:
-        for attempt in (1, 2):
+        for attempt in (1, 2, 3):
             try:
                 resp = requests.post(
                     endpoint,
                     data={"data": query},
                     headers={"User-Agent": USER_AGENT},
-                    timeout=60,
+                    timeout=45,
                 )
                 resp.raise_for_status()
                 print(f"  Overpass OK via {endpoint}")
                 return resp.json().get("elements", [])
             except requests.RequestException as e:
                 last_exc = e
-                print(f"  Overpass {endpoint} Versuch {attempt} fehlgeschlagen: {e}")
-                time.sleep(5)
+                wait = 10
+                if isinstance(e, requests.HTTPError) and e.response is not None:
+                    retry_after = e.response.headers.get("Retry-After")
+                    if retry_after and retry_after.isdigit():
+                        wait = max(wait, min(int(retry_after), 120))
+                    if e.response.status_code == 429:
+                        wait = max(wait, 30)
+                print(f"  Overpass {endpoint} Versuch {attempt} fehlgeschlagen: {e} (pause {wait}s)")
+                time.sleep(wait)
     raise last_exc
 
 

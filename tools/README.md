@@ -26,9 +26,10 @@ python3 tools/research_pipeline.py \
 
 Nur OSM-Daten ohne Website-Analyse: `--skip-website-check`.
 
-Falls die Overpass-Hauptinstanz (overpass-api.de) mit 504/Timeout antwortet: anderes Endpunkt mitgeben, z. B.
-`--overpass https://overpass.kumi.systems/api/interpreter` — ohne Angabe werden die Fallback-Instanzen
-(kumi.systems, nchc.org.tw, private.coffee) automatisch durchprobiert, jeweils mit Retry.
+Falls die Overpass-Hauptinstanz (overpass-api.de) mit 502/504/429 antwortet: anderes Endpunkt mitgeben, z. B.
+`--overpass https://overpass.osm.ch/api/interpreter` — ohne Angabe werden die Fallback-Instanzen
+(kumi.systems, private.coffee, overpass.openstreetmap.fr, overpass.osm.ch) automatisch durchprobiert,
+bei 429 mit Retry-After-Backoff (bis 120s). Tipp: bei dauerhaftem 429 kurz warten und `--max 30` verwenden.
 
 ## Output
 
