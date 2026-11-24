@@ -12434,6 +12434,754 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "nur Telefon; OSM-Website war restaurantguru (Aggregator)"
+    },
+    {
+      "id": "hannover-ofelia",
+      "regionId": "hannover",
+      "name": "Restaurant Ofelia",
+      "address": {
+        "street": "Elbestraße 39",
+        "postcode": "30419",
+        "city": "Hannover"
+      },
+      "lat": 52.3999381,
+      "lon": 9.6791126,
+      "phone": "+49 511 44454926",
+      "website": "https://restaurant-ofelia.de/",
+      "orderUrl": "https://ofelia-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "GREEK"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Su 14:00-02:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website + eigener Bestellshop (ofelia-hannover.de); wird auch auf Lieferando gelistet -> Link-out nur auf eigenen Shop"
+    },
+    {
+      "id": "hannover-adams-kitchen",
+      "regionId": "hannover",
+      "name": "Adam's Kitchen",
+      "address": {
+        "street": null,
+        "postcode": "30657",
+        "city": "Hannover"
+      },
+      "lat": 52.4011132,
+      "lon": 9.823425,
+      "phone": "+49 511 89829576",
+      "website": "https://www.adamskitchen.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "BURGER",
+        "ITALIAN",
+        "PIZZA"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Tu-Th 11:30-22:00; Fr 11:30-22:30; Sa 12:00-22:30; Su 12:00-21:30",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website (adamskitchen.de), Bestellkanal nur telefonisch; Bothfeld"
+    },
+    {
+      "id": "hannover-pizza-house",
+      "regionId": "hannover",
+      "name": "Pizza House",
+      "address": {
+        "street": "Derfflingerstraße 6",
+        "postcode": "30161",
+        "city": "Hannover"
+      },
+      "lat": 52.3904081,
+      "lon": 9.7350532,
+      "phone": "+49 511 89841100",
+      "website": "https://www.pizza-house-hannover.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "ITALIAN"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Th 11:00-02:00; Fr-Su 11:00-04:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website, Lieferung laut eigener Seite nur ueber Plattformen -> telefonische Bestellung"
+    },
+    {
+      "id": "hannover-pizza-ustad",
+      "regionId": "hannover",
+      "name": "Pizza Ustad",
+      "address": {
+        "street": null,
+        "postcode": "30453",
+        "city": "Hannover"
+      },
+      "lat": 52.3771311,
+      "lon": 9.6847491,
+      "phone": "+49 511 35736668",
+      "website": "https://www.pizzaustad.de/",
+      "orderUrl": "https://www.pizzaustad.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "PIZZA"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": null,
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Domain mit eigener Bestellseite (bestellen und liefern lassen)"
+    },
+    {
+      "id": "hannover-china-imbiss-jasmin",
+      "regionId": "hannover",
+      "name": "China-Imbiss-Jasmin",
+      "address": {
+        "street": "Ricklinger Stadtweg 39A",
+        "postcode": "30459",
+        "city": "Hannover"
+      },
+      "lat": 52.3465869,
+      "lon": 9.723948,
+      "phone": "+49 511 2349870",
+      "website": "https://china-imbiss-jasmin-1.jimdosite.com/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN",
+        "CHINESE"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Tu-Su,PH 12:00-20:30; Mo off",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Jimdo-Website ohne eigenen Shop; telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-meiers-lebenslust",
+      "regionId": "hannover",
+      "name": "Meiers Lebenslust",
+      "address": {
+        "street": "Osterstraße 64",
+        "postcode": "30159",
+        "city": "Hannover"
+      },
+      "lat": 52.3685277,
+      "lon": 9.7403365,
+      "phone": "+49 511 8982250",
+      "website": "https://www.meiers-lebenslust.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Sa 12:00-24:00; Su off",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website mit Impressum; Reservierung telefonisch, keine Lieferung"
+    },
+    {
+      "id": "hannover-trocadero",
+      "regionId": "hannover",
+      "name": "Trocadero",
+      "address": {
+        "street": "Alt-Vinnhorst 117",
+        "postcode": "30419",
+        "city": "Hannover"
+      },
+      "lat": 52.4248581,
+      "lon": 9.7068669,
+      "phone": "+49 511 4754135",
+      "website": "https://www.restaurant-trocadero.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ITALIAN"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Fr 17:30-22:00; Sa 11:30-15:00,17:30-22:00; Su,PH 11:30-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website mit Impressum; Restaurant, keine Lieferung"
+    },
+    {
+      "id": "hannover-kaisers-wok",
+      "regionId": "hannover",
+      "name": "Kaiser's Wok",
+      "address": {
+        "street": "Lavesstraße 11a",
+        "postcode": "30159",
+        "city": "Hannover"
+      },
+      "lat": 52.3734092,
+      "lon": 9.7485451,
+      "phone": "+49 511 35399246",
+      "website": "https://www.kaisers-wok.de/",
+      "orderUrl": "https://www.lieferservice-kaisers-wok.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "CHINESE"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Su-Fr 11:45-14:30,18:00-21:00; Sa off",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website + Impressum + eigener Lieferservice-Shop (lieferservice-kaisers-wok.de)"
+    },
+    {
+      "id": "hannover-tomo-sushi",
+      "regionId": "hannover",
+      "name": "Tomo Sushi",
+      "address": {
+        "street": "Volgersweg 18",
+        "postcode": "30175",
+        "city": "Hannover"
+      },
+      "lat": 52.3788438,
+      "lon": 9.750274,
+      "phone": "+49 511 343443",
+      "website": "https://tomosushi.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "SUSHI",
+        "ASIAN"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Tu-Th 18:00-22:00; Fr,Sa 17:00-22:00; Su 17:00-21:00; PH 18:00-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website mit Impressum; Abholung/Lieferung telefonisch"
+    },
+    {
+      "id": "hannover-elim-hotpot",
+      "regionId": "hannover",
+      "name": "Elim Hotpot",
+      "address": {
+        "street": "Hildesheimer Straße 397",
+        "postcode": "30519",
+        "city": "Hannover"
+      },
+      "lat": 52.3273034,
+      "lon": 9.7817674,
+      "phone": "+49 511 8988920",
+      "website": "https://www.elimrestaurant.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "CHINESE"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": null,
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website mit Online-Reservierung; telefonische Bestellung"
+    },
+    {
+      "id": "hannover-honeys-linden",
+      "regionId": "hannover",
+      "name": "Honey's Linden",
+      "address": {
+        "street": "Fössestraße 4",
+        "postcode": "30451",
+        "city": "Hannover"
+      },
+      "lat": 52.371243,
+      "lon": 9.712627,
+      "phone": "+49 511 94051082",
+      "website": "https://honeys-hannover.de/",
+      "orderUrl": "https://app.honeys-hannover.de/filialen",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "BURGER"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo 17:00-23:00; Tu-Th,Su 12:00-23:00; Fr,Sa 12:00-02:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "gleiche Marke wie verified hannover-honeys; eigener App-Shop (app.honeys-hannover.de)"
+    },
+    {
+      "id": "hannover-street-kitchen",
+      "regionId": "hannover",
+      "name": "Street Kitchen - Viet Cuisine",
+      "address": {
+        "street": "Limmerstraße 26",
+        "postcode": "30451",
+        "city": "Hannover"
+      },
+      "lat": 52.3727601,
+      "lon": 9.7098241,
+      "phone": "+49 511 98638834",
+      "website": "https://streetkitchen-viet-cuisine-hannover.de/",
+      "orderUrl": "https://streetkitchen-viet-cuisine-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "VIETNAMESE"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Th 12:00-22:00; Fr-Sa 12:00-23:00; Su 12:00-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigener Bestellshop auf eigener Domain"
+    },
+    {
+      "id": "hannover-dim-sum-house",
+      "regionId": "hannover",
+      "name": "China Dim Sum House",
+      "address": {
+        "street": "Nordmannpassage 8",
+        "postcode": "30159",
+        "city": "Hannover"
+      },
+      "lat": 52.3763214,
+      "lon": 9.7339346,
+      "phone": "+49 511 89824088",
+      "website": "https://www.dim-sum-hannover.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "CHINESE"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "We-Mo 12:00-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website; Restaurant, telefonische Bestellung"
+    },
+    {
+      "id": "hannover-hvin",
+      "regionId": "hannover",
+      "name": "H'Vin",
+      "address": {
+        "street": "Carl-Loges-Straße 8",
+        "postcode": "30657",
+        "city": "Hannover"
+      },
+      "lat": 52.4205908,
+      "lon": 9.793769,
+      "phone": "+49 511 6045222",
+      "website": "https://hvin.de/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo off; Tu-Fr 16:00+; Sa-Su 10:00+",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website mit Impressum (OSV Vereinsheim, orientalische/kurdische Kueche)"
+    },
+    {
+      "id": "hannover-das-zwiespalt",
+      "regionId": "hannover",
+      "name": "Das Zwiespalt",
+      "address": {
+        "street": "Charlottenstraße 64",
+        "postcode": "30449",
+        "city": "Hannover"
+      },
+      "lat": 52.3600276,
+      "lon": 9.7181328,
+      "phone": "+49 511 54397753",
+      "website": "https://daszwiespalt.de",
+      "orderUrl": "https://www.daszwiespalthannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": null,
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Umzug von Egestorffstr. nach Charlottenstr. 64; eigene Website + eigener Bestellshop; wird auch auf Lieferando gelistet"
+    },
+    {
+      "id": "hannover-oregano-grillhaus",
+      "regionId": "hannover",
+      "name": "Oregano Grillhaus",
+      "address": {
+        "street": "Mecklenheidestraße 123E",
+        "postcode": "30419",
+        "city": "Hannover"
+      },
+      "lat": 52.414858,
+      "lon": 9.6671584,
+      "phone": "+49 511 76800230",
+      "website": "https://oregano-grill.com/",
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "GREEK"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Su 12:00-23:30",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Website; Reservierung telefonisch, keine Lieferung"
+    },
+    {
+      "id": "hannover-my-my-asian-bistro",
+      "regionId": "hannover",
+      "name": "My My Asian Bistro",
+      "address": {
+        "street": "Badenstedter Straße 123",
+        "postcode": "30455",
+        "city": "Hannover"
+      },
+      "lat": 52.3595923,
+      "lon": 9.6784369,
+      "phone": "+49 511 4735436",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Th-Tu 11:00-20:00; We off",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "OSM-Website ist nur Shoppingcenter-Seite (carre-badenstedt.de); telefonische Bestellung"
+    },
+    {
+      "id": "hannover-urfa-tadim",
+      "regionId": "hannover",
+      "name": "Urfa Tadim",
+      "address": {
+        "street": null,
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": 52.3650611,
+      "lon": 9.7480259,
+      "phone": "+49 511 70815012",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "DOENER",
+        "PIZZA"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Fr 11:00-22:00; Sa,Su 12:00-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "nur Telefon in OSM; telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-huong",
+      "regionId": "hannover",
+      "name": "HUONG",
+      "address": {
+        "street": null,
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": 52.3518804,
+      "lon": 9.693681,
+      "phone": "+49 511 26232377",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN",
+        "CHINESE",
+        "SUSHI",
+        "VIETNAMESE"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Sa 09:00-19:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "nur Telefon in OSM (delivery=no); telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-alsham",
+      "regionId": "hannover",
+      "name": "Alsham",
+      "address": {
+        "street": "Am Marstall 2",
+        "postcode": "30159",
+        "city": "Hannover"
+      },
+      "lat": 52.3748731,
+      "lon": 9.7339075,
+      "phone": "+49 176 40568760",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Su,PH 11:30-00:45",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "syyrisch; nur Mobilnummer in OSM; telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-einburgerung",
+      "regionId": "hannover",
+      "name": "Die EinBURGERung",
+      "address": {
+        "street": "Waldstraße 19",
+        "postcode": "30629",
+        "city": "Hannover"
+      },
+      "lat": 52.3933132,
+      "lon": 9.8554592,
+      "phone": "+49 152 15321374",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "AMERICAN",
+        "BURGER"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "We 16:00-21:00; Th-Sa 12:30-21:00; Su 12:30-20:30",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "nur Mobilnummer in OSM; telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-net-hu",
+      "regionId": "hannover",
+      "name": "Nét Hutf",
+      "address": {
+        "street": "Hildesheimer Straße 81",
+        "postcode": "30169",
+        "city": "Hannover"
+      },
+      "lat": 52.3602651,
+      "lon": 9.7506684,
+      "phone": "+49 511 8060141",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN",
+        "THAI",
+        "VIETNAMESE"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Fr 11:30-22:00; Sa,Su 12:00-22:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "nur Telefon in OSM; telefonische Bestellung/Abholung"
+    },
+    {
+      "id": "hannover-frytastic",
+      "regionId": "hannover",
+      "name": "Frytastic",
+      "address": {
+        "street": "Limmerstraße 36",
+        "postcode": "30451",
+        "city": "Hannover"
+      },
+      "lat": 52.3731569,
+      "lon": 9.7086675,
+      "phone": "+49 151 20755995",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "BURGER"
+      ],
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": "Mo-Th,Su 12:00-23:00; Fr-Sa 12:00-02:00",
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "nur Mobilnummer in OSM; telefonische Bestellung/Abholung"
     }
   ]
 }
