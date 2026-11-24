@@ -99,14 +99,18 @@ def candidate_to_entry(c: dict, region_id: str, region_name: str, existing_ids: 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Merge Pipeline-Kandidaten in restaurants.json")
-    ap.add_argument("--candidates", required=True)
+    ap.add_argument("--candidates", required=True, action="append", help="candidates.json (mehrfach angebbar, z. B. fuer Slices)")
     ap.add_argument("--out", required=True, help="bestehende restaurants.json (wird erweitert)")
     ap.add_argument("--region", default=None, help="region.json fuer Regionsname (optional)")
     args = ap.parse_args()
 
-    with open(args.candidates, encoding="utf-8") as f:
-        cand = json.load(f)
-    region_id = cand.get("regionId", "unknown")
+    all_candidates = []
+    region_id = "unknown"
+    for cpath in args.candidates:
+        with open(cpath, encoding="utf-8") as f:
+            cand = json.load(f)
+        region_id = cand.get("regionId", region_id)
+        all_candidates.extend(cand.get("candidates", []))
     region_name = region_id
     if args.region:
         with open(args.region, encoding="utf-8") as f:
@@ -123,7 +127,7 @@ def main() -> int:
     existing_domains = {domain(r.get("website")) for r in dataset["restaurants"]} - {None}
 
     added, skipped_dup, skipped_reject = 0, 0, 0
-    for c in cand.get("candidates", []):
+    for c in all_candidates:
         status = c.get("status")
         if status == "reject":
             skipped_reject += 1

@@ -470,13 +470,26 @@ def main():
         if args.skip_website_check:
             analysis = {"orderChannel": None, "orderRedirectsToPlatform": False, "homepageReachable": False, "imprintFound": False}
         else:
-            analysis = analyze_website(session, website, region, args.delay)
+            d = domain_of(website)
+            if d in cache:
+                analysis = cache[d]
+                print(f"      (aus Cache: {d})")
+            else:
+                analysis = analyze_website(session, website, region, args.delay)
+                cache[d] = analysis
+                if i % 10 == 0:
+                    with open(cache_path, "w", encoding="utf-8") as f:
+                        json.dump(cache, f, ensure_ascii=False)
+                    print(f"      Cache zwischengespeichert ({len(cache)} Domains)")
             if entry["phone"] is None and analysis.get("phone"):
                 entry["phone"] = analysis["phone"]
         entry["analysis"] = analysis
         entry["cuisines"] = classify_cuisines(tags, analysis)
         entry.update(score_candidate(tags, analysis, region))
         candidates.append(entry)
+
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
 
     summary = {"auto_accept": 0, "review": 0, "reject": 0}
     for c in candidates:
