@@ -25,9 +25,11 @@ class RestaurantRepository(
 ) {
 
     suspend fun ensureRegionSeeded(regionId: String) {
-        if (dao.count(regionId) == 0) {
-            val entities = catalog.loadRestaurantSeed(regionId).map { it.toEntity() }
-            dao.upsertAll(entities)
+        withContext(Dispatchers.IO) {
+            if (dao.count(regionId) == 0) {
+                val entities = catalog.loadRestaurantSeed(regionId).map { it.toEntity() }
+                dao.upsertAll(entities)
+            }
         }
     }
 
