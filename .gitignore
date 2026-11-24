@@ -9,3 +9,4 @@ captures/
 .cxx/
 __pycache__/
 *.pyc
+*.cache.json

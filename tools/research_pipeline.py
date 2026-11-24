@@ -269,19 +269,20 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
 
 
 def build_overpass_query(region: dict, limit: int, query_timeout: int = 15) -> str:
+    limit_str = f" {limit}" if limit > 0 else ""
     if region.get("bbox"):
         south, west, north, east = region["bbox"]
         area = f"({south},{west},{north},{east})"
         return (
             f'[out:json][timeout:{query_timeout}];'
             f'(node["amenity"~"^(restaurant|fast_food)$"]{area};way["amenity"~"^(restaurant|fast_food)$"]{area};);'
-            f'out tags center {limit};'
+            f'out tags center{limit_str};'
         )
     if region.get("osmAreaName"):
         return (
             f'[out:json][timeout:{query_timeout}];area["name"="{region["osmAreaName"]}"]["boundary"="administrative"]->.a;'
             f'(node["amenity"~"^(restaurant|fast_food)$"](area.a);way["amenity"~"^(restaurant|fast_food)$"](area.a););'
-            f'out tags center {limit};'
+            f'out tags center{limit_str};'
         )
     raise SystemExit("region.json braucht bbox oder osmAreaName")
 
@@ -387,10 +388,12 @@ def main():
     ap = argparse.ArgumentParser(description="p2p_Fooddelivery Recherche-Pipeline")
     ap.add_argument("--region", required=True, help="Pfad zu region.json")
     ap.add_argument("--out", required=True, help="Zieldatei fuer Kandidaten (JSON)")
-    ap.add_argument("--max", type=int, default=60, help="max. OSM-Kandidaten")
+    ap.add_argument("--max", type=int, default=60, help="max. OSM-Kandidaten nach Priorisierung (0 = alle)")
     ap.add_argument("--delay", type=float, default=1.0, help="Sekunden Pause zwischen Requests pro Domain")
     ap.add_argument("--skip-website-check", action="store_true", help="nur OSM-Daten, keine Website-Analyse")
     ap.add_argument("--overpass", default=OVERPASS_URL, help="Overpass-API-Endpunkt (Fallbacks werden automatisch probiert)")
+    ap.add_argument("--slice", default=None, help="nur jeden n-ten Kandidaten ab Index i, z. B. '2/8' (Chunking fuer mehrere Terminals)")
+    ap.add_argument("--cache", default=None, help="Cache-Datei fuer Website-Analysen (Default: <out>.cache.json); macht Abbrueche resumable")
     args = ap.parse_args()
 
     with open(args.region, encoding="utf-8") as f:
@@ -401,9 +404,35 @@ def main():
     session.headers.update({"User-Agent": USER_AGENT})
     session.blocklist = blocklist
 
-    print(f"[1/3] Overpass-Abfrage fuer Region '{region['id']}' (max {args.max}) ...")
+    print(f"[1/3] Overpass-Abfrage fuer Region '{region['id']}' (max {args.max}, 0=alle) ...")
     elements = overpass_candidates(region, args.max, args.overpass)
-    print(f"      {len(elements)} OSM-Elemente gefunden")
+
+    def prio(el):
+        tags = el.get("tags", {})
+        has_web = bool(tags.get("website") or tags.get("contact:website"))
+        has_delivery = tags.get("delivery") in ("yes", "only") or tags.get("takeaway") in ("yes", "only")
+        if has_web and has_delivery:
+            return 0
+        if has_web:
+            return 1
+        return 2
+
+    elements.sort(key=prio)
+    if args.slice:
+        i, n = args.slice.split("/")
+        elements = elements[int(i)::int(n)]
+        print(f"      Slice {args.slice}: {len(elements)} Kandidaten")
+    if args.max > 0:
+        elements = elements[: args.max]
+    print(f"      {len(elements)} OSM-Elemente nach Prio/Slice/Max")
+
+    import os
+    cache_path = args.cache or (args.out + ".cache.json")
+    cache = {}
+    if os.path.exists(cache_path):
+        with open(cache_path, encoding="utf-8") as f:
+            cache = json.load(f)
+        print(f"      Analyse-Cache geladen: {len(cache)} Domains")
 
     candidates = []
     for i, el in enumerate(elements, 1):
