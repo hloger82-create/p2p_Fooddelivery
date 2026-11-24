@@ -102,6 +102,8 @@ def main() -> int:
     ap.add_argument("--candidates", required=True, action="append", help="candidates.json (mehrfach angebbar, z. B. fuer Slices)")
     ap.add_argument("--out", required=True, help="bestehende restaurants.json (wird erweitert)")
     ap.add_argument("--region", default=None, help="region.json fuer Regionsname (optional)")
+    ap.add_argument("--min-status", default="review", choices=["auto_accept", "review"],
+                    help="nur Kandidaten ab diesem Status mergen (auto_accept = nur automatisch bestandene Checks)")
     args = ap.parse_args()
 
     all_candidates = []
@@ -127,9 +129,11 @@ def main() -> int:
     existing_domains = {domain(r.get("website")) for r in dataset["restaurants"]} - {None}
 
     added, skipped_dup, skipped_reject = 0, 0, 0
+    rank = {"auto_accept": 2, "review": 1, "reject": 0}
+    min_rank = rank[args.min_status]
     for c in all_candidates:
         status = c.get("status")
-        if status == "reject":
+        if rank.get(status, 0) < min_rank:
             skipped_reject += 1
             continue
         if not c.get("checks", {}).get("hasWebsite"):
