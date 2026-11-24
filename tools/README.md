@@ -56,6 +56,24 @@ Das Merge-Tool uebernimmt alle Kandidaten (ausser `reject` / ohne Website), inkl
 - Keine personenbezogenen Daten; nur oeffentliche Gewerbedaten (Firma, Adresse, Telefon, Website).
 - Vor Veroeffentlichung immer manuelle Endpruefung (siehe `docs/LEGAL.md`).
 
+## Review-Queue
+
+```bash
+python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json \
+    --out data/regions/hannover/review-queue.md
+```
+
+Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop/Formular, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
+
+## Review-Queue
+
+```bash
+python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json \
+    --out data/regions/hannover/review-queue.md
+```
+
+Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop/Formular, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
+
 ## Neue Region
 
 1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, PLZ-Praefixe, Blocklist).
