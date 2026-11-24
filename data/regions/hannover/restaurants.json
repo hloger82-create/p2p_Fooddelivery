@@ -4,132 +4,29 @@
   "notes": "Seed-Datensatz, manuell recherchiert. Alle Eintraege haben status=pending_review, bis die Verifizierungs-Checkliste (Impressum, Region, eigener Bestellkanal ohne Plattform-Redirect) manuell oder per tools/research_pipeline.py geprueft wurde. lat/lon werden vom Pipeline-Geocoding ergaenzt.",
   "restaurants": [
     {
-      "id": "hannover-pizza-tornado-vahrenwald",
-      "regionId": "hannover",
-      "name": "Pizza Tornado Vahrenwald",
-      "address": { "street": "Philipsbornstr. 60", "postcode": "30169", "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.tornadopizza.de/filialen/vahrenwald",
-      "orderUrl": "https://tornado.simplywebshop.de/",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["PIZZA", "BURGER", "ITALIAN"],
-      "openingHours": null,
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": ["Vahrenwald", "List", "Hainholz", "Nordstadt"],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigener Webshop (simplywebshop, eigene Brand) + eigene App + Telefon. Wird zusaetzlich auf Wolt gelistet, eigener Kanal ist aber vorhanden. Liefergebiet direkt im Webshop pruefbar."
-    },
-    {
-      "id": "hannover-pizza-tornado-misburg",
-      "regionId": "hannover",
-      "name": "Pizza Tornado Misburg",
-      "address": { "street": "Am Seelberg 2", "postcode": "30629", "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.tornadopizza.de/filialen/misburg",
-      "orderUrl": "https://tornado.simplywebshop.de/",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["PIZZA", "BURGER", "ITALIAN"],
-      "openingHours": null,
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Gleicher eigener Webshop wie Filiale Vahrenwald."
-    },
-    {
-      "id": "hannover-pizzeria-aroma",
-      "regionId": "hannover",
-      "name": "Pizzeria Aroma (Pizza Roma)",
-      "address": { "street": "Kirchhoefner Str. 8", "postcode": "30453", "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.pizzaroma-hannover.de/",
-      "orderUrl": "https://www.pizzaroma-hannover.de/liefergebiete",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["PIZZA", "ITALIAN", "DOENER"],
-      "openingHours": null,
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigene Online-Bestellung auf eigener Domain, Liefergebiete auf Unterseite /liefergebiete gelistet. Wird auch auf Lieferando gefuehrt, eigener Kanal vorhanden."
-    },
-    {
-      "id": "hannover-manhattan-burger-linden",
-      "regionId": "hannover",
-      "name": "Manhattan Burger Linden",
-      "address": { "street": "Limmerstr. 13", "postcode": "30451", "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": "+49 511 64691945",
-      "website": "https://manhattan-burger.net/",
-      "orderUrl": "https://manhattan-burger.net/",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["BURGER", "AMERICAN", "GRILL"],
-      "openingHours": "taeglich 11:30 bis mind. 22:00, Fr/So bis 23:00",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": ["Linden", "Limmer", "Seelze"],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigene Bestellseite mit 10% Online-Rabatt. Wird auch auf Lieferando/Uber Eats gelistet, eigener Shop auf eigener Domain vorhanden."
-    },
-    {
-      "id": "hannover-star-kebap",
-      "regionId": "hannover",
-      "name": "Star Kebap",
-      "address": { "street": "Alte Stoeckener Str. 31", "postcode": "30419", "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.starkebap-hannover.de/",
-      "orderUrl": "https://www.starkebap-hannover.de/",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["DOENER", "TURKISH", "PIZZA", "BURGER"],
-      "openingHours": "Mo 13:00-21:00; Di-Sa 12:00-21:15; So 12:00-21:15",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigene Seite mit Online-Bestellung ('Essen online bestellen in Hannover'). Wird auch auf Lieferando/Wolt gelistet, eigener Kanal vorhanden."
-    },
-    {
       "id": "hannover-asia-food",
       "regionId": "hannover",
       "name": "Asia Food Hannover",
-      "address": { "street": "Kramerstr. 21", "postcode": "30159", "city": "Hannover" },
+      "address": {
+        "street": "Kramerstr. 21",
+        "postcode": "30159",
+        "city": "Hannover"
+      },
       "lat": null,
       "lon": null,
       "phone": null,
       "website": "https://asiafood-hannover.de/",
       "orderUrl": null,
-      "orderTypes": ["PHONE", "PICKUP"],
-      "cuisines": ["ASIAN", "SUSHI", "THAI", "VIETNAMESE"],
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN",
+        "SUSHI",
+        "THAI",
+        "VIETNAMESE"
+      ],
       "openingHours": null,
       "delivers": false,
       "pickup": true,
@@ -142,17 +39,667 @@
       "notes": "Eigene Webseite mit Reservierung/Abholung. Ob Lieferung direkt oder nur ueber Plattformen angeboten wird, muss manuell geprueft werden."
     },
     {
+      "id": "hannover-baba",
+      "regionId": "hannover",
+      "name": "Baba",
+      "address": {
+        "street": "Hannover",
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": 52.3643996,
+      "lon": 9.7574322,
+      "phone": "+49 511 9088381",
+      "website": "https://restaurant-baba.de/",
+      "orderUrl": "https://restaurant-baba.de/",
+      "orderTypes": [
+        "PHONE"
+      ],
+      "cuisines": [
+        "TURKISH"
+      ],
+      "openingHours": "Mo-Su 11:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30657"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/260196737; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": false, \"hasOrderChannel\": false, \"inRegionPostcode\": true}; reasons=[\"kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)\"]"
+    },
+    {
+      "id": "hannover-basil",
+      "regionId": "hannover",
+      "name": "Basil",
+      "address": {
+        "street": "Dragonerstraße 30",
+        "postcode": "30163",
+        "city": "Hannover"
+      },
+      "lat": 52.3943626,
+      "lon": 9.7379212,
+      "phone": "+49 511 622636",
+      "website": "https://www.basil.de/",
+      "orderUrl": "https://www.basil.de/",
+      "orderTypes": [
+        "FORM"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Mo-Sa 18:00-22:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/253269264; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-cavallo-konigliche-reithalle",
+      "regionId": "hannover",
+      "name": "cavallo - Königliche Reithalle",
+      "address": {
+        "street": "Dragonerstraße 34",
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": 52.3943312,
+      "lon": 9.7388007,
+      "phone": "05112889911",
+      "website": "https://www.cavallo-reithalle.de",
+      "orderUrl": "https://www.cavallo-reithalle.de",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "\"custom\"",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30163"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/253269265; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-das-ding",
+      "regionId": "hannover",
+      "name": "Das Ding",
+      "address": {
+        "street": "Wöhlerstraße 34",
+        "postcode": "30163",
+        "city": "Hannover"
+      },
+      "lat": 52.3971196,
+      "lon": 9.7494075,
+      "phone": "+49 511 392999",
+      "website": "https://www.dasding-restaurant.de",
+      "orderUrl": "https://www.dasding-restaurant.de",
+      "orderTypes": [
+        "FORM"
+      ],
+      "cuisines": [
+        "BURGER"
+      ],
+      "openingHours": "Mo-Su,PH 12:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30163"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/253238389; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-esskultur-hannover",
+      "regionId": "hannover",
+      "name": "EssKultur Hannover",
+      "address": {
+        "street": "Voßstraße 51",
+        "postcode": "30163",
+        "city": "Hannover"
+      },
+      "lat": 52.3909167,
+      "lon": 9.7441553,
+      "phone": "+49 511 98425158",
+      "website": "https://esskultur-hannover.de",
+      "orderUrl": "https://esskultur-hannover.de",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Tu-Sa 18:00-22:30",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30163"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/84450588; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-hotel-restaurant-ohlers",
+      "regionId": "hannover",
+      "name": "Hotel Restaurant Öhlers",
+      "address": {
+        "street": "Nenndorfer Straße 64",
+        "postcode": "30952",
+        "city": "Ronnenberg"
+      },
+      "lat": 52.3426051,
+      "lon": 9.662724,
+      "phone": "+49 511 438720",
+      "website": "https://www.hotel-oehlers.de/restaurant.html",
+      "orderUrl": "https://www.hotel-oehlers.de/restaurant.html",
+      "orderTypes": [
+        "PICKUP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Mo-Fr 11:30-23:00; Sa-Su,PH 11:30-15:00,17:00-23:00, PH 11:30-15:00,17:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/45406083; checks={\"hasWebsite\": true, \"homepageReachable\": false, \"imprintFound\": false, \"notPlatformOnly\": false, \"hasOrderChannel\": false, \"inRegionPostcode\": true}; reasons=[\"Website nicht erreichbar\", \"kein Impressum gefunden (oder nicht erreichbar)\", \"kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)\"]"
+    },
+    {
+      "id": "hannover-kebap-63",
+      "regionId": "hannover",
+      "name": "Kebap 63",
+      "address": {
+        "street": null,
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.kebap63-hannover.de/",
+      "orderUrl": "https://www.kebap63-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "DOENER",
+        "TURKISH"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigene Domain mit Online-Bestellung. Adresse/Telefon muessen noch recherchiert werden."
+    },
+    {
+      "id": "hannover-kfc",
+      "regionId": "hannover",
+      "name": "KFC",
+      "address": {
+        "street": "Vahrenwalder Straße 272",
+        "postcode": "30179",
+        "city": "Hannover"
+      },
+      "lat": 52.4163185,
+      "lon": 9.7343173,
+      "phone": "+49 511 2619793",
+      "website": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
+      "orderUrl": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
+      "orderTypes": [
+        "PICKUP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-00:00; Su,PH 11:00-23:00",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/266679712; checks={\"hasWebsite\": true, \"homepageReachable\": false, \"imprintFound\": false, \"notPlatformOnly\": false, \"hasOrderChannel\": false, \"inRegionPostcode\": true}; reasons=[\"Website nicht erreichbar\", \"kein Impressum gefunden (oder nicht erreichbar)\", \"kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)\"]"
+    },
+    {
+      "id": "hannover-lasall-weinbar-restaurant",
+      "regionId": "hannover",
+      "name": "LaSall Weinbar & Restaurant",
+      "address": {
+        "street": "Sallstraße 79",
+        "postcode": "30171",
+        "city": "Hannover"
+      },
+      "lat": 52.3618633,
+      "lon": 9.7596045,
+      "phone": "+49 511 816663",
+      "website": "https://www.lasall-hannover.de/",
+      "orderUrl": "https://www.lasall-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Mo off; Tu-Fr 09:00-22:00; Sa 10:00-22:00; Su 10:00-19:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/260196727; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-manhattan-burger-linden",
+      "regionId": "hannover",
+      "name": "Manhattan Burger Linden",
+      "address": {
+        "street": "Limmerstr. 13",
+        "postcode": "30451",
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": "+49 511 64691945",
+      "website": "https://manhattan-burger.net/",
+      "orderUrl": "https://manhattan-burger.net/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "BURGER",
+        "AMERICAN",
+        "GRILL"
+      ],
+      "openingHours": "taeglich 11:30 bis mind. 22:00, Fr/So bis 23:00",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [
+        "Linden",
+        "Limmer",
+        "Seelze"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigene Bestellseite mit 10% Online-Rabatt. Wird auch auf Lieferando/Uber Eats gelistet, eigener Shop auf eigener Domain vorhanden."
+    },
+    {
+      "id": "hannover-nikopolis",
+      "regionId": "hannover",
+      "name": "Nikopolis",
+      "address": {
+        "street": "Husarenstraße 7",
+        "postcode": "30163",
+        "city": "Hannover"
+      },
+      "lat": 52.3926563,
+      "lon": 9.7430798,
+      "phone": "+49 511 663193",
+      "website": "https://nikopolis.net",
+      "orderUrl": "https://nikopolis.net",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "GREEK"
+      ],
+      "openingHours": "We-Mo,PH 18:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/253269301; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-pier-51",
+      "regionId": "hannover",
+      "name": "Pier 51",
+      "address": {
+        "street": "Rudolf-von-Bennigsen-Ufer 51",
+        "postcode": "30173",
+        "city": "Hannover"
+      },
+      "lat": 52.3540725,
+      "lon": 9.7457039,
+      "phone": "+49 511 8071800",
+      "website": "https://www.pier51.de/",
+      "orderUrl": "https://www.pier51.de/",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Mo-Su 12:00-24:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30173"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/88923015; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-pizza-tornado-misburg",
+      "regionId": "hannover",
+      "name": "Pizza Tornado Misburg",
+      "address": {
+        "street": "Am Seelberg 2",
+        "postcode": "30629",
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.tornadopizza.de/filialen/misburg",
+      "orderUrl": "https://tornado.simplywebshop.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "BURGER",
+        "ITALIAN"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Gleicher eigener Webshop wie Filiale Vahrenwald."
+    },
+    {
+      "id": "hannover-pizza-tornado-vahrenwald",
+      "regionId": "hannover",
+      "name": "Pizza Tornado Vahrenwald",
+      "address": {
+        "street": "Philipsbornstr. 60",
+        "postcode": "30169",
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.tornadopizza.de/filialen/vahrenwald",
+      "orderUrl": "https://tornado.simplywebshop.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "BURGER",
+        "ITALIAN"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [
+        "Vahrenwald",
+        "List",
+        "Hainholz",
+        "Nordstadt"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigener Webshop (simplywebshop, eigene Brand) + eigene App + Telefon. Wird zusaetzlich auf Wolt gelistet, eigener Kanal ist aber vorhanden. Liefergebiet direkt im Webshop pruefbar."
+    },
+    {
+      "id": "hannover-pizzeria-aroma",
+      "regionId": "hannover",
+      "name": "Pizzeria Aroma (Pizza Roma)",
+      "address": {
+        "street": "Kirchhoefner Str. 8",
+        "postcode": "30453",
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.pizzaroma-hannover.de/",
+      "orderUrl": "https://www.pizzaroma-hannover.de/liefergebiete",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "ITALIAN",
+        "DOENER"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigene Online-Bestellung auf eigener Domain, Liefergebiete auf Unterseite /liefergebiete gelistet. Wird auch auf Lieferando gefuehrt, eigener Kanal vorhanden."
+    },
+    {
+      "id": "hannover-restaurant-bar-nuovo",
+      "regionId": "hannover",
+      "name": "Restaurant & Bar NUOVO",
+      "address": {
+        "street": "Im Heidkampe 80",
+        "postcode": "30659",
+        "city": "Hannover"
+      },
+      "lat": 52.4169871,
+      "lon": 9.8066991,
+      "phone": "+49 511 71300792",
+      "website": "https://www.nuovo-restaurant.de/",
+      "orderUrl": "https://www.nuovo-restaurant.de/",
+      "orderTypes": [
+        "FORM"
+      ],
+      "cuisines": [
+        "BURGER"
+      ],
+      "openingHours": "Tu-Su 17:00+; Mo off",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30659"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/264238564; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-restaurante-fellini",
+      "regionId": "hannover",
+      "name": "Restaurante Fellini",
+      "address": {
+        "street": "Voßstraße 42",
+        "postcode": "30161",
+        "city": "Hannover"
+      },
+      "lat": 52.3894272,
+      "lon": 9.7431594,
+      "phone": "+49 511 623760",
+      "website": "https://www.ristorante-fellini.de/",
+      "orderUrl": "https://www.ristorante-fellini.de/",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "ITALIAN"
+      ],
+      "openingHours": "Tu-Sa 17:30-23:00; Su,PH 12:00-15:00,18:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30161"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/84450585; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-star-kebap",
+      "regionId": "hannover",
+      "name": "Star Kebap",
+      "address": {
+        "street": "Alte Stoeckener Str. 31",
+        "postcode": "30419",
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.starkebap-hannover.de/",
+      "orderUrl": "https://www.starkebap-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "DOENER",
+        "TURKISH",
+        "PIZZA",
+        "BURGER"
+      ],
+      "openingHours": "Mo 13:00-21:00; Di-Sa 12:00-21:15; So 12:00-21:15",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigene Seite mit Online-Bestellung ('Essen online bestellen in Hannover'). Wird auch auf Lieferando/Wolt gelistet, eigener Kanal vorhanden."
+    },
+    {
+      "id": "hannover-sultan-kebap",
+      "regionId": "hannover",
+      "name": "Sultan Kebap Hannover",
+      "address": {
+        "street": null,
+        "postcode": null,
+        "city": "Hannover"
+      },
+      "lat": null,
+      "lon": null,
+      "phone": null,
+      "website": "https://www.sultankebaphannover.de/",
+      "orderUrl": "https://www.sultankebaphannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "DOENER",
+        "TURKISH",
+        "PIZZA",
+        "BURGER"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "manual_seed",
+      "notes": "Eigene Domain mit Online-Bestellung. Adresse/Telefon muessen noch recherchiert werden."
+    },
+    {
       "id": "hannover-sushi-mix",
       "regionId": "hannover",
       "name": "Sushi Mix Hannover",
-      "address": { "street": "Falkenstr. 5", "postcode": "30449", "city": "Hannover" },
+      "address": {
+        "street": "Falkenstr. 5",
+        "postcode": "30449",
+        "city": "Hannover"
+      },
       "lat": null,
       "lon": null,
       "phone": null,
       "website": "https://sushimixhannover.de/",
       "orderUrl": "https://sushimixhannover.de/21524",
-      "orderTypes": ["WEBSHOP", "PICKUP"],
-      "cuisines": ["SUSHI", "ASIAN"],
+      "orderTypes": [
+        "WEBSHOP",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "SUSHI",
+        "ASIAN"
+      ],
       "openingHours": null,
       "delivers": false,
       "pickup": true,
@@ -165,50 +712,103 @@
       "notes": "Online-Bestellung ueber White-Label-Shop (app-smart) auf eigener Domain - keine Grossplattform. Abholung bestaetigt, Lieferung manuell pruefen."
     },
     {
-      "id": "hannover-kebap-63",
+      "id": "hannover-taverna-asteria",
       "regionId": "hannover",
-      "name": "Kebap 63",
-      "address": { "street": null, "postcode": null, "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.kebap63-hannover.de/",
-      "orderUrl": "https://www.kebap63-hannover.de/",
-      "orderTypes": ["WEBSHOP", "PHONE"],
-      "cuisines": ["DOENER", "TURKISH"],
-      "openingHours": null,
-      "delivers": true,
+      "name": "Taverna Asteria",
+      "address": {
+        "street": "Möckernstraße 2",
+        "postcode": "30163",
+        "city": "Hannover"
+      },
+      "lat": 52.4000979,
+      "lon": 9.7412376,
+      "phone": "+49 511 90882723",
+      "website": "https://www.tavernaasteria.de/",
+      "orderUrl": "https://www.tavernaasteria.de/",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "GREEK"
+      ],
+      "openingHours": "Mo-Sa 17:30-22:00; Tu off; Su 12:00-14:00,17:30-22:00",
+      "delivers": false,
       "pickup": true,
-      "deliveryAreas": [],
+      "deliveryAreas": [
+        "30163"
+      ],
       "minOrderValue": null,
       "deliveryFee": null,
       "status": "pending_review",
       "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigene Domain mit Online-Bestellung. Adresse/Telefon muessen noch recherchiert werden."
+      "source": "pipeline",
+      "notes": "pipeline node/256857457; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-sultan-kebap",
+      "id": "hannover-trattoria-il-padrino",
       "regionId": "hannover",
-      "name": "Sultan Kebap Hannover",
-      "address": { "street": null, "postcode": null, "city": "Hannover" },
-      "lat": null,
-      "lon": null,
-      "phone": null,
-      "website": "https://www.sultankebaphannover.de/",
-      "orderUrl": "https://www.sultankebaphannover.de/",
-      "orderTypes": ["WEBSHOP", "PHONE", "PICKUP"],
-      "cuisines": ["DOENER", "TURKISH", "PIZZA", "BURGER"],
-      "openingHours": null,
-      "delivers": true,
+      "name": "Trattoria il Padrino",
+      "address": {
+        "street": "Martinstraße 7",
+        "postcode": "30659",
+        "city": "Hannover"
+      },
+      "lat": 52.4114661,
+      "lon": 9.8032689,
+      "phone": "+49 511 59206147",
+      "website": "https://www.trattoria-il-padrino.de",
+      "orderUrl": "https://www.trattoria-il-padrino.de",
+      "orderTypes": [
+        "WEBSHOP"
+      ],
+      "cuisines": [
+        "ITALIAN"
+      ],
+      "openingHours": "Tu-Sa 17:30-22:30; Su 12:00-14:30,17:30-22:30; Mo off",
+      "delivers": false,
       "pickup": true,
-      "deliveryAreas": [],
+      "deliveryAreas": [
+        "30659"
+      ],
       "minOrderValue": null,
       "deliveryFee": null,
       "status": "pending_review",
       "lastVerified": null,
-      "source": "manual_seed",
-      "notes": "Eigene Domain mit Online-Bestellung. Adresse/Telefon muessen noch recherchiert werden."
+      "source": "pipeline",
+      "notes": "pipeline node/266649173; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-werkhof-restaurant",
+      "regionId": "hannover",
+      "name": "Werkhof Restaurant",
+      "address": {
+        "street": "Schaufelder Straße 11",
+        "postcode": "30167",
+        "city": "Hannover"
+      },
+      "lat": 52.3884213,
+      "lon": 9.7188658,
+      "phone": "+49 511 35356380",
+      "website": "https://werkhof-hannover.de/restaurant",
+      "orderUrl": "https://werkhof-hannover.de/restaurant",
+      "orderTypes": [
+        "FORM"
+      ],
+      "cuisines": [
+        "OTHER"
+      ],
+      "openingHours": "Tu-Sa 11:00-23:00",
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [
+        "30167"
+      ],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": null,
+      "source": "pipeline",
+      "notes": "pipeline node/267556357; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     }
   ]
 }

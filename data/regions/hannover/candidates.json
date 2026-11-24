@@ -1,0 +1,1235 @@
+{
+  "regionId": "hannover",
+  "generatedAt": "2026-11-24",
+  "legalNote": "Nur oeffentliche Geschaeftsdaten; robots.txt respektiert; keine Plattform-Inhalte ausgelesen. Manuelle Endpruefung vor Veroeffentlichung erforderlich.",
+  "summary": {
+    "auto_accept": 12,
+    "review": 18,
+    "reject": 0
+  },
+  "candidates": [
+    {
+      "osmId": "node/45406083",
+      "name": "Hotel Restaurant Öhlers",
+      "website": "https://www.hotel-oehlers.de/restaurant.html",
+      "phone": "+49 511 438720",
+      "address": "64 Nenndorfer Straße, 30952, Ronnenberg",
+      "lat": 52.3426051,
+      "lon": 9.662724,
+      "osmTags": {
+        "addr:city": "Ronnenberg",
+        "addr:housenumber": "64",
+        "addr:postcode": "30952",
+        "addr:street": "Nenndorfer Straße",
+        "cuisine": "german",
+        "opening_hours": "Mo-Fr 11:30-23:00; Sa-Su,PH 11:30-15:00,17:00-23:00, PH 11:30-15:00,17:00-23:00",
+        "takeaway": "yes"
+      },
+      "analysis": {
+        "website": "https://www.hotel-oehlers.de/restaurant.html",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/82355431",
+      "name": "diverse Restaurants",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.4390594,
+      "lon": 9.7403158,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/82359327",
+      "name": "Pho",
+      "website": null,
+      "phone": "+49 511 64719571",
+      "address": "46 Lohkamp, 30855, Langenhagen",
+      "lat": 52.4419864,
+      "lon": 9.6994275,
+      "osmTags": {
+        "addr:city": "Langenhagen",
+        "addr:housenumber": "46",
+        "addr:postcode": "30855",
+        "addr:street": "Lohkamp",
+        "cuisine": "vietnamese;sushi",
+        "opening_hours": "Mo-Su 11:00-22:00"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "SUSHI",
+        "VIETNAMESE"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/84450585",
+      "name": "Restaurante Fellini",
+      "website": "https://www.ristorante-fellini.de/",
+      "phone": "+49 511 623760",
+      "address": "42 Voßstraße, 30161, Hannover",
+      "lat": 52.3894272,
+      "lon": 9.7431594,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "42",
+        "addr:postcode": "30161",
+        "addr:street": "Voßstraße",
+        "cuisine": "italian",
+        "opening_hours": "Tu-Sa 17:30-23:00; Su,PH 12:00-15:00,18:00-23:00"
+      },
+      "analysis": {
+        "website": "https://www.ristorante-fellini.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "+49511623760",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30161"
+        ],
+        "orderLinks": [
+          "https://www.ristorante-fellini.de/speisekarte",
+          "https://www.ristorante-fellini.de/speisekarte/antipasti",
+          "https://www.ristorante-fellini.de/speisekarte/antipasti/antipasti-mista",
+          "https://www.ristorante-fellini.de/speisekarte/antipasti/insalata",
+          "https://www.ristorante-fellini.de/speisekarte/antipasti/zuppe",
+          "https://www.ristorante-fellini.de/speisekarte/primi",
+          "https://www.ristorante-fellini.de/speisekarte/primi/pasta",
+          "https://www.ristorante-fellini.de/speisekarte/primi/pasta-al-forno",
+          "https://www.ristorante-fellini.de/speisekarte/primi/pizza",
+          "https://www.ristorante-fellini.de/speisekarte/secondi"
+        ]
+      },
+      "cuisines": [
+        "ITALIAN"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/84450588",
+      "name": "EssKultur Hannover",
+      "website": "https://esskultur-hannover.de",
+      "phone": "+49 511 98425158",
+      "address": "51 Voßstraße, 30163, Hannover",
+      "lat": 52.3909167,
+      "lon": 9.7441553,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "51",
+        "addr:postcode": "30163",
+        "addr:street": "Voßstraße",
+        "cuisine": "international",
+        "opening_hours": "Tu-Sa 18:00-22:30"
+      },
+      "analysis": {
+        "website": "https://esskultur-hannover.de",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "2125556767",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30163"
+        ],
+        "orderLinks": [
+          "https://esskultur-hannover.de/unser-menu/"
+        ]
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/86610892",
+      "name": "Bootshaus",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3361792,
+      "lon": 9.7576353,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/88923015",
+      "name": "Pier 51",
+      "website": "https://www.pier51.de/",
+      "phone": "+49 511 8071800",
+      "address": "51 Rudolf-von-Bennigsen-Ufer, 30173, Hannover",
+      "lat": 52.3540725,
+      "lon": 9.7457039,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "51",
+        "addr:postcode": "30173",
+        "addr:street": "Rudolf-von-Bennigsen-Ufer",
+        "opening_hours": "Mo-Su 12:00-24:00"
+      },
+      "analysis": {
+        "website": "https://www.pier51.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "05118071800",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30173"
+        ],
+        "orderLinks": [
+          "https://www.pier51.de/#speisekarten",
+          "https://www.pier51.de/wp-content/uploads/2026/11/Speisekarte-23.11.2026.pdf"
+        ]
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/138050957",
+      "name": "Schützenhaus/ Biergarten",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3229461,
+      "lon": 9.7733835,
+      "osmTags": {
+        "cuisine": "regional"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/253238389",
+      "name": "Das Ding",
+      "website": "https://www.dasding-restaurant.de",
+      "phone": "+49 511 392999",
+      "address": "34 Wöhlerstraße, 30163, Hannover",
+      "lat": 52.3971196,
+      "lon": 9.7494075,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "34",
+        "addr:postcode": "30163",
+        "addr:street": "Wöhlerstraße",
+        "cuisine": "steak_house",
+        "opening_hours": "Mo-Su,PH 12:00-23:00"
+      },
+      "analysis": {
+        "website": "https://www.dasding-restaurant.de",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "form",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "+49511392999",
+        "openingHours": "Mo-Su 12:00-23:00",
+        "servesCuisine": [
+          "Steaks",
+          "Burger",
+          "Rippchen",
+          "Salate",
+          "Sandwiches"
+        ],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30163"
+        ],
+        "orderLinks": [
+          "https://www.dasding-restaurant.de/speisekarte.html"
+        ]
+      },
+      "cuisines": [
+        "BURGER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/253269264",
+      "name": "Basil",
+      "website": "https://www.basil.de/",
+      "phone": "+49 511 622636",
+      "address": "30 Dragonerstraße, 30163, Hannover",
+      "lat": 52.3943626,
+      "lon": 9.7379212,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "30",
+        "addr:postcode": "30163",
+        "addr:street": "Dragonerstraße",
+        "cuisine": "regional",
+        "opening_hours": "Mo-Sa 18:00-22:00"
+      },
+      "analysis": {
+        "website": "https://www.basil.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "form",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": [
+          "https://www.basil.de/speisekarte.pdf"
+        ]
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/253269265",
+      "name": "cavallo - Königliche Reithalle",
+      "website": "https://www.cavallo-reithalle.de",
+      "phone": "05112889911",
+      "address": "34 Dragonerstraße, Hannover",
+      "lat": 52.3943312,
+      "lon": 9.7388007,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "34",
+        "addr:street": "Dragonerstraße",
+        "opening_hours": "\"custom\""
+      },
+      "analysis": {
+        "website": "https://www.cavallo-reithalle.de",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "05112889911",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30163"
+        ],
+        "orderLinks": []
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/253269301",
+      "name": "Nikopolis",
+      "website": "https://nikopolis.net",
+      "phone": "+49 511 663193",
+      "address": "7 Husarenstraße, 30163, Hannover",
+      "lat": 52.3926563,
+      "lon": 9.7430798,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "7",
+        "addr:postcode": "30163",
+        "addr:street": "Husarenstraße",
+        "cuisine": "greek",
+        "opening_hours": "We-Mo,PH 18:00-23:00"
+      },
+      "analysis": {
+        "website": "https://nikopolis.net",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": [
+          "https://shop.samsung.com/id/cart",
+          "http://shop.samsung.com/id/mypage/orders/",
+          "http://shop.samsung.com/id/mypage/wishlist"
+        ]
+      },
+      "cuisines": [
+        "GREEK"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/256857457",
+      "name": "Taverna Asteria",
+      "website": "https://www.tavernaasteria.de/",
+      "phone": "+49 511 90882723",
+      "address": "2 Möckernstraße, 30163, Hannover",
+      "lat": 52.4000979,
+      "lon": 9.7412376,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "2",
+        "addr:postcode": "30163",
+        "addr:street": "Möckernstraße",
+        "cuisine": "greek",
+        "opening_hours": "Mo-Sa 17:30-22:00; Tu off; Su 12:00-14:00,17:30-22:00"
+      },
+      "analysis": {
+        "website": "https://www.tavernaasteria.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "0511671509",
+        "openingHours": "['Mo,We,Th,Fr,Sa 17:30 - 22:00', 'Su 12:00 - 14:00 &amp; 17:30 - 22:00']",
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30163"
+        ],
+        "orderLinks": [
+          "https://www.tavernaasteria.de/wp-content/uploads/2025/02/2025_Asteria_Speisekarte_online.pdf"
+        ]
+      },
+      "cuisines": [
+        "GREEK"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/257551252",
+      "name": "Clubheim RSV Seelze",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.393087,
+      "lon": 9.6184687,
+      "osmTags": {
+        "opening_hours": "Mo-Fr 17:00-22:00; Sa-Su 10:00-19:00"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/258771504",
+      "name": "Subway",
+      "website": null,
+      "phone": null,
+      "address": "344 Podbielskistraße, 30655, Hannover",
+      "lat": 52.4050389,
+      "lon": 9.7981162,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "344",
+        "addr:postcode": "30655",
+        "addr:street": "Podbielskistraße",
+        "cuisine": "sandwich",
+        "delivery": "no",
+        "opening_hours": "Mo-Fr 08:30-23:30; Sa-Su 10:00-23:30; PH 10:00-22:00",
+        "takeaway": "yes"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/259980633",
+      "name": "Panorama",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3232323,
+      "lon": 9.8098038,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/259982473",
+      "name": "Münchener Halle",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3273638,
+      "lon": 9.811822,
+      "osmTags": {
+        "cuisine": "bavarian"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/259983983",
+      "name": "Ahrberg Catering",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3239641,
+      "lon": 9.8069043,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260063132",
+      "name": "Osteria",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3223745,
+      "lon": 9.8082443,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260075140",
+      "name": "Insel",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3257606,
+      "lon": 9.8030496,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260113653",
+      "name": "Vita-World",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3217238,
+      "lon": 9.8063281,
+      "osmTags": {
+        "opening_hours": "\"je nach Messe\""
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260139049",
+      "name": "Nordsee",
+      "website": null,
+      "phone": "+49 175 2995074",
+      "address": "Hannover",
+      "lat": 52.3239436,
+      "lon": 9.8067491,
+      "osmTags": {
+        "cuisine": "seafood",
+        "takeaway": "yes"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260174865",
+      "name": "Lord Nelson",
+      "website": null,
+      "phone": null,
+      "address": "Hannover",
+      "lat": 52.3237472,
+      "lon": 9.8101771,
+      "osmTags": {},
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/260196727",
+      "name": "LaSall Weinbar & Restaurant",
+      "website": "https://www.lasall-hannover.de/",
+      "phone": "+49 511 816663",
+      "address": "79 Sallstraße, 30171, Hannover",
+      "lat": 52.3618633,
+      "lon": 9.7596045,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "79",
+        "addr:postcode": "30171",
+        "addr:street": "Sallstraße",
+        "cuisine": "regional",
+        "opening_hours": "Mo off; Tu-Fr 09:00-22:00; Sa 10:00-22:00; Su 10:00-19:00"
+      },
+      "analysis": {
+        "website": "https://www.lasall-hannover.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/260196737",
+      "name": "Baba",
+      "website": "https://restaurant-baba.de/",
+      "phone": "+49 511 9088381",
+      "address": "Hannover",
+      "lat": 52.3643996,
+      "lon": 9.7574322,
+      "osmTags": {
+        "cuisine": "turkish",
+        "opening_hours": "Mo-Su 11:00-23:00"
+      },
+      "analysis": {
+        "website": "https://restaurant-baba.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30657"
+        ],
+        "orderLinks": [
+          "https://restaurant-baba.de/speisekarte.html"
+        ]
+      },
+      "cuisines": [
+        "TURKISH"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/264238564",
+      "name": "Restaurant & Bar NUOVO",
+      "website": "https://www.nuovo-restaurant.de/",
+      "phone": "+49 511 71300792",
+      "address": "80 Im Heidkampe, 30659, Hannover",
+      "lat": 52.4169871,
+      "lon": 9.8066991,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "80",
+        "addr:postcode": "30659",
+        "addr:street": "Im Heidkampe",
+        "cuisine": "burger",
+        "opening_hours": "Tu-Su 17:00+; Mo off"
+      },
+      "analysis": {
+        "website": "https://www.nuovo-restaurant.de/",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "form",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "+49051171300792",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30659"
+        ],
+        "orderLinks": []
+      },
+      "cuisines": [
+        "BURGER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/265546900",
+      "name": "Miles",
+      "website": null,
+      "phone": null,
+      "address": "9 Rathenaustraße, 30159, Hannover",
+      "lat": 52.3739274,
+      "lon": 9.741897,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "9",
+        "addr:postcode": "30159",
+        "addr:street": "Rathenaustraße",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa 10:00-22:00; Su 10:00-14:30"
+      },
+      "analysis": {
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": false,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "keine Website in OSM hinterlegt",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/266649173",
+      "name": "Trattoria il Padrino",
+      "website": "https://www.trattoria-il-padrino.de",
+      "phone": "+49 511 59206147",
+      "address": "7 Martinstraße, 30659, Hannover",
+      "lat": 52.4114661,
+      "lon": 9.8032689,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "7",
+        "addr:postcode": "30659",
+        "addr:street": "Martinstraße",
+        "cuisine": "italian",
+        "opening_hours": "Tu-Sa 17:30-22:30; Su 12:00-14:30,17:30-22:30; Mo off"
+      },
+      "analysis": {
+        "website": "https://www.trattoria-il-padrino.de",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": "+4951159206147",
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30659"
+        ],
+        "orderLinks": [
+          "https://www.trattoria-il-padrino.de/menuekarte/"
+        ]
+      },
+      "cuisines": [
+        "ITALIAN"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    },
+    {
+      "osmId": "node/266679712",
+      "name": "KFC",
+      "website": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
+      "phone": "+49 511 2619793",
+      "address": "272 Vahrenwalder Straße, 30179, Hannover",
+      "lat": 52.4163185,
+      "lon": 9.7343173,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "272",
+        "addr:postcode": "30179",
+        "addr:street": "Vahrenwalder Straße",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "opening_hours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-00:00; Su,PH 11:00-23:00",
+        "takeaway": "yes"
+      },
+      "analysis": {
+        "website": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
+        "inRegionPostcode": true
+      },
+      "reasons": [
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)"
+      ],
+      "status": "review"
+    },
+    {
+      "osmId": "node/267556357",
+      "name": "Werkhof Restaurant",
+      "website": "https://werkhof-hannover.de/restaurant",
+      "phone": "+49 511 35356380",
+      "address": "11 Schaufelder Straße, 30167, Hannover",
+      "lat": 52.3884213,
+      "lon": 9.7188658,
+      "osmTags": {
+        "addr:city": "Hannover",
+        "addr:housenumber": "11",
+        "addr:postcode": "30167",
+        "addr:street": "Schaufelder Straße",
+        "cuisine": "regional;german;international",
+        "opening_hours": "Tu-Sa 11:00-23:00"
+      },
+      "analysis": {
+        "website": "https://werkhof-hannover.de/restaurant",
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "form",
+        "orderRedirectsToPlatform": false,
+        "platformHit": null,
+        "phone": null,
+        "openingHours": null,
+        "servesCuisine": [],
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [
+          "30167"
+        ],
+        "orderLinks": [
+          "https://werkhof-hannover.de/fileadmin/user_upload/pdf/speisekarte.pdf"
+        ]
+      },
+      "cuisines": [
+        "OTHER"
+      ],
+      "checks": {
+        "hasWebsite": true,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
+        "inRegionPostcode": true
+      },
+      "reasons": [],
+      "status": "auto_accept"
+    }
+  ]
+}
