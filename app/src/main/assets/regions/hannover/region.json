@@ -23,5 +23,18 @@
     "online-pizza.de",
     "webimbiss.de"
   ],
-  "datasetUrl": "https://raw.githubusercontent.com/hloger82-create/p2p_Fooddelivery/main/data/regions/hannover/restaurants.json"
+  "datasetUrl": "https://raw.githubusercontent.com/hloger82-create/p2p_Fooddelivery/main/data/regions/hannover/restaurants.json",
+  "chainDomains": [
+    "kfc.de",
+    "mcdonalds.de",
+    "burgerking.de",
+    "subway.com",
+    "dominos.de",
+    "pizza-hut.de",
+    "callapizza.de",
+    "deananddavid.de",
+    "vapiano.com",
+    "blockhouse.de",
+    "maredo.de"
+  ]
 }

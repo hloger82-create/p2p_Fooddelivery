@@ -63,6 +63,8 @@ IMPRINT_HINTS = [
 ]
 ORDER_LINK_HINTS = ["bestellen", "bestellung", "order", "webshop", "shop", "lieferservice", "lieferdienst", "bringdienst", "menu", "speisekarte"]
 DELIVERY_HINTS = ["liefergebiet", "liefern wir", "wir liefern", "delivery area", "liefern nach"]
+RESERVATION_HINTS = ["reservier", "tischreserv", "opentable", "bookatable", "quandoo", "resmio", "formitable"]
+FOOD_ORDER_HINTS = ["bestellen", "warenkorb", "speisekarte", "cart", "checkout", "liefern", "abholen", "lieferservice", "bringdienst", "webshop"]
 
 MAX_HTML_BYTES = 500_000
 
@@ -242,6 +244,10 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
         own_shop = True
     if any(h in low for h in FORM_HINTS):
         form_only = True
+    reservation = any(h in low for h in RESERVATION_HINTS)
+    food_order = any(h in low for h in FOOD_ORDER_HINTS)
+    if own_shop and reservation and not food_order:
+        own_shop = False
 
     if platform_hit:
         result["orderRedirectsToPlatform"] = True
@@ -345,6 +351,10 @@ def classify_cuisines(tags: dict, analysis: dict) -> list:
 
 def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
     reasons = []
+    website = tags.get("website") or tags.get("contact:website")
+    chain_blocked = bool(website) and is_blocked(website, region.get("chainDomains", []))
+    if chain_blocked:
+        reasons.append(f"Kette/Marke (chainDomains): {domain_of(website)}")
     checks = {
         "hasWebsite": bool(tags.get("website") or tags.get("contact:website")),
         "homepageReachable": analysis.get("homepageReachable", False),
@@ -364,13 +374,13 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
     if not checks["hasOrderChannel"]:
         reasons.append("kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)")
 
-    if analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"]:
+    if chain_blocked or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"]):
         status = "reject"
     elif all(checks.values()):
         status = "auto_accept"
     else:
         status = "review"
-    return {"checks": checks, "reasons": reasons, "status": status}
+    return {"checks": checks, "reasons": reasons, "status": status, "chainBlocked": chain_blocked}
 
 
 def main():

@@ -266,37 +266,6 @@
       "notes": "Eigene Domain mit Online-Bestellung. Adresse/Telefon muessen noch recherchiert werden."
     },
     {
-      "id": "hannover-kfc",
-      "regionId": "hannover",
-      "name": "KFC",
-      "address": {
-        "street": "Vahrenwalder Straße 272",
-        "postcode": "30179",
-        "city": "Hannover"
-      },
-      "lat": 52.4163185,
-      "lon": 9.7343173,
-      "phone": "+49 511 2619793",
-      "website": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
-      "orderUrl": "https://www.kfc.de/find-a-kfc/kfc-hannover-vahrenwalder-str-272",
-      "orderTypes": [
-        "PICKUP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Th 11:00-23:00; Fr-Sa 11:00-00:00; Su,PH 11:00-23:00",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/266679712; checks={\"hasWebsite\": true, \"homepageReachable\": false, \"imprintFound\": false, \"notPlatformOnly\": false, \"hasOrderChannel\": false, \"inRegionPostcode\": true}; reasons=[\"Website nicht erreichbar\", \"kein Impressum gefunden (oder nicht erreichbar)\", \"kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)\"]"
-    },
-    {
       "id": "hannover-lasall-weinbar-restaurant",
       "regionId": "hannover",
       "name": "LaSall Weinbar & Restaurant",

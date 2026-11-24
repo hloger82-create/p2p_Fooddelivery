@@ -43,6 +43,8 @@ fun FilterBar(
     onToggleOrderType: (OrderType) -> Unit,
     deliversOnly: Boolean,
     onDeliversOnly: (Boolean) -> Unit,
+    openNow: Boolean,
+    onToggleOpenNow: () -> Unit,
 ) {
     var cuisineExpanded by remember { mutableStateOf(false) }
     var orderExpanded by remember { mutableStateOf(false) }
@@ -83,6 +85,12 @@ fun FilterBar(
                     selected = deliversOnly,
                     onClick = { onDeliversOnly(!deliversOnly) },
                     label = { Text(stringResource(R.string.filter_delivers), style = MaterialTheme.typography.labelSmall) },
+                )
+                FilterChip(
+                    modifier = Modifier.height(28.dp),
+                    selected = openNow,
+                    onClick = onToggleOpenNow,
+                    label = { Text(stringResource(R.string.open_now), style = MaterialTheme.typography.labelSmall) },
                 )
             }
         }

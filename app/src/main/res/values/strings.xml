@@ -28,4 +28,5 @@
     <string name="postcode_hint">PLZ</string>
     <string name="favorites">Favoriten</string>
     <string name="toggle_theme">Hell/Dunkel wechseln</string>
+    <string name="open_now">Jetzt geöffnet</string>
 </resources>

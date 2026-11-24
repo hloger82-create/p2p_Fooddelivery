@@ -11,6 +11,7 @@ import de.p2pfood.app.data.model.RegionConfig
 import de.p2pfood.app.data.model.Restaurant
 import de.p2pfood.app.data.region.RegionCatalog
 import de.p2pfood.app.data.repository.RestaurantRepository
+import de.p2pfood.app.util.OpeningHours
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -28,6 +29,7 @@ data class Filters(
     val orderTypes: Set<OrderType> = emptySet(),
     val deliversOnly: Boolean = false,
     val favoritesOnly: Boolean = false,
+    val openNow: Boolean = false,
 )
 
 data class HomeUiState(
@@ -71,7 +73,8 @@ class HomeViewModel(
                     (filters.orderTypes.isEmpty() || r.orderTypes.any { it in filters.orderTypes }) &&
                     (!filters.deliversOnly || r.delivers) &&
                     (filters.postcode.isBlank() || deliversTo(r, filters.postcode.trim())) &&
-                    (!filters.favoritesOnly || r.id in favoriteIds)
+                    (!filters.favoritesOnly || r.id in favoriteIds) &&
+                    (!filters.openNow || OpeningHours.isOpen(r.openingHours) == true)
             },
         )
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), HomeUiState())
@@ -118,6 +121,10 @@ class HomeViewModel(
 
     fun toggleFavoritesOnly() {
         _filters.update { it.copy(favoritesOnly = !it.favoritesOnly) }
+    }
+
+    fun toggleOpenNow() {
+        _filters.update { it.copy(openNow = !it.openNow) }
     }
 
     fun toggleFavorite(restaurantId: String) {

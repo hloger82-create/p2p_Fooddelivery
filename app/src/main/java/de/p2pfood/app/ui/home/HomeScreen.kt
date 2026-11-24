@@ -124,6 +124,8 @@ fun HomeScreen(
                         onToggleOrderType = viewModel::toggleOrderType,
                         deliversOnly = state.filters.deliversOnly,
                         onDeliversOnly = viewModel::setDeliversOnly,
+                        openNow = state.filters.openNow,
+                        onToggleOpenNow = viewModel::toggleOpenNow,
                     )
                 }
             }
