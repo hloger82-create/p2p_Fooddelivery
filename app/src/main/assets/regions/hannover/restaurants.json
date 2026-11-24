@@ -103,6 +103,42 @@
       "notes": "pipeline node/13644649403; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
+      "id": "hannover-aegi-doener",
+      "regionId": "hannover",
+      "name": "Aegi Döner",
+      "address": {
+        "street": "Hildesheimer Str. 46",
+        "postcode": "30169",
+        "city": "Hannover"
+      },
+      "lat": 52.3634171,
+      "lon": 9.7477155,
+      "phone": "+49 511 3738 4623",
+      "website": "https://www.aegi-dner-hannover.de/",
+      "orderUrl": "https://www.aegi-dner-hannover.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "DOENER",
+        "TURKISH",
+        "PIZZA",
+        "BURGER"
+      ],
+      "openingHours": "Mo-So 14:00-21:00",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Domain mit Online-Bestellung + Impressum; zusaetzlich auf Lieferando/Wolt (eigener Kanal vorhanden); manuell verifiziert."
+    },
+    {
       "id": "hannover-agorino",
       "regionId": "hannover",
       "name": "Agorino",
@@ -435,6 +471,41 @@
       "notes": "pipeline node/270503036; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
+      "id": "hannover-annam",
+      "regionId": "hannover",
+      "name": "Annam Ahlem",
+      "address": {
+        "street": "Heisterbergallee 85",
+        "postcode": "30453",
+        "city": "Hannover"
+      },
+      "lat": 52.3767709,
+      "lon": 9.6625533,
+      "phone": "+49 511 39497727",
+      "website": "https://annam-ahlem.de/",
+      "orderUrl": "https://annam-ahlem.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ASIAN",
+        "SUSHI",
+        "VIETNAMESE"
+      ],
+      "openingHours": "Mo-So 11:30-21:30, Di geschlossen",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Seite mit Online-Bestellung + 10% Abholrabatt; auch auf Wolt/Lieferando (eigener Kanal vorhanden); manuell verifiziert."
+    },
+    {
       "id": "hannover-appetito",
       "regionId": "hannover",
       "name": "Appetito",
@@ -631,6 +702,42 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/3017264444; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-asia-thai",
+      "regionId": "hannover",
+      "name": "Asia Thai",
+      "address": {
+        "street": "Hannoversche Str. 28",
+        "postcode": "30629",
+        "city": "Hannover"
+      },
+      "lat": 52.3903358,
+      "lon": 9.8491135,
+      "phone": "+49 511 2283981",
+      "website": "https://www.asia-thai1.de/",
+      "orderUrl": "https://www.asiathai-shop.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "CHINESE",
+        "SUSHI",
+        "THAI",
+        "VIETNAMESE"
+      ],
+      "openingHours": "Mo,Mi 11:30-14:15 & 17:00-21:00; Do,Fr 11:30-14:15 & 17:00-21:30; Sa 17:00-21:30; So 11:30-14:15 & 17:00-21:00; Di geschlossen",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Domains mit Online-Lieferdienst (asia-thai1.de, asiathai-shop.de) + Impressum; auch auf Lieferando; manuell verifiziert."
     },
     {
       "id": "hannover-asianativ",
@@ -3339,6 +3446,41 @@
       "notes": "pipeline node/1847997661; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
+      "id": "hannover-hendl-und-glut",
+      "regionId": "hannover",
+      "name": "Hendl & Glut",
+      "address": {
+        "street": "Stephansplatz 6",
+        "postcode": "30171",
+        "city": "Hannover"
+      },
+      "lat": 52.3604506,
+      "lon": 9.754661,
+      "phone": "+49 511 886739",
+      "website": "https://hendlundglut.de/",
+      "orderUrl": "https://hendlundglut.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "GRILL",
+        "DOENER",
+        "BURGER"
+      ],
+      "openingHours": null,
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Offizieller eigener Shop ('keine Plattformgebuehren'), 10-20% Abholer-Rabatt; manuell verifiziert."
+    },
+    {
       "id": "hannover-hikari",
       "regionId": "hannover",
       "name": "Hikari",
@@ -4312,6 +4454,41 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline way/1409780055; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-kp-pizza",
+      "regionId": "hannover",
+      "name": "KP Pizza",
+      "address": {
+        "street": "Kugelfangtrift 91",
+        "postcode": "30657",
+        "city": "Hannover"
+      },
+      "lat": 52.4166471,
+      "lon": 9.7767496,
+      "phone": "+49 511 27084654",
+      "website": "https://www.kp-pizza.de",
+      "orderUrl": "https://www.kp-pizza.de",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "BURGER",
+        "ITALIAN"
+      ],
+      "openingHours": "Mo,Mi,Do,Fr-So 15:00-22:00/23:00, Di Ruhetag",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Online-Bestellplattform mit Warenkorb auf eigener Domain; manuell verifiziert."
     },
     {
       "id": "hannover-kreta-grill",
@@ -5328,8 +5505,8 @@
         "postcode": "30451",
         "city": "Hannover"
       },
-      "lat": null,
-      "lon": null,
+      "lat": 52.3719596,
+      "lon": 9.7113711,
       "phone": "+49 511 64691945",
       "website": "https://manhattan-burger.net/",
       "orderUrl": "https://manhattan-burger.net/",
@@ -5353,10 +5530,10 @@
       ],
       "minOrderValue": null,
       "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
       "source": "manual_seed",
-      "notes": "Eigene Bestellseite mit 10% Online-Rabatt. Wird auch auf Lieferando/Uber Eats gelistet, eigener Shop auf eigener Domain vorhanden."
+      "notes": "Eigener offizieller Shop (manhattan-burger.net) mit 10% Online-Rabatt; eigene Domain, kein Plattform-Redirect. Manuell verifiziert."
     },
     {
       "id": "hannover-mantu-ich-du",
@@ -5822,6 +5999,40 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/11825795581; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-mozzaria",
+      "regionId": "hannover",
+      "name": "Mozzaria (Mozzeria Restaurant)",
+      "address": {
+        "street": "Kurze-Kamp-Str. 14",
+        "postcode": "30659",
+        "city": "Hannover"
+      },
+      "lat": 52.4203687,
+      "lon": 9.7995559,
+      "phone": "+49 511 56968351",
+      "website": "https://www.mozzeria-restaurant.de",
+      "orderUrl": "https://www.mozzeria-restaurant.de",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ITALIAN",
+        "PIZZA"
+      ],
+      "openingHours": "Mo-So 10:00-22:00 (Abholung/Lieferung 11:00-22:00)",
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": 10.0,
+      "deliveryFee": 1.0,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Eigene Online-Bestellung auf eigener Domain; Lieferzonen Zone1-3 mit Gebuehr; manuell verifiziert."
     },
     {
       "id": "hannover-movenpick",
@@ -7081,6 +7292,39 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/11407231971; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+    },
+    {
+      "id": "hannover-pizzeria-taormina",
+      "regionId": "hannover",
+      "name": "Pizzeria Taormina",
+      "address": {
+        "street": "Kirchröder Str. 95",
+        "postcode": "30625",
+        "city": "Hannover"
+      },
+      "lat": 52.3721716,
+      "lon": 9.7882674,
+      "phone": "+49 511 5332721",
+      "website": null,
+      "orderUrl": null,
+      "orderTypes": [
+        "PHONE",
+        "PICKUP"
+      ],
+      "cuisines": [
+        "ITALIAN",
+        "PIZZA"
+      ],
+      "openingHours": null,
+      "delivers": false,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "status": "pending_review",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "Kein eigener Online-Kanal gefunden (nur Reservierung/Lieferando); telefonische Bestellung moeglich. Status pending_review."
     },
     {
       "id": "hannover-play-off",

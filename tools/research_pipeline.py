@@ -58,7 +58,8 @@ WEBSHOP_HINTS = [
 FORM_HINTS = ["bestellformular", "kontaktformular", "mailto:", "anfrageformular", "bestellung per formular"]
 IMPRINT_HINTS = [
     "impressum", "imprint", "legal notice", "angaben gemäß", "angaben gemaess",
-    "§ 5 tmg", "5 tmg", "verantwortlich", "handelsregister", "hrb",
+    "§ 5 tmg", "5 tmg", "§ 5 ddg", "5 ddg", "digitale-dienste-gesetz", "ddg",
+    "verantwortlich", "handelsregister", "hrb",
     "ust-idnr", "umsatzsteuer-id", "geschäftsführer", "inhaber",
 ]
 ORDER_LINK_HINTS = ["bestellen", "bestellung", "order", "webshop", "shop", "lieferservice", "lieferdienst", "bringdienst", "menu", "speisekarte"]

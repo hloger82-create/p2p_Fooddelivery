@@ -1,6 +1,6 @@
 # Impressum (Template — vor Veroeffentlichung ausfuellen und anwaltlich pruefen)
 
-Angaben gemaess § 5 TMG:
+Angaben gemaess § 5 DDG (Digitale-Dienste-Gesetz; bis 13.05.2024: § 5 TMG):
 
 **[Name des Betreibers / Firma]**
 [Adresse]

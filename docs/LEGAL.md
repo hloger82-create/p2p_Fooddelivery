@@ -26,9 +26,9 @@ Stand: zur Vorbereitung der Android-App (v1, Region Hannover). Kein Rechtsrat; v
 - **Verboten**: Scraping von Google Maps, Lieferando, Wolt, Uber Eats, Volt u. a. (AGB-Verstoss, wettbewerbsrechtlich riskant). Plattform-Seiten werden nicht ausgelesen, nur als Redirect-Ziel erkannt.
 - Zulaessig: OSM/Overpass/Nominatim (mit Rate-Limit und User-Agent) und die **eigenen oeffentlichen Websites** der Restaurants (robots.txt respektieren, max. 1 req/s pro Domain, keine Login-Bereiche, keine personenbezogenen Daten speichern).
 
-## 5. App-Pflichten (TMG / DSGVO)
+## 5. App-Pflichten (DDG / DSGVO)
 
-- Impressum in der App verlinkt/angezeigt (§ 5 TMG) — Template: `docs/templates/IMPRESSUM.md`.
+- Impressum in der App verlinkt/angezeigt (§ 5 DDG, seit 14.05.2024; davor § 5 TMG) — Template: `docs/templates/IMPRESSUM.md`.
 - Datenschutzerklaerung (DSGVO Art. 13) — Template: `docs/templates/DATENSCHUTZ.md`.
 - Grundsatz Datenminimierung: **kein Tracking, keine Werbe-IDs, keine Standort-Uebermittlung** in v1. Standort/PLZ des Nutzers wird nur lokal auf dem Geraet verarbeitet (Filter „liefert zu mir“), nie hochgeladen.
 - Sobald Werbung/Analytics ins Spiel kommen: Einwilligung (Consent) einholen (TDDDG § 6, DSGVO Art. 6/7) — siehe `docs/MONETIZATION.md`.
