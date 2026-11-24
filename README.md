@@ -59,6 +59,13 @@ Voraussetzung: Android Studio / JDK 17.
 
 Hinweis: Das Gradle-Wrapper-Jar ist nicht eingecheckt. Einmalig lokal erzeugen mit `gradle wrapper` (in Android Studio: Gradle-Task `wrapper` ausfuehren) — danach steht `./gradlew` zur Verfuegung. CI nutzt `gradle/actions/setup-gradle` und kommt ohne Wrapper aus.
 
+## Troubleshooting
+
+- **Schwarzer Bildschirm im Emulator, App lebt aber (Logcat: Activity resumed, Surface vorhanden, „Skipped frames")**: Emulator-Grafikproblem. Device Manager → AVD bearbeiten → Show Advanced Settings → **Graphics: Software - SwiftShader**, dann Cold Boot. Alternativ `emulator -avd <name> -gpu swiftshader_indirect`. Auf echtem Geraet testen.
+- **Windows/PowerShell**: `python` (nicht `python3`), `Copy-Item` statt `cp`, `;` statt `&&`, kein `\` als Zeilenumbruch. `adb` ueber `$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe` (oder platform-tools dauerhaft in PATH).
+- **Android Studio fuegt `foojay-resolver`-Plugin in settings.gradle.kts ein** — nicht committen (CI kann es nicht aufloesen); lokal `git checkout -- settings.gradle.kts`.
+- **Overpass 429/502**: Pipeline probiert automatisch Fallback-Instanzen; evtl. `--max 30` und spaeter wiederholen.
+
 ## CI
 
 `.github/workflows/ci.yml` laeuft bei Push/PR auf `main` und `vibe/**`:
