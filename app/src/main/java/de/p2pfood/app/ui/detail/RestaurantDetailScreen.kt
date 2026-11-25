@@ -157,6 +157,14 @@ private fun DetailBody(r: Restaurant) {
         r.cuisines.forEach { AssistChip(onClick = {}, label = { Text(it.label()) }) }
         r.orderTypes.forEach { AssistChip(onClick = {}, label = { Text(it.label()) }) }
     }
+    if (r.cuisineSource == "derived") {
+        Text(
+            stringResource(R.string.cuisine_derived),
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(top = 2.dp),
+        )
+    }
     r.openingHours?.let {
         DetailRow(stringResource(R.string.opening_hours), it)
     }

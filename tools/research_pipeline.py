@@ -331,7 +331,13 @@ def geocode(session: requests.Session, address: str, delay: float):
     return None
 
 
-def classify_cuisines(tags: dict, analysis: dict) -> list:
+def classify_cuisines(tags: dict, analysis: dict) -> tuple:
+    """Liefert (cuisines, cuisineSource).
+
+    cuisineSource = "stated", wenn die Kueche auf OSM/Website (JSON-LD servesCuisine)
+    angegeben ist; None, wenn nicht angegeben -> Ableitung aus den Speisen erfolgt
+    erst im manuellen Review (QS), dann dort cuisineSource = "derived".
+    """
     cuisines = set()
     raw = tags.get("cuisine", "")
     for part in re.split(r"[;,]", raw):
@@ -342,9 +348,10 @@ def classify_cuisines(tags: dict, analysis: dict) -> list:
         key = c.strip().lower()
         if key in CUISINE_MAP:
             cuisines.add(CUISINE_MAP[key])
+    source = "stated" if cuisines else None
     if not cuisines:
         cuisines.add("OTHER")
-    return sorted(cuisines)
+    return sorted(cuisines), source
 
 
 def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
@@ -464,7 +471,7 @@ def main():
         }
         if not website:
             entry["analysis"] = {"orderChannel": None, "orderRedirectsToPlatform": False}
-            entry["cuisines"] = classify_cuisines(tags, entry["analysis"])
+            entry["cuisines"], entry["cuisineSource"] = classify_cuisines(tags, entry["analysis"])
             entry.update(score_candidate(tags, entry["analysis"], region))
             candidates.append(entry)
             continue
@@ -490,7 +497,7 @@ def main():
             if entry["phone"] is None and analysis.get("phone"):
                 entry["phone"] = analysis["phone"]
         entry["analysis"] = analysis
-        entry["cuisines"] = classify_cuisines(tags, analysis)
+        entry["cuisines"], entry["cuisineSource"] = classify_cuisines(tags, analysis)
         entry.update(score_candidate(tags, analysis, region))
         candidates.append(entry)
 

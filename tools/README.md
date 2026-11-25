@@ -56,7 +56,7 @@ Das Merge-Tool uebernimmt alle Kandidaten (ausser `reject` / ohne Website), inkl
 - Keine personenbezogenen Daten; nur oeffentliche Gewerbedaten (Firma, Adresse, Telefon, Website).
 - Vor Veroeffentlichung immer manuelle Endpruefung (siehe `docs/LEGAL.md`).
 
-## Review-Queue
+## Review-Queue + manuelle Verifizierung (QS)
 
 ```bash
 python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json \
@@ -65,14 +65,10 @@ python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json
 
 Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
 
-## Review-Queue
-
-```bash
-python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json \
-    --out data/regions/hannover/review-queue.md
-```
-
-Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
+QS-Checkliste pro Fall (siehe auch `docs/RESEARCH-PIPELINE.md` Abschnitt "Manuelle Verifizierung"):
+1. PLZ in der Regionsliste (`postcodes`) + BBox, 2. Impressum + eigener Kanal (kein Plattform-Redirect),
+3. **Kueche**: `cuisineSource=stated` uebernehmen; nicht angegeben -> Speisen analysieren, eigene Schlussfolgerung (`cuisineSource=derived` + Vermerk in `notes`),
+4. delivers/pickup nur mit Nachweis, 5. `status=verified` + `lastVerified` setzen.
 
 ## Neue Region
 

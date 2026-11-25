@@ -38,7 +38,16 @@ Schema: `data/schema/restaurant.schema.json`. App-Assets aktualisieren nicht ver
 
 Nur oeffentliche Seiten; robots.txt; Rate-Limit; keine Plattform-Inhalte; keine personenbezogenen Daten. Siehe `docs/LEGAL.md` Abschnitt 4.
 
-## QS-Backlog (erst spaeter im Verifizierungsprozess)
+## Manuelle Verifizierung (QS)
 
-- **Kuechen-Pruefung**: Ist die angebotene Kueche auf der Webseite nicht konkret angegeben, wird sie im manuellen Review geprueft: Analyse der angebotenen Speisen und eigene Schlussfolgerung (kein blosses Raten). Nicht Teil der Pipeline.
-- **Region-Pruefung**: Kandidaten mit `addr:postcode` ausserhalb der Regions-PLZ (`postcodes` in `region.json`) werden bereits in der Pipeline mit `reject` markiert (`inRegionPostcode`-Check); in der App weist ein Hinweis unter dem PLZ-Feld auf PLZ ausserhalb der Region hin.
+Jeder `pending_review`-Eintrag wird vor dem Umstellen auf `verified` manuell geprueft (Reihenfolge):
+
+1. **Region**: `addr:postcode` in `postcodes` der Region, Adresse/Koordinaten im BBox. (In der Pipeline bereits als `inRegionPostcode`-Check mit `reject` vorgelagert; in der App weist ein Hinweis unter dem PLZ-Feld auf PLZ ausserhalb der Region hin.)
+2. **Rechtlich/Kanal**: Impressum gefunden, eigener Bestellkanal (Webshop/Telefon), kein Plattform-Redirect.
+3. **Kuechen-Pruefung**: Ist die Kueche auf OSM/Website angegeben (`cuisineSource: "stated"` aus der Pipeline), wird sie uebernommen. **Ist sie nicht angegeben**: Speisekarte bzw. angebotene Speisen analysieren und eine eigene Schlussfolgerung ziehen (z. B. Pizza/Pasta -> `PIZZA` + `ITALIAN`), dann `cuisines` entsprechend setzen, `cuisineSource: "derived"` und kurzer Vermerk in `notes` (z. B. "Kueche aus Speisekarte abgeleitet"). Kein blosses Raten. Die App kennzeichnet abgeleitete Kuechen mit einem kleinen Hinweis im Detail-Screen.
+4. **Lieferung/Abholung nur mit Nachweis**: `delivers` nur bei expliziter Lieferangabe; `pickup` nur bei OSM `takeaway=yes/only`, expliziter Abholmption oder Telefon/eigener Shop ohne Lieferung.
+5. `lastVerified` = Datum setzen, `status: "verified"`.
+
+## QS-Backlog
+
+- (leer — Kuechen-Pruefung ist oben im Verifizierungsprozess verankert)

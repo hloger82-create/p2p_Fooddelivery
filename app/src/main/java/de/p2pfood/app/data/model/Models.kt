@@ -57,6 +57,7 @@ data class Restaurant(
     val orderUrl: String? = null,
     val orderTypes: List<OrderType> = emptyList(),
     val cuisines: List<Cuisine> = emptyList(),
+    val cuisineSource: String? = null,
     val openingHours: String? = null,
     val delivers: Boolean = false,
     val pickup: Boolean = true,

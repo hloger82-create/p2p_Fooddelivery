@@ -83,6 +83,7 @@ def candidate_to_entry(c: dict, region_id: str, region_name: str, existing_ids: 
         "orderUrl": c.get("website"),
         "orderTypes": order_types or ["PHONE"],
         "cuisines": c.get("cuisines") or ["OTHER"],
+        "cuisineSource": c.get("cuisineSource"),
         "openingHours": tags.get("opening_hours") or analysis.get("openingHours"),
         "delivers": delivers,
         "pickup": takeaway or not delivers,

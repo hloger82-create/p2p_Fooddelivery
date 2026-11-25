@@ -45,6 +45,10 @@
             "enum": ["PIZZA", "ITALIAN", "DOENER", "TURKISH", "ASIAN", "SUSHI", "BURGER", "AMERICAN", "GRILL", "CHINESE", "VIETNAMESE", "THAI", "INDIAN", "MEXICAN", "GREEK", "OTHER"]
           }
         },
+        "cuisineSource": {
+          "enum": ["stated", "derived", null],
+          "description": "stated = Kueche auf OSM/Website angegeben; derived = im manuellen Review aus den angebotenen Speisen abgeleitet (eigene Schlussfolgerung, Vermerk in notes)"
+        },
         "openingHours": { "type": ["string", "null"] },
         "delivers": { "type": "boolean" },
         "pickup": { "type": "boolean" },

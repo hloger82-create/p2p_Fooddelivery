@@ -2,7 +2,7 @@
 """Erstellt eine priorisierte Review-Queue aus candidates.json.
 
 Bewertet jeden review-Kandidaten und sortiert die vielversprechendsten zuerst:
-Lieferung/Abholung in OSM-Tags, eigener Bestellkanal (Webshop/Formular/Telefon),
+Lieferung/Abholung in OSM-Tags, eigener Bestellkanal (Webshop/Telefon),
 Impressum gefunden, Koordinaten vorhanden, Website erreichbar.
 
 Usage:
@@ -24,7 +24,7 @@ def score(c: dict) -> int:
         s += 3
     if tags.get("takeaway") in ("yes", "only"):
         s += 2
-    if a.get("orderChannel") in ("webshop", "form"):
+    if a.get("orderChannel") == "webshop":
         s += 3
     elif a.get("orderChannel") == "phone" or c.get("phone") or a.get("phone"):
         s += 1
@@ -55,7 +55,9 @@ def main() -> int:
     lines = [
         f"# Review-Queue {data.get('regionId', '?')} ({len(reviews)} Faelle, sortiert nach Score)",
         "",
-        "Score: delivery-Tag +3, eigener Webshop/Formular +3, takeaway-Tag +2, Telefon +1, Impressum +1, Koords +1, Website down -2.",
+        "Score: delivery-Tag +3, eigener Webshop +3, takeaway-Tag +2, Telefon +1, Impressum +1, Koords +1, Website down -2.",
+        "",
+        "QS-Checkliste pro Fall: 1) PLZ in Regionsliste + BBox, 2) Impressum + eigener Kanal (kein Plattform-Redirect), 3) **Kueche**: `cuisineSource=stated` uebernehmen; nicht angegeben -> Speisen analysieren, eigene Schlussfolgerung (`cuisines` setzen, `cuisineSource=derived`, Vermerk in `notes`), 4) delivers/pickup nur mit Nachweis, 5) `status=verified` + `lastVerified` setzen.",
         "",
         "| # | Score | Name | Kanal | Kueche | PLZ | Impressum | Koords | Website | Reasons |",
         "|---|-------|------|-------|--------|-----|-----------|--------|---------|--------|",
