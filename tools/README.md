@@ -85,6 +85,11 @@ python tools\research_pipeline.py --region data\regions\hannover\region.json --o
 # Queue mit nur NEUEN Faellen (bekannte Domains aus restaurants.json + alte Queue ausschliessen)
 python tools\review_queue.py --candidates data\regions\hannover\candidates.json --restaurants data\regions\hannover\restaurants.json --exclude-queue data\regions\hannover\review-queue-old.md --out data\regions\hannover\review-queue.md
 
+# Plattform-Eintraege entfernen (Startseite verlinkt auf Lieferando & Co. oder wird von Plattform verwaltet;
+# erstes --dry-run zeigt die Liste, ohne --dry-run wird entfernt + Assets gespiegelt):
+python tools\qs_apply_analysis.py --restaurants data\regions\hannover\restaurants.json --candidates data\regions\hannover\candidates.json --dry-run
+python tools\qs_apply_analysis.py --restaurants data\regions\hannover\restaurants.json --candidates data\regions\hannover\candidates.json
+
 # mergen — NUR die neue Queue; --auto-verify markiert eindeutige auto_accept-Faelle
 # (eigener Webshop + Impressum + PLZ in Region + Kueche stated) direkt als verified:
 python tools\merge_candidates.py --candidates data\regions\hannover\candidates.json --out data\regions\hannover\restaurants.json --region data\regions\hannover\region.json --only-queue data\regions\hannover\review-queue.md --auto-verify

@@ -75,7 +75,8 @@ ORDER_LINK_HINTS = ["bestellen", "bestellung", "order", "webshop", "shop", "lief
 STRONG_ORDER_HINTS = ["bestellen", "warenkorb", "checkout", "bestellshop", "in den warenkorb", "add to cart"]
 GUTSCHEIN_HINTS = ["gutschein", "voucher", "geschenkkarte"]
 # Plattform-betriebene "eigene" Seiten (z. B. "betrieben und verwaltet durch Lieferando.de")
-PLATFORM_MANAGED_HINTS = ["betrieben und verwaltet durch", "betrieben und verwaltet von", "powered by", "bereitgestellt von"]
+PLATFORM_MANAGED_HINTS = ["betrieben und verwaltet durch", "betrieben und verwaltet von", "verwaltet durch", "verwaltet von",
+                          "managed by", "powered by", "bereitgestellt von"]
 DELIVERY_HINTS = ["liefergebiet", "liefern wir", "wir liefern", "delivery area", "liefern nach"]
 RESERVATION_HINTS = ["reservier", "tischreserv", "opentable", "bookatable", "quandoo", "resmio", "formitable"]
 FOOD_ORDER_HINTS = ["bestellen", "warenkorb", "speisekarte", "cart", "checkout", "liefern", "abholen", "lieferservice", "bringdienst", "webshop"]
@@ -188,6 +189,8 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
         "orderChannel": None,
         "orderRedirectsToPlatform": False,
         "platformHit": None,
+        "platformLinkOnHomepage": None,
+        "platformManaged": None,
         "phone": None,
         "openingHours": None,
         "servesCuisine": [],
@@ -243,6 +246,12 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
             platform_managed = next((d for d in session.blocklist if d in low), h)
             break
     result["platformManaged"] = platform_managed
+    # jeder Link auf der Startseite zu einer Plattform-Domain (z. B. Lieferando im Footer/Menue)
+    for href in re.findall(r'href=["\']([^"\']+)["\']', html, flags=re.I):
+        abs_url = urllib.parse.urljoin(website, href)
+        if is_blocked(abs_url, session.blocklist):
+            result["platformLinkOnHomepage"] = domain_of(abs_url)
+            break
     for link in order_links[:6]:
         chain, final, blocked = redirect_chain(session, link, delay)
         if blocked and is_blocked(blocked, session.blocklist):
@@ -417,6 +426,8 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
         reasons.append("keine Website -> Ausschluss (App ist reines Link-Out: ohne Website kann der User sich das Restaurant nirgends ansehen)")
     if not checks["hasDistanceOrder"]:
         reasons.append("weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss")
+    if analysis.get("platformLinkOnHomepage") and analysis.get("orderChannel") != "webshop":
+        reasons.append(f"Startseite verlinkt auf Plattform {analysis.get('platformLinkOnHomepage')} und kein eigener Webshop -> Ausschluss")
     if checks["hasWebsite"] and not checks["homepageReachable"]:
         reasons.append("Website nicht erreichbar")
     if not checks["imprintFound"]:
@@ -430,6 +441,7 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
             or not checks["hasWebsite"]
             or not checks["hasDistanceOrder"]
             or analysis.get("platformManaged")
+            or (analysis.get("platformLinkOnHomepage") and analysis.get("orderChannel") != "webshop")
             or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"])
             or not checks["inRegionPostcode"]):
         status = "reject"

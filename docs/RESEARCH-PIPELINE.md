@@ -14,6 +14,7 @@ python3 tools/research_pipeline.py --region data/regions/hannover/region.json \
 2. Nominatim-Geocoding fuer fehlende Koordinaten (1 req/s).
 3. Website-Analyse der **eigenen Restaurant-Domain** (robots.txt, Rate-Limit, eigener UA):
    - Redirect-Check der Bestell-Links gegen `platformBlocklist` -> Plattform-only = `reject`.
+   - Plattform-Erkennung auf der Startseite: **jeder Link** zu einer `platformBlocklist`-Domain (`platformLinkOnHomepage`) und Texte wie "verwaltet/betrieben durch Lieferando.de" (`platformManaged`). Beides ohne eigenen Webshop -> `reject`. Bestand wird via `tools/qs_apply_analysis.py` bereinigt (siehe `tools/README.md` Re-Run).)
    - Impressum-Check (§ 5 DDG Pflichtangaben).
    - Bestellkanal: eigener Webshop / Telefon (JSON-LD + Keyword-Heuristik). Kontakt-/Reservierungsformulare zaehlen nicht als Bestellformular.
    - Telefon, Oeffnungszeiten, Kueche aus JSON-LD; Liefergebiet via Keywords + PLZ aus der Regionsliste (`postcodes`).
