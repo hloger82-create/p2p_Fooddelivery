@@ -560,40 +560,6 @@
       "notes": "eigene Website; telefonische Bestellung"
     },
     {
-      "id": "hannover-alba-und-ibrahim",
-      "regionId": "hannover",
-      "name": "Alba und Ibrahim",
-      "address": {
-        "street": "Mühlenbergsweg 21",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.414689,
-      "lon": 9.5966318,
-      "phone": "+49 51378904520",
-      "website": "https://www.alba-restaurant.de/",
-      "orderUrl": "https://www.alba-restaurant.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Su, PH 11:30-22:00",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/13640602502; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-alexander",
       "regionId": "hannover",
       "name": "Alexander",
@@ -722,40 +688,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "syyrisch; nur Mobilnummer in OSM; telefonische Bestellung/Abholung"
-    },
-    {
-      "id": "hannover-alt-garbsen",
-      "regionId": "hannover",
-      "name": "Alt Garbsen",
-      "address": {
-        "street": "Hannoversche Straße 156",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4146591,
-      "lon": 9.5876823,
-      "phone": "+49 5137 72117",
-      "website": "https://www.pension-altgarbsen.de/",
-      "orderUrl": "https://www.pension-altgarbsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/309468961; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-alte-hahnenburg",
@@ -1021,39 +953,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "nur Telefon in OSM; telefonische Bestellung/Abholung"
-    },
-    {
-      "id": "hannover-appetito",
-      "regionId": "hannover",
-      "name": "Appetito",
-      "address": {
-        "street": "Berenbosteler Straße 76",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4226654,
-      "lon": 9.5914027,
-      "phone": "+49 5137 99 18 99 9",
-      "website": "https://appetito-garbsen.com/",
-      "orderUrl": "https://appetito-garbsen.com/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "PIZZA"
-      ],
-      "openingHours": "Mo-Su 10:00-22:00",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/13468605067; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-aram-kebab-haus",
@@ -1504,39 +1403,6 @@
       "notes": "eigene Website mit Impressum; keine Tel. in OSM"
     },
     {
-      "id": "hannover-asia-star",
-      "regionId": "hannover",
-      "name": "Asia Star",
-      "address": {
-        "street": "Bauboulevard 2",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4302194,
-      "lon": 9.6171635,
-      "phone": "+49 5131 9068989",
-      "website": "https://www.asiastar-garbsen.de/",
-      "orderUrl": "https://www.asiastar-garbsen.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "CHINESE"
-      ],
-      "openingHours": "Tu-Su 12:00-14:30, 18:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30827"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/3017264444; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-asia-thai",
       "regionId": "hannover",
       "name": "Asia Thai",
@@ -1861,45 +1727,6 @@
       "notes": "eigene Website; telefonische Bestellung"
     },
     {
-      "id": "hannover-bacchus",
-      "regionId": "hannover",
-      "name": "Bacchus",
-      "address": {
-        "street": "Göttinger Straße 102A",
-        "postcode": "30966",
-        "city": "Hemmingen"
-      },
-      "lat": 52.2985297,
-      "lon": 9.7412103,
-      "phone": "+49 5101 2958",
-      "website": "https://www.bacchus-restaurant.de/",
-      "orderUrl": "https://www.bacchus-restaurant.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "Mo-We 17:00-22:00; Th-Sa 12:00-15:00,17:00-22:00; Su 12:00-22:00",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [
-        "30133",
-        "30199",
-        "30213",
-        "30413",
-        "30966"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/315375692; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-badenstedter-doner",
       "regionId": "hannover",
       "name": "Badenstedter Döner",
@@ -1963,40 +1790,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/292364774; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-balkan-house",
-      "regionId": "hannover",
-      "name": "Balkan House",
-      "address": {
-        "street": "Walsroder Straße 153",
-        "postcode": "30853",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4505659,
-      "lon": 9.7429908,
-      "phone": "+49 511 37082901",
-      "website": "https://www.balkan-house.de",
-      "orderUrl": "https://www.balkan-house.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Tu-Th 17:30-21:30; Fr-Sa 17:30-22:00; Su 12:00-14:30,17:00-21:00; Mo off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30853"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/379520550; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-bambus-asia-bistro",
@@ -2397,38 +2190,6 @@
       "notes": "pipeline node/559302558; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-beim-wildschutz",
-      "regionId": "hannover",
-      "name": "Beim Wildschütz",
-      "address": {
-        "street": "Bauernwiesenweg 7a",
-        "postcode": "30952",
-        "city": "Ronnenberg"
-      },
-      "lat": 52.3230698,
-      "lon": 9.6548064,
-      "phone": "+49 5109 9100",
-      "website": "https://www.restaurant-beim-wildschuetz.de/",
-      "orderUrl": "https://www.restaurant-beim-wildschuetz.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo,Th,Fr,Sa 17:00+, Su,PH 11:00-14:30; Tu,We off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/2428875667; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-beiwi",
       "regionId": "hannover",
       "name": "Beiwi",
@@ -2488,73 +2249,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung"
-    },
-    {
-      "id": "hannover-berenbosteler-terrassen",
-      "regionId": "hannover",
-      "name": "Berenbosteler Terrassen",
-      "address": {
-        "street": "Dorfstraße 53",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4401846,
-      "lon": 9.620845,
-      "phone": "+4951316426",
-      "website": "https://berenbosteler-terrassen.de/",
-      "orderUrl": "https://berenbosteler-terrassen.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30827"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/2624728792; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-berggasthaus-niedersachsen",
-      "regionId": "hannover",
-      "name": "Berggasthaus Niedersachsen",
-      "address": {
-        "street": "Köthnerberg 4",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.3078257,
-      "lon": 9.5870152,
-      "phone": "+49 5108 3101",
-      "website": "https://www.berggasthaus-niedersachsen.de/",
-      "orderUrl": "https://www.berggasthaus-niedersachsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Th-Fr 15:00-22:00; Sa-Su 12:00-22:00; Mo-We off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/308031473; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-bestia-vera-pizza-napoletana",
@@ -4361,47 +4055,6 @@
       "notes": "pipeline node/510959967; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-da-luca",
-      "regionId": "hannover",
-      "name": "da Luca",
-      "address": {
-        "street": "Am Weiherfeld 1",
-        "postcode": "30855",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4755683,
-      "lon": 9.7300855,
-      "phone": "495115193192",
-      "website": "https://www.da-luca.eu/",
-      "orderUrl": "https://www.da-luca.eu/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Su 12:00-22:30",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30179",
-        "30657",
-        "30669",
-        "30851",
-        "30853",
-        "30855",
-        "30900",
-        "30916"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/13701523797; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-dai-doo",
       "regionId": "hannover",
       "name": "Dai Doo",
@@ -6034,37 +5687,6 @@
       "notes": "eigene Website; telefonische Bestellung"
     },
     {
-      "id": "hannover-flugel-s-restaurant",
-      "regionId": "hannover",
-      "name": "Flügel's Restaurant",
-      "address": {
-        "street": "Hannoversche Straße 17c",
-        "postcode": "30926",
-        "city": "Seelze"
-      },
-      "lat": 52.3957727,
-      "lon": 9.5940702,
-      "phone": null,
-      "website": "https://www.fluegelsrestaurant.de/",
-      "orderUrl": "https://www.fluegelsrestaurant.de/",
-      "orderTypes": [],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Tu-Su 11:30+",
-      "delivers": false,
-      "pickup": false,
-      "deliveryAreas": [
-        "30926"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/1129832009; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-foodbreak20",
       "regionId": "hannover",
       "name": "FoodBreak20",
@@ -6547,39 +6169,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website mit Impressum; keine Tel. in OSM; Standort Nordstadt (Koords)"
-    },
-    {
-      "id": "hannover-gastwirtschaft-rust",
-      "regionId": "hannover",
-      "name": "Gastwirtschaft Rust",
-      "address": {
-        "street": "Alte Landstraße 6",
-        "postcode": "30855",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4399466,
-      "lon": 9.673379,
-      "phone": "+49 511 9781747",
-      "website": "https://gastwirtschaft-rust.de/",
-      "orderUrl": "https://gastwirtschaft-rust.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Su-Mo 12:00-15:00; Tu-Th 12:00-20:00; Fr-Sa 12:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30855"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/2411170214; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-georgen-terrassen",
@@ -7536,42 +7125,6 @@
       "notes": "pipeline way/638421631; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-hokkaido",
-      "regionId": "hannover",
-      "name": "Hokkaido",
-      "address": {
-        "street": "Steintor 3",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.314982,
-      "lon": 9.5987304,
-      "phone": "+4915256789333",
-      "website": "https://hokkai.do/",
-      "orderUrl": "https://hokkai.do/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ASIAN",
-        "SUSHI",
-        "VIETNAMESE"
-      ],
-      "openingHours": "Mo,We-Th 11:30-15:00,17:00-22:00; Tu off; Fr-Su 12:00-15:00,16:00-23:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/288531281; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-honeys",
       "regionId": "hannover",
       "name": "Honey's",
@@ -7634,38 +7187,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "gleiche Marke wie verified hannover-honeys; eigener App-Shop (app.honeys-hannover.de)"
-    },
-    {
-      "id": "hannover-hotel-restaurant-ohlers",
-      "regionId": "hannover",
-      "name": "Hotel Restaurant Öhlers",
-      "address": {
-        "street": "Nenndorfer Straße 64",
-        "postcode": "30952",
-        "city": "Ronnenberg"
-      },
-      "lat": 52.3426051,
-      "lon": 9.662724,
-      "phone": "+49 511 438720",
-      "website": "https://www.hotel-oehlers.de/restaurant.html",
-      "orderUrl": "https://www.hotel-oehlers.de/restaurant.html",
-      "orderTypes": [
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Fr 11:30-23:00; Sa-Su,PH 11:30-15:00,17:00-23:00, PH 11:30-15:00,17:00-23:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/45406083; checks={\"hasWebsite\": true, \"homepageReachable\": false, \"imprintFound\": false, \"notPlatformOnly\": false, \"hasOrderChannel\": false, \"inRegionPostcode\": true}; reasons=[\"Website nicht erreichbar\", \"kein Impressum gefunden (oder nicht erreichbar)\", \"kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)\"]"
     },
     {
       "id": "hannover-hotel-stern",
@@ -8061,39 +7582,6 @@
       "notes": "nur Telefon in OSM; telefonische Bestellung/Abholung"
     },
     {
-      "id": "hannover-inos-taverne",
-      "regionId": "hannover",
-      "name": "Inos Taverne",
-      "address": {
-        "street": "Hildesheimer Straße 196",
-        "postcode": "30880",
-        "city": "Laatzen"
-      },
-      "lat": 52.3040075,
-      "lon": 9.802218,
-      "phone": "+4951154302490",
-      "website": "https://inos-taverne.de/",
-      "orderUrl": "https://inos-taverne.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "Tu-Sa 16:30-22:30; Su 12:00-14:30,16:30-22:30; Mo off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30880"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/9970399036; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-insel-beach-club",
       "regionId": "hannover",
       "name": "Insel Beach Club",
@@ -8325,39 +7813,6 @@
       "notes": "eigene Website; koreanische Fusion; Lieferung sonst ueber Plattformen -> Telefon"
     },
     {
-      "id": "hannover-jorg-s-bulettenschmiede",
-      "regionId": "hannover",
-      "name": "Jörg's Bulettenschmiede",
-      "address": {
-        "street": "In der Beschen 7",
-        "postcode": "30952",
-        "city": "Ronnenberg"
-      },
-      "lat": 52.3448392,
-      "lon": 9.6532606,
-      "phone": "+49 172 5164330",
-      "website": "https://www.joergs-bulettenschmiede.de",
-      "orderUrl": "https://www.joergs-bulettenschmiede.de",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Fr 05:00-15:00; Sa-Su off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30952"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/376058315; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-kailua",
       "regionId": "hannover",
       "name": "Kailua",
@@ -8456,75 +7911,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/2246828114; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-kalimera",
-      "regionId": "hannover",
-      "name": "Kalimera",
-      "address": {
-        "street": "Steinriede 2",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4303491,
-      "lon": 9.6105119,
-      "phone": "0513146210",
-      "website": "https://kalimera-hannover.de/",
-      "orderUrl": "https://kalimera-hannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK",
-        "ITALIAN"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30827"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/172587674; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-kaminstube",
-      "regionId": "hannover",
-      "name": "Kaminstube",
-      "address": {
-        "street": "Berenbosteler Straße 103",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4165184,
-      "lon": 9.5875176,
-      "phone": "+49 5137 13495",
-      "website": "https://kaminstube-garbsen.de/",
-      "orderUrl": "https://kaminstube-garbsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/298267863; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-kazumi-sushi-manufaktur",
@@ -8853,157 +8239,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/2578436716; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-konstantinos",
-      "regionId": "hannover",
-      "name": "Konstantinos",
-      "address": {
-        "street": "Hildesheimer Straße 49",
-        "postcode": "30880",
-        "city": "Laatzen"
-      },
-      "lat": 52.3170508,
-      "lon": 9.7902243,
-      "phone": "+49 511 8791377",
-      "website": "https://restaurant-konstantinos.de/",
-      "orderUrl": "https://restaurant-konstantinos.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "Mo 17:00-22:30; Tu-Fr 12:00-14:00,17:00-22:30; Sa 17:00-22:30; Su,PH 12:00-14:30,17:00-22:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30880"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/1579413573; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-korfu",
-      "regionId": "hannover",
-      "name": "Korfu",
-      "address": {
-        "street": "Walsroder Straße 13",
-        "postcode": "30851",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4306604,
-      "lon": 9.7320184,
-      "phone": "+49 511 77 47 92",
-      "website": "https://korfu-langenhagen.de/",
-      "orderUrl": "https://korfu-langenhagen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "Mo-Sa 17:30-22:00; Su 17:30-21:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30851"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/280981456; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-kosta-s-bringdienst",
-      "regionId": "hannover",
-      "name": "Kosta's Bringdienst",
-      "address": {
-        "street": "Walsroder Straße 178",
-        "postcode": "30853",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4523651,
-      "lon": 9.7435498,
-      "phone": "+49 511 8979150",
-      "website": "https://www.kostas-langenhagen.de",
-      "orderUrl": "https://www.kostas-langenhagen.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK",
-        "PIZZA"
-      ],
-      "openingHours": null,
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30179",
-        "30419",
-        "30657",
-        "30669",
-        "30851",
-        "30853",
-        "30855",
-        "30900",
-        "30916",
-        "30938"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11887021877; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-kosta-s-bringdienst-2",
-      "regionId": "hannover",
-      "name": "Kosta´s Bringdienst",
-      "address": {
-        "street": "Im Rehwinkel 1a",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4466059,
-      "lon": 9.6071291,
-      "phone": "+49 5131465644",
-      "website": "https://www.kostas-garbsen.de/",
-      "orderUrl": "https://www.kostas-garbsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Sa 11:00-22:45; Su 12:00-22:45",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30419",
-        "30823",
-        "30826",
-        "30827",
-        "30855",
-        "30900",
-        "30926"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/1409780055; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-kouya-sushi",
@@ -9772,39 +9007,6 @@
       "notes": "eigene Seite + Impressum + eigene Online-Bestellung (laperlahannover.de)"
     },
     {
-      "id": "hannover-la-piazzetta",
-      "regionId": "hannover",
-      "name": "La Piazzetta",
-      "address": {
-        "street": "Steintor 2",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.3151456,
-      "lon": 9.5982171,
-      "phone": "+49 5108 643687",
-      "website": "https://www.la-piazzetta-gehrden.de/",
-      "orderUrl": "https://www.la-piazzetta-gehrden.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "Mo off; Tu-Sa 12:00-15:00,16:00-22:30; Su 12:00-15:00,16:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/288531278; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-la-plaza",
       "regionId": "hannover",
       "name": "La Plaza",
@@ -10134,39 +9336,6 @@
       "notes": "eigene Website; telefonische Bestellung"
     },
     {
-      "id": "hannover-leibniz-56",
-      "regionId": "hannover",
-      "name": "Leibniz 56",
-      "address": {
-        "street": "Leibnizstraße 56",
-        "postcode": "30853",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4488833,
-      "lon": 9.7488236,
-      "phone": "0511775182",
-      "website": "https://www.leibniz56.de/",
-      "orderUrl": "https://www.leibniz56.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Tu-Sa 17:00-18:00+; Su,Mo off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30853"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/4309100082; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-leinegold",
       "regionId": "hannover",
       "name": "Leinegold",
@@ -10494,39 +9663,6 @@
       "notes": "pipeline node/321257013; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-linie-10",
-      "regionId": "hannover",
-      "name": "Linie 10",
-      "address": {
-        "street": "Am Markt 6",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.3127389,
-      "lon": 9.6009204,
-      "phone": "+49 5108 2098",
-      "website": "http://www.ratskeller-gehrden.de/",
-      "orderUrl": "http://www.ratskeller-gehrden.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Th 16:00-00:30, Fr-Sa 16:00+, Su 16:00-23:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/307395777; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-lister-doener-prinz",
       "regionId": "hannover",
       "name": "Lister Döner (Prinz)",
@@ -10656,77 +9792,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/1807479466; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-locanta",
-      "regionId": "hannover",
-      "name": "Locanta",
-      "address": {
-        "street": "Planetenring 31-33",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4190098,
-      "lon": 9.5951309,
-      "phone": "+4951379879779",
-      "website": "https://locanta.eatbu.com/?lang=de",
-      "orderUrl": "https://locanta.eatbu.com/?lang=de",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "BURGER",
-        "DOENER",
-        "GRILL",
-        "ITALIAN",
-        "PIZZA"
-      ],
-      "openingHours": "Mo-Sa 10:00-22:00",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/8926866257; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-lombardo",
-      "regionId": "hannover",
-      "name": "Lombardo",
-      "address": {
-        "street": "Stephanusstraße 26c",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4337377,
-      "lon": 9.6107355,
-      "phone": "+4951316642",
-      "website": "https://ristorante-da-lombardo.eatbu.com/?lang=de",
-      "orderUrl": "https://ristorante-da-lombardo.eatbu.com/?lang=de",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "ITALIAN",
-        "PIZZA"
-      ],
-      "openingHours": "Tu-Su 12:00-15:00,17:30-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30827"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/534241166; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-lorberg",
@@ -11051,40 +10116,6 @@
       "notes": "nur Telefon in OSM; telefonische Bestellung/Abholung"
     },
     {
-      "id": "hannover-maikes-restaurant",
-      "regionId": "hannover",
-      "name": "Maike’s Restaurant",
-      "address": {
-        "street": "Rathausplatz 6a",
-        "postcode": "30966",
-        "city": "Hemmingen"
-      },
-      "lat": 52.3263045,
-      "lon": 9.7267249,
-      "phone": "+49 511 60010100",
-      "website": "https://maikes-restaurant.de/",
-      "orderUrl": "https://maikes-restaurant.de/",
-      "orderTypes": [
-        "PHONE",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo off; Tu-Su 12:00-14:00,17:30+; PH open",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30966"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/4995156361; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-malatyagrill",
       "regionId": "hannover",
       "name": "Malatya Grill",
@@ -11273,39 +10304,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung"
-    },
-    {
-      "id": "hannover-mantu-ich-du",
-      "regionId": "hannover",
-      "name": "ManTu. Ich & Du!",
-      "address": {
-        "street": "Planetenring 9a",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4145258,
-      "lon": 9.6092636,
-      "phone": "+49 5137 72841",
-      "website": "https://mantu-garbsen.de/",
-      "orderUrl": "https://mantu-garbsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Tu-Fr,Su 16:00-22:00; Sa 16:00-22:30",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/14160060110; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-maremonte",
@@ -11506,39 +10504,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/678368417; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-max-es",
-      "regionId": "hannover",
-      "name": "Max'es",
-      "address": {
-        "street": "Walsroder Straße 39",
-        "postcode": "30851",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4316667,
-      "lon": 9.7318721,
-      "phone": "+49 511 7269143",
-      "website": "https://www.restaurant-maxes.de",
-      "orderUrl": "https://www.restaurant-maxes.de",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Fr 12:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30851"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/280981721; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-mega-doner",
@@ -12034,40 +10999,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website mit Impressum; keine Telefonnummer in OSM -> nur Website-Link"
-    },
-    {
-      "id": "hannover-moes",
-      "regionId": "hannover",
-      "name": "Moes",
-      "address": {
-        "street": "Kastanienallee 16",
-        "postcode": "30851",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4371199,
-      "lon": 9.7296555,
-      "phone": "+49 511 54 55 30 15",
-      "website": "http://moes-hannover.de/",
-      "orderUrl": "http://moes-hannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "BURGER"
-      ],
-      "openingHours": "Tu-Fr 11:00-22:00; Sa-Su 15:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30851"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11825795581; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-mon-bonheur",
@@ -13009,40 +11940,6 @@
       "notes": "pipeline node/380919551; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-odysseus",
-      "regionId": "hannover",
-      "name": "Odysseus",
-      "address": {
-        "street": "Große Bergstraße 39",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.3121475,
-      "lon": 9.591537,
-      "phone": "+49 5108 5039",
-      "website": "https://www.odysseus-gehrden.de/",
-      "orderUrl": "https://www.odysseus-gehrden.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "Mo off; Tu-Sa 17:30-22:00; Su,PH 12:00-14:30,17:30-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/7188234606; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-oji-long",
       "regionId": "hannover",
       "name": "Oji Long",
@@ -13666,41 +12563,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/600299658; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-pham-s-kitchen",
-      "regionId": "hannover",
-      "name": "Pham's Kitchen",
-      "address": {
-        "street": "Dammstraße 19",
-        "postcode": "30989",
-        "city": "Gehrden"
-      },
-      "lat": 52.3111429,
-      "lon": 9.6005879,
-      "phone": "+49 152 2202 9999",
-      "website": "https://www.phamskitchen.de/",
-      "orderUrl": "https://www.phamskitchen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "VIETNAMESE"
-      ],
-      "openingHours": "Tu-Su 11:00-22:00; Mo off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30989"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/901618223; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-phamy-sushi",
@@ -15514,38 +14376,6 @@
       "notes": "pipeline node/470929109; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-reisland",
-      "regionId": "hannover",
-      "name": "Reisland",
-      "address": {
-        "street": "Osterwalder Straße 2a",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4374056,
-      "lon": 9.6111637,
-      "phone": "+49 5131 5024217",
-      "website": "https://reislandgarbsen.de",
-      "orderUrl": "https://reislandgarbsen.de",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "SUSHI",
-        "VIETNAMESE"
-      ],
-      "openingHours": "Mo-Su 11:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/809200734; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-rembetiko",
       "regionId": "hannover",
       "name": "Rembetiko",
@@ -15730,39 +14560,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "manuelle Prüfung: eigene Seite mit Impressum + eigener Online-Lieferservice (asello); zusätzlich telefonische Bestellung"
-    },
-    {
-      "id": "hannover-restaurant-heinrichs",
-      "regionId": "hannover",
-      "name": "Restaurant Heinrichs",
-      "address": {
-        "street": "Hauptstraße 1",
-        "postcode": "30916",
-        "city": "Isernhagen"
-      },
-      "lat": 52.4675755,
-      "lon": 9.8335245,
-      "phone": null,
-      "website": "https://restaurant-heinrichs.de/",
-      "orderUrl": "https://restaurant-heinrichs.de/",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30916"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/117568087; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-restaurant-hiller",
@@ -16296,43 +15093,6 @@
       "notes": "pipeline node/2283339167; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-rice-n-roll",
-      "regionId": "hannover",
-      "name": "Rice'n'Roll",
-      "address": {
-        "street": "Havelser Straße 1",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4268846,
-      "lon": 9.5959942,
-      "phone": "+49 5131 908596",
-      "website": "https://ricenroll-garbsen.eatbu.com/?lang=de#",
-      "orderUrl": "https://ricenroll-garbsen.eatbu.com/?lang=de#",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "SUSHI",
-        "VIETNAMESE"
-      ],
-      "openingHours": "Mo-Sa 08:30-22:00; Su 12:30-21:00",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30823",
-        "30826",
-        "30827",
-        "30926"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/302013239; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-richards",
       "regionId": "hannover",
       "name": "Richards",
@@ -16465,38 +15225,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/2579828715; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-ristorante-leonardo-da-vinci",
-      "regionId": "hannover",
-      "name": "Ristorante Leonardo da Vinci",
-      "address": {
-        "street": "Weizenkamp 4",
-        "postcode": "30916",
-        "city": "Isernhagen"
-      },
-      "lat": 52.4757491,
-      "lon": 9.7982372,
-      "phone": "+49 511 77 57 64",
-      "website": "https://www.ledavi-hannover.de",
-      "orderUrl": "https://www.ledavi-hannover.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "Mo,We-Fr 12:00-15:00, 18:00-23:00; Sa 18:00-23:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11409161025; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-ristorante-lucca",
@@ -16658,40 +15386,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/295297457; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-rodizio-baumhaus",
-      "regionId": "hannover",
-      "name": "Rodizio Baumhaus",
-      "address": {
-        "street": "Nürnberger Straße 16",
-        "postcode": "30855",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4411103,
-      "lon": 9.6816389,
-      "phone": "+49 511 72712584",
-      "website": "https://www.rodizio-baumhaus.de/",
-      "orderUrl": "https://www.rodizio-baumhaus.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30855"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/707481124; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-romantico",
@@ -17088,40 +15782,6 @@
       "notes": "pipeline node/288173604; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-saloniki",
-      "regionId": "hannover",
-      "name": "Saloniki",
-      "address": {
-        "street": "Am Kreuzweg 2",
-        "postcode": "30926",
-        "city": "Seelze"
-      },
-      "lat": 52.3963344,
-      "lon": 9.5900786,
-      "phone": "+49 5137 125210",
-      "website": "https://salonikiseelze.de/",
-      "orderUrl": "https://salonikiseelze.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30926"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/3005571191; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-san-marino",
       "regionId": "hannover",
       "name": "San Marino",
@@ -17462,40 +16122,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/11638005725; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-seehaus",
-      "regionId": "hannover",
-      "name": "Seehaus",
-      "address": {
-        "street": "Landwehrdamm 1",
-        "postcode": "30916",
-        "city": "Isernhagen"
-      },
-      "lat": 52.4550635,
-      "lon": 9.7728497,
-      "phone": "+49 511 2351500",
-      "website": "https://seehaus-isernhagen.de/",
-      "orderUrl": "https://seehaus-isernhagen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "We-Su 12:00-21:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30916"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/456306137; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-sen-pizza",
@@ -18028,40 +16654,6 @@
       "notes": "pipeline node/3523086393; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-spazzo-bistrorante",
-      "regionId": "hannover",
-      "name": "Spazzo Bistrorante",
-      "address": {
-        "street": "Rathausplatz 2",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4257501,
-      "lon": 9.59371,
-      "phone": "+49 5131909484",
-      "website": "https://spazzo.eu",
-      "orderUrl": "https://spazzo.eu",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "Mo-Th 11:30-22:00; Fr 11:30-23:00; Sa-Su 12:00-23:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/302002323; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-speiserei",
       "regionId": "hannover",
       "name": "Speiserei",
@@ -18127,40 +16719,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/9020712917; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-sporthof-stelingen",
-      "regionId": "hannover",
-      "name": "Sporthof Stelingen",
-      "address": {
-        "street": "Stöckener Straße 6",
-        "postcode": "30827",
-        "city": "Garbsen"
-      },
-      "lat": 52.4469659,
-      "lon": 9.6286598,
-      "phone": "05131 93935",
-      "website": "https://www.sporthof-stelingen.de/",
-      "orderUrl": "https://www.sporthof-stelingen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "We-Sa 16:00-23:00; Su 12:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30827"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/233526011; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-spatzle-haus",
@@ -19175,39 +17733,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung"
-    },
-    {
-      "id": "hannover-tapas-bar-lorenzo",
-      "regionId": "hannover",
-      "name": "Tapas Bar Lorenzo",
-      "address": {
-        "street": "Am Moore 10",
-        "postcode": "30855",
-        "city": "Langenhagen"
-      },
-      "lat": 52.4359169,
-      "lon": 9.7074263,
-      "phone": "+49 511 8975854",
-      "website": "https://www.tapasbarlorenzo.de/",
-      "orderUrl": "https://www.tapasbarlorenzo.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Sa 17:00-24:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30855"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/8312525447; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-taste-of-india",
@@ -20647,40 +19172,6 @@
       "notes": "pipeline node/5500431719; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-viethouse",
-      "regionId": "hannover",
-      "name": "VietHouse",
-      "address": {
-        "street": "Havelser Straße 2-10",
-        "postcode": "30823",
-        "city": "Garbsen"
-      },
-      "lat": 52.4243958,
-      "lon": 9.5968551,
-      "phone": "+4951314799999",
-      "website": "https://viethouse-garbsen.de/",
-      "orderUrl": "https://viethouse-garbsen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ASIAN"
-      ],
-      "openingHours": "Mo-Sa 10:00-20:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30823"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11446196666; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-vina-97-restaurant",
       "regionId": "hannover",
       "name": "Vina 97 Restaurant",
@@ -20909,39 +19400,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/267556357; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
-      "id": "hannover-wiesendachhaus-im-luftbad-laatzen",
-      "regionId": "hannover",
-      "name": "Wiesendachhaus im Luftbad Laatzen",
-      "address": {
-        "street": "Zum Fugenwinkel 1",
-        "postcode": "30880",
-        "city": "Laatzen"
-      },
-      "lat": 52.310481,
-      "lon": 9.7733833,
-      "phone": "+49 511 96769001",
-      "website": "https://wiesendachhaus-laatzen.de/",
-      "orderUrl": "https://wiesendachhaus-laatzen.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo off; Tu-Sa 12:00-20:00; Su, PH 11:30-20:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30880"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/1579413586; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
       "id": "hannover-wirtshaus-hannover",
@@ -21314,40 +19772,6 @@
       "notes": "pipeline node/1967351947; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     },
     {
-      "id": "hannover-zum-storchennest",
-      "regionId": "hannover",
-      "name": "Zum Storchennest",
-      "address": {
-        "street": "Hohe Bünte 8",
-        "postcode": "30966",
-        "city": "Hemmingen"
-      },
-      "lat": 52.3299446,
-      "lon": 9.7409557,
-      "phone": "+49 511 42 35 95",
-      "website": "https://www.storchennest-hemmingen.de/",
-      "orderUrl": "https://www.storchennest-hemmingen.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30966"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/411847114; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-zur-eiche",
       "regionId": "hannover",
       "name": "Zur Eiche",
@@ -21576,39 +20000,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "anderer Standort als hannover-oz-urfa (Roderbruchmarkt); eigener Shop auf White-Label (eatbu.com)"
-    },
-    {
-      "id": "hannover-ozer-grill",
-      "regionId": "hannover",
-      "name": "Özer Grill",
-      "address": {
-        "street": "Kastanienplatz 9",
-        "postcode": "30926",
-        "city": "Seelze"
-      },
-      "lat": 52.3967761,
-      "lon": 9.6380661,
-      "phone": null,
-      "website": "https://www.oezergrill.de",
-      "orderUrl": "https://www.oezergrill.de",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Fr-We 10:00-23:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30926"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/891849174; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
     }
   ]
 }

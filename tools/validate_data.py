@@ -27,10 +27,45 @@ def main() -> int:
             jsonschema.validate(json.load(f), restaurant_schema)
         print(f"OK  {path}")
 
+    # Cross-Checks: Region-PLZ (postcodes) + Assets-Mirror
+    errors = []
+    for region_path in sorted(glob.glob("data/regions/*/region.json")):
+        region_dir = region_path.rsplit("/", 1)[0]
+        with open(region_path, encoding="utf-8") as f:
+            region = json.load(f)
+        plz_list = set(region.get("postcodes", []))
+        rest_path = f"{region_dir}/restaurants.json"
+        with open(rest_path, encoding="utf-8") as f:
+            dataset = json.load(f)
+        if plz_list:
+            for r in dataset.get("restaurants", []):
+                plz = (r.get("address") or {}).get("postcode")
+                if plz and plz not in plz_list:
+                    errors.append(f"{rest_path}: {r.get('id')} hat PLZ {plz} (Stadt {(r.get('address') or {}).get('city')}), liegt nicht in postcodes von {region_path}")
+        # Assets-Mirror: data/ und app/assets muessen identisch sein
+        for name in ("region.json", "restaurants.json"):
+            asset_path = f"app/src/main/assets/regions/{region['id']}/{name}"
+            try:
+                with open(asset_path, encoding="utf-8") as f:
+                    asset = json.load(f)
+            except FileNotFoundError:
+                errors.append(f"fehlendes Asset: {asset_path}")
+                continue
+            with open(f"{region_dir}/{name}", encoding="utf-8") as f:
+                src = json.load(f)
+            if asset != src:
+                errors.append(f"Asset nicht identisch mit data/: {asset_path} != {region_dir}/{name}")
+
     for path in sorted(glob.glob("app/src/main/assets/**/*.json", recursive=True)):
         with open(path, encoding="utf-8") as f:
             json.load(f)
         print(f"OK  {path}")
+
+    if errors:
+        for e in errors:
+            print(f"ERROR  {e}", file=sys.stderr)
+        print("DATA ERRORS", file=sys.stderr)
+        return 1
 
     print("ALL DATA OK")
     return 0
