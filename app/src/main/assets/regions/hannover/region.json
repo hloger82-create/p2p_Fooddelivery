@@ -30,7 +30,18 @@
     "online-pizza.de",
     "webimbiss.de",
     "vuyo.me",
-    "bizsite.link"
+    "bizsite.link",
+    "speisekartenweb.de",
+    "restaurantguru.com",
+    "mymenuweb.com",
+    "gastroguide.de",
+    "essen-in-hannover.de",
+    "coolibri.de",
+    "doenieren.in",
+    "menustic.com",
+    "lieferplatz.de",
+    "mcbring.de",
+    "hammerpizza.de"
   ],
   "datasetUrl": "https://raw.githubusercontent.com/hloger82-create/p2p_Fooddelivery/main/data/regions/hannover/restaurants.json",
   "chainDomains": [
@@ -61,6 +72,8 @@
     "eathappy.de",
     "ikea.com",
     "paulaner-am-thielenplatz.de",
-    "paulaner-langenhagen.de"
+    "paulaner-langenhagen.de",
+    "foodbrother.com",
+    "bellaitalia.de"
   ]
 }
