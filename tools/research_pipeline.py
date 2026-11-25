@@ -43,12 +43,21 @@ USER_AGENT = (
 
 CUISINE_MAP = {
     "pizza": "PIZZA", "italian": "ITALIAN", "pasta": "ITALIAN",
-    "kebab": "DOENER", "doner": "DOENER", "turkish": "TURKISH", "greek": "GREEK",
+    "kebab": "DOENER", "doner": "DOENER", "doener kebab": "DOENER", "falafel": "DOENER",
+    "turkish": "TURKISH", "tuerkisch": "TURKISH",
+    "greek": "GREEK", "griechisch": "GREEK", "gyros": "GREEK",
     "burger": "BURGER", "american": "AMERICAN", "grill": "GRILL",
     "sushi": "SUSHI", "japanese": "ASIAN", "chinese": "CHINESE", "thai": "THAI",
     "vietnamese": "VIETNAMESE", "indian": "INDIAN", "asian": "ASIAN",
-    "mexican": "MEXICAN", "falafel": "DOENER",
+    "mexican": "MEXICAN",
 }
+
+
+def norm_cuisine_key(s: str) -> str:
+    """Normalisiert cuisine-Werte (OSM/JSON-LD): lowercase, Umlaute -> ae/oe/ue, '_'/'-' -> ' '."""
+    return (s.strip().lower()
+            .replace("ö", "oe").replace("ä", "ae").replace("ü", "ue").replace("ß", "ss")
+            .replace("_", " ").replace("-", " "))
 
 WEBSHOP_HINTS = [
     "woocommerce", "shopify", "shopware", "simplywebshop", "app-smart",
@@ -341,11 +350,11 @@ def classify_cuisines(tags: dict, analysis: dict) -> tuple:
     cuisines = set()
     raw = tags.get("cuisine", "")
     for part in re.split(r"[;,]", raw):
-        key = part.strip().lower()
+        key = norm_cuisine_key(part)
         if key in CUISINE_MAP:
             cuisines.add(CUISINE_MAP[key])
     for c in analysis.get("servesCuisine", []):
-        key = c.strip().lower()
+        key = norm_cuisine_key(str(c))
         if key in CUISINE_MAP:
             cuisines.add(CUISINE_MAP[key])
     source = "stated" if cuisines else None
