@@ -90,7 +90,9 @@ def main() -> int:
             return True
         return (str(c.get("name", "")).lower(), candidate_plz(c)) in skip_names
 
-    all_reviews = [c for c in data.get("candidates", []) if c.get("status") == "review"]
+    # review + auto_accept: auto_accept faellt nicht ins manuelle Review, muss aber gemergt werden
+    # (mit merge_candidates.py --auto-verify werden die eindeutigen Faelle direkt verified)
+    all_reviews = [c for c in data.get("candidates", []) if c.get("status") in ("review", "auto_accept")]
     reviews = [c for c in all_reviews if not known(c)]
     skipped = len(all_reviews) - len(reviews)
     reviews.sort(key=score, reverse=True)
@@ -98,7 +100,7 @@ def main() -> int:
         reviews = reviews[: args.limit]
 
     lines = [
-        f"# Review-Queue {data.get('regionId', '?')} ({len(reviews)} Faelle, {skipped} bereits bekannte uebersprungen, sortiert nach Score)",
+        f"# Review-Queue {data.get('regionId', '?')} ({len(reviews)} neue Faelle [review/auto_accept], {skipped} bereits bekannte uebersprungen, sortiert nach Score)",
         "",
         "Score: delivery-Tag +3, eigener Webshop +3, takeaway-Tag +2, Telefon +1, Impressum +1, Koords +1, Website down -2.",
         "",

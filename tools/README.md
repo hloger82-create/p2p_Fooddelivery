@@ -85,8 +85,12 @@ python tools\research_pipeline.py --region data\regions\hannover\region.json --o
 # Queue mit nur NEUEN Faellen (bekannte Domains aus restaurants.json + alte Queue ausschliessen)
 python tools\review_queue.py --candidates data\regions\hannover\candidates.json --restaurants data\regions\hannover\restaurants.json --exclude-queue data\regions\hannover\review-queue-old.md --out data\regions\hannover\review-queue.md
 
-# neue Faelle manuell reviewen (QS-Checkliste im Queue-Header), dann NUR diese mergen:
-python tools\merge_candidates.py --candidates data\regions\hannover\candidates.json --out data\regions\hannover\restaurants.json --region data\regions\hannover\region.json --only-queue data\regions\hannover\review-queue.md
+# mergen — NUR die neue Queue; --auto-verify markiert eindeutige auto_accept-Faelle
+# (eigener Webshop + Impressum + PLZ in Region + Kueche stated) direkt als verified:
+python tools\merge_candidates.py --candidates data\regions\hannover\candidates.json --out data\regions\hannover\restaurants.json --region data\regions\hannover\region.json --only-queue data\regions\hannover\review-queue.md --auto-verify
+# danach manuell nur noch die uebrigen pending_review-Eintraege reviewen (QS-Checkliste im Queue-Header):
+#   Uebersicht: review-queue.md (Tabelle mit Website-Spalte)  |  Edit: restaurants.json, nach "pending_review" suchen
+#   Tipp: git diff nach dem Merge zeigt genau die neuen Eintraege
 python tools\validate_data.py
 Copy-Item data\regions\hannover\restaurants.json app\src\main\assets\regions\hannover\restaurants.json
 git add -A

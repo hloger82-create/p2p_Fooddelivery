@@ -18,6 +18,7 @@ import json
 import re
 import sys
 import unicodedata
+from datetime import date
 from urllib.parse import urlparse
 
 CHANNEL_TO_TYPES = {
@@ -106,6 +107,10 @@ def main() -> int:
                     help="nur Kandidaten ab diesem Status mergen (auto_accept = nur automatisch bestandene Checks)")
     ap.add_argument("--only-queue", default=None,
                     help="nur Kandidaten mergen, die in dieser review-queue.md stehen (Website-Domain oder Name+PLZ); fuer Re-Runs nach manueller Pruefung der NEUEN Queue")
+    ap.add_argument("--auto-verify", action="store_true",
+                    help="auto_accept-Kandidaten, die ALLE folgenden Kriterien erfuellen, direkt als verified uebernehmen: "
+                         "eigener Webshop + Impressum gefunden + PLZ in Region + Kueche stated (cuisineSource=stated). "
+                         "Alles andere bleibt pending_review fuer die manuelle QS-Pruefung.")
     args = ap.parse_args()
 
     allowed_fn = None
@@ -157,7 +162,7 @@ def main() -> int:
     existing_ids = {r["id"] for r in dataset["restaurants"]}
     existing_domains = {domain(r.get("website")) for r in dataset["restaurants"]} - {None}
 
-    added, skipped_dup, skipped_reject, skipped_queue = 0, 0, 0, 0
+    added, skipped_dup, skipped_reject, skipped_queue, auto_verified = 0, 0, 0, 0, 0
     rank = {"auto_accept": 2, "review": 1, "reject": 0}
     min_rank = rank[args.min_status]
     for c in all_candidates:
@@ -175,6 +180,17 @@ def main() -> int:
             skipped_dup += 1
             continue
         entry = candidate_to_entry(c, region_id, region_name, existing_ids)
+        if args.auto_verify and c.get("status") == "auto_accept":
+            checks = c.get("checks", {})
+            if (c.get("analysis", {}).get("orderChannel") == "webshop"
+                    and checks.get("imprintFound")
+                    and checks.get("inRegionPostcode")
+                    and c.get("cuisineSource") == "stated"):
+                entry["status"] = "verified"
+                entry["lastVerified"] = date.today().isoformat()
+                entry["source"] = "pipeline+auto_verified"
+                entry["notes"] = (entry.get("notes") or "") + " | auto_verified: Webshop+Impressum+PLZ-in-Region+Kueche stated"
+                auto_verified += 1
         dataset["restaurants"].append(entry)
         existing_domains.add(domain(c.get("website")))
         added += 1
@@ -184,8 +200,8 @@ def main() -> int:
         json.dump(dataset, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    print(f"added={added} skipped_duplicates={skipped_dup} skipped_reject/no_website={skipped_reject} "
-          f"skipped_not_in_queue={skipped_queue} -> {args.out}")
+    print(f"added={added} (davon auto_verified={auto_verified}) skipped_duplicates={skipped_dup} "
+          f"skipped_reject/no_website={skipped_reject} skipped_not_in_queue={skipped_queue} -> {args.out}")
     return 0
 
 
