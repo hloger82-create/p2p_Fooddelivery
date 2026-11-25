@@ -75,8 +75,11 @@ ORDER_LINK_HINTS = ["bestellen", "bestellung", "order", "webshop", "shop", "lief
 STRONG_ORDER_HINTS = ["bestellen", "warenkorb", "checkout", "bestellshop", "in den warenkorb", "add to cart"]
 GUTSCHEIN_HINTS = ["gutschein", "voucher", "geschenkkarte"]
 # Plattform-betriebene "eigene" Seiten (z. B. "betrieben und verwaltet durch Lieferando.de")
-PLATFORM_MANAGED_HINTS = ["betrieben und verwaltet durch", "betrieben und verwaltet von", "verwaltet durch", "verwaltet von",
-                          "managed by", "powered by", "bereitgestellt von"]
+# Starke Phrasen: Plattform-Name (Domain oder Root) muss mit im Text stehen.
+# Schwache Phrasen ("powered by"): nur mit voller Plattform-Domain (sonst "Powered by WordPress"!).
+STRONG_MANAGED_HINTS = ["betrieben und verwaltet durch", "betrieben und verwaltet von", "verwaltet durch", "verwaltet von", "managed by"]
+WEAK_MANAGED_HINTS = ["powered by", "bereitgestellt von"]
+ANALYSIS_VERSION = 3  # Cache-Invalidierung bei Aenderungen an der Analyse
 DELIVERY_HINTS = ["liefergebiet", "liefern wir", "wir liefern", "delivery area", "liefern nach"]
 RESERVATION_HINTS = ["reservier", "tischreserv", "opentable", "bookatable", "quandoo", "resmio", "formitable"]
 FOOD_ORDER_HINTS = ["bestellen", "warenkorb", "speisekarte", "cart", "checkout", "liefern", "abholen", "lieferservice", "bringdienst", "webshop"]
@@ -191,6 +194,7 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
         "platformHit": None,
         "platformLinkOnHomepage": None,
         "platformManaged": None,
+        "analysisVersion": ANALYSIS_VERSION,
         "phone": None,
         "openingHours": None,
         "servesCuisine": [],
@@ -241,10 +245,19 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     platform_hit = None
     own_shop = False
     platform_managed = None
-    for h in PLATFORM_MANAGED_HINTS:
+    for h in STRONG_MANAGED_HINTS:
         if h in low:
-            platform_managed = next((d for d in session.blocklist if d in low), h)
-            break
+            hit = next((d for d in session.blocklist if d in low or d.split(".")[0] in low), None)
+            if hit:
+                platform_managed = hit
+                break
+    if platform_managed is None:
+        for h in WEAK_MANAGED_HINTS:
+            if h in low:
+                hit = next((d for d in session.blocklist if d in low), None)
+                if hit:
+                    platform_managed = hit
+                    break
     result["platformManaged"] = platform_managed
     # jeder Link auf der Startseite zu einer Plattform-Domain (z. B. Lieferando im Footer/Menue)
     for href in re.findall(r'href=["\']([^"\']+)["\']', html, flags=re.I):
@@ -500,12 +513,11 @@ def main():
     if os.path.exists(cache_path):
         with open(cache_path, encoding="utf-8") as f:
             cache = json.load(f)
-        # Cache-Invalidierung: Analysen ohne neue Felder (platformLinkOnHomepage/platformManaged)
-        # stammen von einem aelteren Pipeline-Stand und werden neu analysiert
-        stale = [d for d, a in cache.items() if "platformLinkOnHomepage" not in a]
+        # Cache-Invalidierung: Analysen mit aelterer analysisVersion werden neu geholt
+        stale = [d for d, a in cache.items() if a.get("analysisVersion", 0) < ANALYSIS_VERSION]
         if stale:
-            print(f"      Cache-Invalidierung: {len(stale)} alte Analysen werden neu geholt")
-            cache = {d: a for d, a in cache.items() if "platformLinkOnHomepage" in a}
+            print(f"      Cache-Invalidierung: {len(stale)} alte Analysen (Version < {ANALYSIS_VERSION}) werden neu geholt")
+            cache = {d: a for d, a in cache.items() if a.get("analysisVersion", 0) >= ANALYSIS_VERSION}
         print(f"      Analyse-Cache geladen: {len(cache)} Domains")
 
     candidates = []

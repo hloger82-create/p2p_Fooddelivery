@@ -55,13 +55,17 @@ def main() -> int:
     for r in ds.get("restaurants", []):
         c = cand_of(r)
         a = (c or {}).get("analysis", {}) if c else {}
-        if a.get("platformManaged"):
-            removed.append((r["id"], f"platformManaged={a.get('platformManaged')}"))
+        # platformManaged nur werten, wenn eine echte Domain erkannt wurde (kein Klartext wie "powered by")
+        pm = a.get("platformManaged")
+        if pm and "." in str(pm):
+            removed.append((r["id"], f"Seite wird von Plattform verwaltet ({pm})"))
             continue
-        if a.get("platformLinkOnHomepage") and a.get("orderChannel") != "webshop":
+        # Plattform-Link auf Startseite: nur entfernen, wenn der Eintrag KEINEN eigenen Webshop behauptet
+        # (manuelle Verifizierung im Eintrag schlaegt Pipeline-Heuristik)
+        if a.get("platformLinkOnHomepage") and "WEBSHOP" not in r.get("orderTypes", []):
             removed.append((r["id"], f"Startseite verlinkt {a.get('platformLinkOnHomepage')}, kein eigener Webshop"))
             continue
-        if a.get("platformLinkOnHomepage") and a.get("orderChannel") == "webshop":
+        if a.get("platformLinkOnHomepage"):
             kept_link.append((r["id"], a.get("platformLinkOnHomepage")))
         out.append(r)
 
