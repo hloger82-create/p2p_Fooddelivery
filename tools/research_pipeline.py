@@ -43,7 +43,7 @@ USER_AGENT = (
 
 CUISINE_MAP = {
     "pizza": "PIZZA", "italian": "ITALIAN", "pasta": "ITALIAN",
-    "kebab": "DOENER", "doner": "DOENER", "doener kebab": "DOENER", "falafel": "DOENER",
+    "kebab": "DOENER", "doner": "DOENER", "doener": "DOENER", "doener kebab": "DOENER", "falafel": "DOENER",
     "turkish": "TURKISH", "tuerkisch": "TURKISH",
     "greek": "GREEK", "griechisch": "GREEK", "gyros": "GREEK",
     "burger": "BURGER", "american": "AMERICAN", "grill": "GRILL",
