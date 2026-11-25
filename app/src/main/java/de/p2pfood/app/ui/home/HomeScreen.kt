@@ -18,11 +18,12 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilledTonalTextField
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
@@ -85,7 +86,7 @@ fun HomeScreen(
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
-                        FilledTonalTextField(
+                        OutlinedTextField(
                             value = state.filters.query,
                             onValueChange = viewModel::setQuery,
                             modifier = Modifier.weight(1f).height(52.dp),
@@ -94,16 +95,28 @@ fun HomeScreen(
                             label = { Text(stringResource(R.string.search_hint), style = MaterialTheme.typography.bodySmall) },
                             placeholder = { Text(stringResource(R.string.search_hint), style = MaterialTheme.typography.bodySmall) },
                             leadingIcon = { Icon(Icons.Default.Search, contentDescription = null, modifier = Modifier.size(20.dp)) },
+                            colors = OutlinedTextFieldDefaults.colors(
+                                focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                                unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                                focusedBorderColor = MaterialTheme.colorScheme.primary,
+                                unfocusedBorderColor = MaterialTheme.colorScheme.outline,
+                            ),
                         )
-                        FilledTonalTextField(
+                        OutlinedTextField(
                             value = state.filters.postcode,
                             onValueChange = viewModel::setPostcode,
-                            modifier = Modifier.width(104.dp).height(52.dp),
+                            modifier = Modifier.width(110.dp).height(52.dp),
                             singleLine = true,
                             textStyle = MaterialTheme.typography.bodyMedium,
                             label = { Text(stringResource(R.string.postcode_hint), style = MaterialTheme.typography.bodySmall) },
                             placeholder = { Text(stringResource(R.string.postcode_example), style = MaterialTheme.typography.bodySmall) },
                             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                            colors = OutlinedTextFieldDefaults.colors(
+                                focusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                                unfocusedContainerColor = MaterialTheme.colorScheme.surfaceVariant,
+                                focusedBorderColor = MaterialTheme.colorScheme.primary,
+                                unfocusedBorderColor = MaterialTheme.colorScheme.outline,
+                            ),
                         )
                         IconButton(
                             onClick = viewModel::toggleFavoritesOnly,
