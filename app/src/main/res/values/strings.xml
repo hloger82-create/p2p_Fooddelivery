@@ -32,7 +32,7 @@
     <string name="open_now">Jetzt geöffnet</string>
     <string name="help">Hilfe anzeigen</string>
     <string name="help_title">Wie funktioniert die App?</string>
-    <string name="help_body">• Suchfeld: nach Name oder Küche suchen, z. B. „pizza" oder „döner".\n• PLZ-Feld: zeigt nur Restaurants, die zu dieser PLZ liefern.\n• Filter: Küche, Bestellmöglichkeit, Liefert, Jetzt geöffnet, Favoriten (Stern).\n• Karte: Marker sind nach Küche eingefärbt; die Legende oben links lässt sich ein-/ausklappen; Tipp auf einen Marker öffnet die Details.\n• „Zum Restaurant" öffnet die eigene Bestellseite des Restaurants im Browser – ganz ohne Liefer-Plattformen.</string>
+    <string name="help_body">• Suchfeld: nach Name oder Küche suchen, z. B. „pizza" oder „döner".\n• PLZ-Feld: zeigt nur Restaurants, die zu dieser PLZ liefern – ist kein Liefergebiet hinterlegt, zählt jede PLZ (sofern das Restaurant überhaupt liefert).\n• Filter: Küche, Bestellmöglichkeit, Liefert, Jetzt geöffnet, Favoriten (Stern).\n• Karte: Marker sind nach Küche eingefärbt; die Legende oben links lässt sich ein-/ausklappen; Tipp auf einen Marker öffnet die Details.\n• „Zum Restaurant" öffnet die eigene Bestellseite des Restaurants im Browser – ganz ohne Liefer-Plattformen.</string>
     <string name="understood">Verstanden</string>
     <string name="legend">Legende</string>
     <string name="plz_outside_region">Diese PLZ liegt nicht in %1$s.</string>
