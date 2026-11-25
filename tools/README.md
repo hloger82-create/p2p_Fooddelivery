@@ -105,8 +105,10 @@ Wichtig: Beim Merge `--only-queue` mit der NEUEN Queue verwenden, sonst landen b
 Aktuell 585 von 608 Eintraegen in Hannover sind `pending_review` (Badge in der App). Checkliste erzeugen:
 
 ```powershell
-python tools\pending_review.py --restaurants data\regions\hannover\restaurants.json --out data\regions\hannover\pending-review.md
+python tools\pending_review.py --restaurants data\regions\hannover\restaurants.json --candidates data\regions\hannover\candidates.json --out data\regions\hannover\pending-review.md
 ```
+
+Die Spalte **QS-Flags** markiert Zweifelsfaelle gegen die aktuellen Regeln (WEBSHOP? = Pipeline sieht nur Telefon, PICKUP? = kein takeaway/abhol-Nachweis, LIEFERT? = kein Liefer-Nachweis) — manuell pruefen, korrigieren oder loeschen.
 
 - `data\regions\hannover\pending-review.md` oeffnen (in Android Studio/VS Code): abhakbare Tabelle, WEBSHOP-Eintraege zuerst, inkl. Website/Tel und den Pipeline-Flags (Impressum/Kanal/PLZ aus den notes).
 - Pro Eintrag Website aufrufen und die QS-Checkliste abarbeiten (steht im Header der Liste; Details in `docs/RESEARCH-PIPELINE.md` "Manuelle Verifizierung"): PLZ in Region, Impressum + eigener Kanal, Kueche (stated uebernehmen / sonst ableiten mit `cuisineSource: "derived"` + notes-Vermerk), delivers/pickup nur mit Nachweis.
