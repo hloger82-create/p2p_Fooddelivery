@@ -26,6 +26,7 @@
     <string name="map_no_coords">Keine Koordinaten hinterlegt — bitte Recherche-Pipeline (Geocoding) laufen lassen.</string>
     <string name="search_hint">Name oder Küche suchen…</string>
     <string name="postcode_hint">PLZ</string>
+    <string name="postcode_example">z. B. 30159</string>
     <string name="favorites">Favoriten</string>
     <string name="toggle_theme">Hell/Dunkel wechseln</string>
     <string name="open_now">Jetzt geöffnet</string>
