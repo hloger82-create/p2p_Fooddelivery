@@ -100,6 +100,19 @@ git push
 
 Wichtig: Beim Merge `--only-queue` mit der NEUEN Queue verwenden, sonst landen bereits abgelehnte Kandidaten erneut als `pending_review` im Datensatz. Ohne `--only-queue` waeren beim letzten Stand z. B. 101 alte Rejects wieder dazugekommen.
 
+## Bestand verifizieren (Badge "Verifizierung offen" entfernen)
+
+Aktuell 585 von 608 Eintraegen in Hannover sind `pending_review` (Badge in der App). Checkliste erzeugen:
+
+```powershell
+python tools\pending_review.py --restaurants data\regions\hannover\restaurants.json --out data\regions\hannover\pending-review.md
+```
+
+- `data\regions\hannover\pending-review.md` oeffnen (in Android Studio/VS Code): abhakbare Tabelle, WEBSHOP-Eintraege zuerst, inkl. Website/Tel und den Pipeline-Flags (Impressum/Kanal/PLZ aus den notes).
+- Pro Eintrag Website aufrufen und die QS-Checkliste abarbeiten (steht im Header der Liste; Details in `docs/RESEARCH-PIPELINE.md` "Manuelle Verifizierung"): PLZ in Region, Impressum + eigener Kanal, Kueche (stated uebernehmen / sonst ableiten mit `cuisineSource: "derived"` + notes-Vermerk), delivers/pickup nur mit Nachweis.
+- In `restaurants.json` pro geprueftem Eintrag setzen: `"status": "verified"`, `"lastVerified": "<heute>"` (Badge verschwindet bei `status == verified`, siehe `RestaurantListScreen.kt`). Ablehnen = Eintrag loeschen.
+- Danach: `python tools\validate_data.py` (ALL DATA OK), `Copy-Item data\regions\hannover\restaurants.json app\src\main\assets\regions\hannover\restaurants.json`, commit + push. Checkliste bei Bedarf neu erzeugen (Snapshot).
+
 ## Neue Region
 
 1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, `postcodes` = explizite PLZ-Liste, Blocklist).
