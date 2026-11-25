@@ -73,6 +73,7 @@
     "hammerpizza.de"
   ],
   "datasetUrl": "https://raw.githubusercontent.com/hloger82-create/p2p_Fooddelivery/main/data/regions/hannover/restaurants.json",
+  "reportUrl": "https://github.com/hloger82-create/p2p_Fooddelivery/issues/new?template=restaurant-melden.md",
   "chainDomains": [
     "kfc.de",
     "mcdonalds.de",

@@ -26,6 +26,11 @@
     },
     "platformBlocklist": { "type": "array", "items": { "type": "string" } },
     "datasetUrl": { "type": ["string", "null"], "format": "uri" },
+    "reportUrl": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Link-Out fuer 'Restaurant melden' (z. B. GitHub-Issue-Template mit vorausgefuelltem Titel/Body via Query-Parameter)"
+    },
     "chainDomains": { "type": "array", "items": { "type": "string" } }
   }
 }

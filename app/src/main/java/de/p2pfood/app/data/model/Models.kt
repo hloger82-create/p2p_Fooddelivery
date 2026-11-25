@@ -83,4 +83,5 @@ data class RegionConfig(
     val postcodes: List<String> = emptyList(),
     val platformBlocklist: List<String> = emptyList(),
     val datasetUrl: String? = null,
+    val reportUrl: String? = null,
 )

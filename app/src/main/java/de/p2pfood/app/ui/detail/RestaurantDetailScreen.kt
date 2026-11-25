@@ -1,5 +1,6 @@
 package de.p2pfood.app.ui.detail
 
+import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -17,6 +18,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Call
+import androidx.compose.material.icons.filled.Flag
 import androidx.compose.material.icons.filled.OpenInBrowser
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
@@ -32,6 +34,7 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -54,6 +57,7 @@ fun RestaurantDetailScreen(
     onBack: () -> Unit,
 ) {
     val restaurant by viewModel.restaurant.collectAsState()
+    val reportUrl by viewModel.reportUrl.collectAsState()
     val context = LocalContext.current
 
     Scaffold(
@@ -126,6 +130,34 @@ fun RestaurantDetailScreen(
                     Icon(Icons.Default.Call, contentDescription = null)
                     Spacer(Modifier.padding(4.dp))
                     Text(stringResource(R.string.action_call))
+                }
+            }
+
+            val report = reportUrl
+            if (report != null) {
+                TextButton(
+                    onClick = {
+                        val sep = if (report.contains("?")) "&" else "?"
+                        val addr = listOfNotNull(r.address.street, listOfNotNull(r.address.postcode, r.address.city).joinToString(" ").takeIf { it.isNotBlank() }).joinToString(", ")
+                        val body = buildString {
+                            append("Restaurant-ID: ").append(r.id).append('\n')
+                            append("Name: ").append(r.name).append('\n')
+                            append("Website: ").append(r.website ?: "-").append('\n')
+                            append("Adresse: ").append(addr.ifBlank { "-" }).append('\n')
+                            append("Telefon: ").append(r.phone ?: "-").append('\n')
+                            append('\n').append("**Problem**").append('\n').append('\n')
+                            append("**Beschreibung**").append('\n')
+                        }
+                        val url = report + sep +
+                            "title=" + Uri.encode("[Meldung] ${r.name} (${r.id})") +
+                            "&body=" + Uri.encode(body)
+                        context.openExternal(url)
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Icon(Icons.Default.Flag, contentDescription = null)
+                    Spacer(Modifier.padding(4.dp))
+                    Text(stringResource(R.string.report_restaurant))
                 }
             }
 

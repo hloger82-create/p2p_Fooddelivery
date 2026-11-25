@@ -7,6 +7,7 @@ Android-App (v1: Region **Hannover**), die lokale Restaurants mit **eigener Lief
 - Listen- und Kartenansicht (OpenStreetMap via OSMdroid, mit ODbL-Namensnennung)
 - Filter: Kueche (Pizza, Doener, Asiatisch, Sushi, ...) und Bestellmoeglichkeit (Online-Shop, Telefon, Abholung) sowie „Liefert"
 - Detailseite mit Adresse, Telefon (tap-to-call), Liefergebiet, „Zum Restaurant"-Button (öffnet externen Link)
+- „Restaurant melden": Button auf der Detailseite öffnet ein vorausgefülltes GitHub-Issue (Template `.github/ISSUE_TEMPLATE/restaurant-melden.md`, URL konfigurierbar via `reportUrl` in `region.json`)
 - Regionsbasiert: neue Stadt = neue Config + neues Dataset, kein Code-Eingriff
 
 ## Repo-Layout
