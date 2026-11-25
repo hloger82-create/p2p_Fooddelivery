@@ -57,6 +57,9 @@ def main() -> int:
                 h = host_of(web)
                 if any(h == b or h.endswith("." + b) for b in blocklist):
                     errors.append(f"{rest_path}: {r.get('id')} verlinkt auf Plattform-Domain {web} -> Ausschluss")
+            # QS-Regel: weder Lieferung noch Abholung -> Telefon vermutlich nur Reservierung -> Ausschluss
+            if not r.get("delivers") and not r.get("pickup"):
+                errors.append(f"{rest_path}: {r.get('id')} bietet weder Lieferung noch Abholung -> Ausschluss")
         # Assets-Mirror: data/ und app/assets muessen identisch sein
         for name in ("region.json", "restaurants.json"):
             asset_path = f"app/src/main/assets/regions/{region['id']}/{name}"

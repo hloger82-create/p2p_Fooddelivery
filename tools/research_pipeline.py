@@ -395,6 +395,14 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
         "notPlatformOnly": analysis.get("orderChannel") not in (None, "platform_only"),
         "hasOrderChannel": analysis.get("orderChannel") is not None,
         "inRegionPostcode": True,
+        # QS-Regel: weder Lieferung noch Abholung nachweisbar -> Telefon vermutlich nur Reservierung -> Ausschluss
+        # (eigener Webshop zaehlt als Bestellung auf Distanz)
+        "hasDistanceOrder": (
+            tags.get("delivery") in ("yes", "only")
+            or bool(analysis.get("deliveryMentioned"))
+            or tags.get("takeaway") in ("yes", "only")
+            or analysis.get("orderChannel") == "webshop"
+        ),
     }
     plz = tags.get("addr:postcode", "")
     plz_list = set(region.get("postcodes", []))
@@ -407,6 +415,8 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
         reasons.append(f"PLZ {plz} nicht in Region {region.get('id')}")
     if not checks["hasWebsite"]:
         reasons.append("keine Website -> Ausschluss (App ist reines Link-Out: ohne Website kann der User sich das Restaurant nirgends ansehen)")
+    if not checks["hasDistanceOrder"]:
+        reasons.append("weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss")
     if checks["hasWebsite"] and not checks["homepageReachable"]:
         reasons.append("Website nicht erreichbar")
     if not checks["imprintFound"]:
@@ -418,6 +428,7 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
 
     if (chain_blocked
             or not checks["hasWebsite"]
+            or not checks["hasDistanceOrder"]
             or analysis.get("platformManaged")
             or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"])
             or not checks["inRegionPostcode"]):

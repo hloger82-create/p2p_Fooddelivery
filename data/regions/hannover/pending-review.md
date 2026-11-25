@@ -1,4 +1,4 @@
-# Pending Review hannover (501 Eintraege, WEBSHOP zuerst, dann Name)
+# Pending Review hannover (460 Eintraege, WEBSHOP zuerst, dann Name)
 
 Badge "Verifizierung offen" verschwindet in der App, wenn im Eintrag gesetzt: `"status": "verified"` + `"lastVerified": "<heute>"`.
 QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), 3) Kueche: stated uebernehmen, sonst Speisen analysieren -> `cuisineSource: "derived"` + Vermerk in notes, 4) delivers/pickup nur mit Nachweis, 5) status=verified + lastVerified.
@@ -246,33 +246,25 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Zur Eiche | 30455 | OTHER | WEBSHOP,PHONE | L/A | https://zur-eiche-cafe-bar.9gg.de | +49 0511490525 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Öz Antalya Kebap | 30459 | TURKISH | WEBSHOP,PHONE | -/A | https://www.oez-antalya.de/ | +49 511 2347801 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | ÖZ URFA 63 | - | DOENER,TURKISH | WEBSHOP | L/- | https://soez-urfa-63.eatbu.com/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | 11A | 30449 | OTHER | PHONE | -/- | https://www.11a-restaurant.de/ | +49 511 5901111 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | 6 Sinne | 30159 | OTHER | PHONE,PICKUP | -/A | https://www.6sinne-hannover.de/ | +49 511 47388038 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | 993 Restaurant & Bar | 30173 | OTHER | PHONE,PICKUP | -/A | https://993-hannover.de/ | +49 511 56377742 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | [hof:geflüster] | - | OTHER | PHONE,PICKUP | -/A | http://hofgeflüster.com/ | +49 511 80606630 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Acht & Siebzig | 30169 | OTHER | PHONE,PICKUP | -/A | https://www.achtundsiebzig.de/ | +49 051194020922 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Adam's Kitchen | 30657 | BURGER,ITALIAN,PIZZA | PHONE,PICKUP | -/A | https://www.adamskitchen.de/ | +49 511 89829576 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Adesso | 30163 | ITALIAN | PHONE,PICKUP | -/A | https://adesso-feinkost.de/index.php/start/ | +49 511 54545342 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Adraitic | - | OTHER | - | -/- | https://adriatic-hotel.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Alanya | 30659 | TURKISH | PHONE,PICKUP | -/A | http://alanya-restaurant.de/ | +49 511 69097935 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Alexander | 30159 | OTHER | PHONE | -/A | https://www.alexander-hannover.de/ | +49 511 325826 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Alioli | 30559 | OTHER | PHONE | -/A | https://spanier-hannover.de/ | +49 511 37369300 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Alte Hahnenburg | 30559 | OTHER | PHONE | -/A | https://www.alte-hahnenburg.com | +49 511 526200 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Alter Bahnhof Anderten | 30559 | OTHER | PHONE | -/A | https://www.alter-bahnhof-anderten.de | +49 511 591710 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Amici miei | 30161 | ITALIAN | PHONE,PICKUP | -/A | https://amici-miei.de | +49 511 343829 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Aram Kebab Haus | - | DOENER | - | -/- | https://aram-kebab-haus.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Aristoteles | 30165 | GREEK | PHONE,PICKUP | -/A | http://www.aristoteles-hannover.de/ | +49 511 3482141 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Artemis | 30451 | GREEK | - | -/- | https://artemis-restaurant-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Artinos | 30627 | GREEK | PHONE,PICKUP | -/A | http://www.artinos-hannover.de/ | +49 511 80604345 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Asia Bistro Thanh An | 30179 | ASIAN | - | -/- | http://thanhan.gruetze.eu | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Asia Food Hannover | 30159 | ASIAN,SUSHI,THAI,VIETNAMESE | PHONE,PICKUP | -/A | https://asiafood-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Asia Regent | - | ASIAN | - | -/- | https://www.asia-regent.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Aspera | 30161 | TURKISH | PHONE,PICKUP | -/A | https://aspera-restaurant-hannover.de/ | +49 051189849810 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Atlantis | 30419 | GREEK,ITALIAN | PHONE,PICKUP | -/A | https://www.atlantis-hannover.de | +49 511 753570 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Atrium | 30159 | OTHER | PHONE,PICKUP | -/A | https://www.altes-rathaus-hannover.de/ | +49 511 3008040 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | A´Mura | 30159 | ITALIAN | PHONE | -/A | https://www.a-mura.de/ | +49 511 328665 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Bab al Yemen | 30159 | OTHER | - | -/- | https://bab-al-yemen-modern.de/speisekarte/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Baba | 30657 | DOENER | - | -/- | https://restaurant-baba.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Baba Mia | 30159 | BURGER | PHONE,PICKUP | -/A | https://babamia.de | +49 511 60499924 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Bahnhof Leinhausen | 30419 | OTHER | PHONE | -/A | https://www.bahnhof-leinhausen.de/ | +495112794900 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Bambus Garden | - | CHINESE | PHONE | -/A | https://www.bambus-garden-kirchrode.de/ | +49 511 80 69 083 | Impressum:ja Kanal:ja PLZ:ja | - |
@@ -281,17 +273,13 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Beckmann's Restaurant & Weinhaus | - | ITALIAN | PHONE | -/A | https://www.beckmanns-weinhaus.de/ | +495111316891 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Bei Mario | - | PIZZA,ITALIAN | PHONE,PICKUP | -/A | https://beimario-listerdamm.de/ | +49 511 631412 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Beiwi | 30165 | CHINESE | PHONE,PICKUP | -/A | http://www.beiwi-buffet.de | +49 511 89943710 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Benatis | - | OTHER | - | -/- | https://www.sc-schwarz-gold.de/vereinsheim.html | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Bistro Classico | - | ITALIAN | - | -/- | https://www.sportcenter-empelde.de/bistro-classico | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Bistro Da Toni | 30163 | ITALIAN | PHONE,PICKUP | -/A | https://www.bistrodatoni.de/ | +49 511 5906990 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | BLOCK HOUSE | 30159 | OTHER | PHONE | -/A | https://www.block-house.de/restaurants/hannover/am-kroepcke/ | +49 511 32 12 39 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Bohoo | 30167 | OTHER | PHONE,PICKUP | -/A | https://cafebohoo.de/ | +49 511 79095018 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | bona'me | 30159 | TURKISH,OTHER | PHONE,PICKUP | -/A | https://bona-me.de/hannover-boname/ | +49 511 12376880 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Brauereigaststätte Wienecke XI. | 30519 | OTHER | PHONE,PICKUP | -/A | https://www.wienecke.de | +49 511 12611536 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Brela | 30625 | OTHER | PHONE,PICKUP | -/A | https://restaurant-brela.de/ | +49 511 576151 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Brudis | 30161 | BURGER,DOENER | - | -/- | https://brudis-db.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Bull's Kitchen | 30159 | BURGER | PHONE | -/A | https://www.bullskitchen.de/ | +49 511 21900990 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Burgerimbiss Hannover | 30453 | BURGER,OTHER | - | -/- | https://www.burgerimbiss-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Busan Chicken | 30159 | OTHER | PHONE | -/A | https://www.busan-chicken.de | +49 511 94033217 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Butschies Bistro am Maschsee | 30169 | OTHER | PHONE,PICKUP | -/A | https://butschies-bistro.de/hannover-maschsee/bistro/ | +49 5066900440 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Cafe & Bar Celona | 30159 | BURGER | PHONE | -/A | https://celona.de/cafe-bar-celona-hannover-altstadt | +49 511 3538576 | Impressum:ja Kanal:ja PLZ:ja | - |
@@ -304,7 +292,6 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | China Dim Sum House | 30159 | CHINESE | PHONE,PICKUP | -/A | https://www.dim-sum-hannover.de/ | +49 511 89824088 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | China Restaurant Panda | 30659 | CHINESE,ASIAN | PHONE | L/- | https://panda-hannover.de | +49 511 8980782 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | China-Imbiss-Jasmin | 30459 | ASIAN,CHINESE | PHONE,PICKUP | -/A | https://china-imbiss-jasmin-1.jimdosite.com/ | +49 511 2349870 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Chois | 30161 | ASIAN | - | -/- | https://www.restaurant-chois.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Clubwirt | 30453 | OTHER | PHONE,PICKUP | -/A | https://www.victoria-linden.de/Clubwirt.aspx | +49 151 54117650 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Coimbra | - | OTHER | PHONE,PICKUP | -/A | https://www.coimbra-hannover.de/ | +49 511 451858 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Crunchy snacks & more | 30169 | OTHER | PHONE,PICKUP | -/A | https://www.crunchy-hannover.de/ | +49 511 44455952 | Impressum:nein Kanal:nein PLZ:nein | - |
@@ -312,20 +299,17 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Curry Leaves | 30177 | INDIAN | PHONE,PICKUP | -/A | https://curryleavesrestaurant.de/ | +49 511 37024512 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Da Andrea | 30175 | ITALIAN | PHONE,PICKUP | -/A | https://da-andrea.jimdo.com/ | +49 511 282224 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Damar Baba Döner | - | DOENER | PHONE,PICKUP | -/A | https://damarbabadoner.com/ | +49 163 3516983 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Damn Dog | 30159 | AMERICAN | - | -/- | https://damn-dog.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Daniel's | 30161 | OTHER | PHONE,PICKUP | -/A | https://restaurantdaniels.de/ | +49 511 3362948 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Das Ding | 30163 | BURGER | PHONE | -/A | https://www.dasding-restaurant.de | +49 511 392999 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Das Nest | 30625 | OTHER | PHONE,PICKUP | -/A | https://dasnest-hannover.de/ | +49 051137391271 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Das Vikings | 30539 | OTHER | PHONE,PICKUP | -/A | https://www.das-vikings.de/ | +49 015201917571 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Doli | 30163 | OTHER | PHONE,PICKUP | -/A | https://doli.restaurant | +49 176 12223377 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Donatos Der Imbiss | - | OTHER | - | -/- | http://www.donatos-der-imbiss.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Eckis Wirtshaus | 30449 | OTHER | PHONE | -/A | https://eckiswirts.haus/ | 017683189901 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | El Chileno | 30657 | OTHER | PHONE,PICKUP | -/A | https://www.el-chileno.de/ | +49 051190882677 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | El Pais | 30161 | OTHER | PHONE,PICKUP | -/A | https://elpais-tapasbar.de/ | +49 511 313115 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | El Paso | - | MEXICAN | PHONE | -/A | https://www.el-paso.restaurant/ | +49 51140089477 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Elim Hotpot | 30519 | CHINESE | PHONE,PICKUP | -/A | https://www.elimrestaurant.de/ | +49 511 8988920 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Eliniko | 30171 | GREEK | PICKUP,PHONE | -/A | https://www.eliniko-hannover.de/ | +49 511 81 76 00 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Esskultur | - | OTHER | - | -/- | https://hannover.meandallhotels.com/esskultur | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Esty's Taste | 30163 | OTHER | PHONE,PICKUP | -/A | https://estystaste.com/ | +49 160 92852885 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Euphrat | 30655 | GREEK | PHONE,PICKUP | -/A | http://www.euphrat-hannover.de | +49 511 621307 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Familienrestaurant Smak | - | OTHER | PHONE,PICKUP | -/A | https://www.smak-restaurant.de/ | +49 511 98427633 | Impressum:nein Kanal:nein PLZ:nein | - |
@@ -333,35 +317,28 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Fischers | 30451 | MEXICAN | PHONE,PICKUP | -/A | https://www.estrella-gastro.de/fischers-linden.html | +49 511 441404 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | FoodBreak20 | - | OTHER | PHONE | -/A | https://de.dussmann.de/foodbreak20 | +4951147312390 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Frittenwerk | 30159 | OTHER | PICKUP,PHONE | -/A | https://frittenwerk.com/hannover.php | +49 511 21341130 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Funky Kitchen | - | OTHER | - | -/- | https://funky.kitchen/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Gallo Nero | 30655 | ITALIAN | PHONE,PICKUP | -/A | https://www.gallo-nero-hannover.com/ | +49 511 5463434 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Gaststätte am Annateich | 30625 | OTHER | PHONE,PICKUP | -/A | https://annateich.de | +49 511 53327623 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Gaststätte Kaiser | - | OTHER | - | -/- | https://www.gaststaette-kaiser.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Georgen Terrassen | 30167 | OTHER | PHONE,PICKUP | -/A | https://georgen-terrassen.de/ | +49 511 26295424 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Gerstenkorn | 30171 | OTHER | PHONE,PICKUP | -/A | https://www.restaurant-gerstenkorn.de/ | +49 511 281620 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Gondel | 30159 | OTHER | PHONE,PICKUP | -/A | https://www.restaurant-gondel.de/ | +49 511 30186710 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Griechische Spezialitäten Christos | - | GREEK | - | -/- | https://www.greekkitchen-ellada.de/griechisches-restaurant-christos-im-zimmermann-in-hannover-junkersstrasse-1/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | grüpchen | 30159 | OTHER | PHONE,PICKUP | -/A | https://hotel-an-der-marktkirche.de/grupchen/ | +49 511 368640 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | H'Vin | 30657 | OTHER | PHONE,PICKUP | -/A | https://hvin.de/ | +49 511 6045222 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Hamachi | - | SUSHI | PHONE,PICKUP | -/A | https://www.hamachihannover.de/ | +49 511 37356120 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Handwerk | 30173 | OTHER | PHONE | -/A | https://handwerk-hannover.com/ | +49 511 26267588 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Hannoi Bites 87 | 30167 | VIETNAMESE | PHONE,PICKUP | -/A | https:/www.hannoibites87.de | +49 511 89852222 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Hans im Glück | 30159 | BURGER | PHONE | -/A | https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/ | +49 511 27789677 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Happy Fries | - | OTHER | - | -/- | https://www.happyfries.nl/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Havn Bar und Restaurant | 30163 | SUSHI | PHONE | -/A | https://havn-hannover.de | +49 511 16653107 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Högers 1910 | 30171 | OTHER | PHONE,PICKUP | -/A | http://hoegers1910.de | +49 511 5106425 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Ichiban | 30159 | SUSHI | PHONE,PICKUP | -/A | https://mrphung.de/ichiban-hannover/ | +49 511 2157609 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Idol Kebab Haus | 30171 | DOENER | - | -/- | http://www.ido-kebap.de | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | il piccolo nero | 30451 | ITALIAN | PHONE,PICKUP | -/A | https://www.ilpiccolonero.de/ | +49 511 5391232 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Ilion | 30173 | GREEK | PHONE,PICKUP | -/A | https://www.restaurant-ilion.de/ | +49 511 814728 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Ischia | 30629 | ITALIAN | PHONE | -/A | https://www.restaurant-ischia-misburg.de/ | +49 511 588210 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Istanbul Ocakbasi | 30179 | DOENER,TURKISH | PHONE | -/A | https://www.istanbul-vahrenheide.de/ | +49 511 72737494 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Jante | 30171 | OTHER | PHONE,PICKUP | -/A | https://www.jante-restaurant.de/ | +49 511 54555606 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Jung-Gu | 30167 | ASIAN | PHONE | L/- | https://jung-gu.de/ | +49 511 60498344 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Kleefood | - | BURGER,PIZZA | - | -/- | https://kleefood.de | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Koh-I-Noor Dhaba | 30169 | INDIAN | PHONE | -/A | https://www.kohinoor-hannover.de/ | +49 511 95483483 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Kröner | 30539 | DOENER | PHONE,PICKUP | -/A | https://www.wenndönerdannkröner.de | +49 511 22014903 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | König Café Restaurant Bar | - | OTHER | - | -/- | https://www.konig-restaurant-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | L'Osteria | 30179 | ITALIAN | PHONE,PICKUP | L/A | https://losteria.net/de/restaurants/restaurant/hannover-vahrenwalder/ | +49 511 67696737 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | La Buca | 30165 | ITALIAN | PHONE | -/A | https://www.labuca.de/ | +49 511 36587001 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | La Cantina | 30161 | OTHER | PHONE,PICKUP | -/A | http://tapasparadies.eu/ | +49 511 3880210 | Impressum:nein Kanal:nein PLZ:nein | - |
@@ -378,35 +355,26 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Lindener Bergterrasse | 30449 | GRILL,ITALIAN | PHONE | -/A | https://lindener-bergterrassen.eatbu.com/?lang=de | +491734322327 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Lister Döner (Prinz) | 30161 | DOENER,TURKISH,GRILL | PHONE,PICKUP | -/A | https://listerdoener.de/ | +49 511 21912566 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Loretta's | 30169 | OTHER | PHONE,PICKUP | -/A | http://www.lorettas-hannover.de/ | +49 511 5905780 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | LSV Alexandria Gaststätte | 30459 | OTHER | - | -/- | https://alex1903.de/index.php/gastronomie/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Lucht's Grill | 30177 | OTHER | PHONE,PICKUP | -/A | http://www.luchts-grill.de/Home | +49 511 695365 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Lukullus | 30453 | GREEK | PHONE | -/A | https://www.lukullus-hannover.de | +49 511 482471 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Malatya Grill | 30625 | TURKISH | PHONE,PICKUP | -/A | https://malatyagrill.de/ | +49 05115547605 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Mangal's Kitchen | 30163 | INDIAN | PHONE,PICKUP | -/A | https://restaurant-mangals-kitchen.de/ | +49 511 64693150 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Manti love | 30159 | TURKISH | - | -/- | https://www.mantilove.de | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Marijas Nudelparadies | 30177 | ITALIAN | PHONE | L/- | https://marijasnudelparadies.com/ | +49 511 623285 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Marâa Beef Club | - | OTHER | PHONE,PICKUP | -/A | https://bogabeef.de | +49 176 70238862 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Meiers Lebenslust | 30159 | OTHER | PHONE,PICKUP | -/A | https://www.meiers-lebenslust.de/ | +49 511 8982250 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Mel's Diner | - | AMERICAN | PHONE,PICKUP | -/A | https://www.mels-diner.de/ | +49 511 862310 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Mensa | - | OTHER | - | -/- | https://www.gymnasium-isernhagen.de/mensa/ | - | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Mensa HMTMH | 30175 | OTHER | PICKUP,PHONE | -/A | https://www.studentenwerk-hannover.de/essen/mensen-und-cafes/Mensa%20HMTMH | 0511-3100217 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Meteora | 30161 | GREEK | PHONE,PICKUP | -/A | https://www.meteora-hannover.de | +49 511 315237 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Mezem | 30159 | OTHER | PHONE,PICKUP | -/A | https://mezemrestaurant.de/ | +49 511 51512170 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Milazzo | 30625 | ITALIAN,PIZZA | PHONE | -/A | https://restaurant-milazzo.de | +49 511 556601 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Mimi Fusion | - | ASIAN,VIETNAMESE,SUSHI | PHONE,PICKUP | -/A | http://mimifusion.de | +49 511 84489696 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Mio Mio | - | ITALIAN | PHONE,PICKUP | -/A | https://www.miomiolinden.de/ | +49 511 54358283 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Misik | 30161 | OTHER | - | -/- | https://www.misik-hannover.com/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Mon Bonheur | 30163 | OTHER | PHONE,PICKUP | -/A | https://www.monbonheur.de | +49 511 53078717 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Montelliana | 30539 | ITALIAN | PHONE,PICKUP | -/A | https://www.restaurant-montelliana.de | +49 511 98226689 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Mosaik | 30163 | OTHER | - | -/- | https://mosaik.cafe/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Napoli 47 | 30451 | PIZZA | PHONE,PICKUP | -/A | https://napoli47.de | +49 511 48973171 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Nasim Banoo | - | INDIAN | - | -/- | https://www.nasimbanoo-hannover.com/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Nefis | 30167 | TURKISH | PHONE | L/- | https://nefishannover.de/ | +49 051149538959 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Niki | - | GREEK | - | -/- | http://www.niki-restaurant.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | NTV 09 Gaststätte | - | OTHER | - | -/- | https://www.ntv09.de/clubgaststaette.cfm | - | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | NY Italian Buffet | 30159 | ITALIAN | PHONE,PICKUP | -/A | https://www.ny-italian.com/hannover-city | +49 162 7880673 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | O'Atlantico | 30451 | OTHER | PHONE | -/A | https://www.spanische-restaurants.com/oatlantico/ | +49 511 448239 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Oji Long | 30159 | SUSHI,ASIAN | - | -/- | https://www.ojilong.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Ombra | - | ITALIAN | PHONE,PICKUP | -/A | https://ombra-hannover.de/ | +49 152 27655273 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Oregano Grillhaus | 30419 | GREEK | PHONE,PICKUP | -/A | https://oregano-grill.com/ | +49 511 76800230 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Palios | 30659 | GREEK | PHONE,PICKUP | -/A | https://restaurant-palios.de/ | +49 511 80603291 | Impressum:nein Kanal:nein PLZ:nein | - |
@@ -424,16 +392,12 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Pizza Günes | 30451 | PIZZA | PHONE,PICKUP | -/A | https://pizza-guenes.de | +49 051189700794 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Pizza House | 30161 | PIZZA,ITALIAN | PHONE | L/- | https://www.pizza-house-hannover.de/ | +49 511 89841100 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Pizza Mario | 30519 | ITALIAN,PIZZA | PHONE,PICKUP | -/A | http://www.hannoverpizza.de | +49 511 868681 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Pizza Master | 30419 | PIZZA | - | -/- | https://www.pizzamaster-in-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Pizzeria Riccardo | 30159 | ITALIAN,PIZZA | PHONE,PICKUP | -/A | https://www.pizzeria-riccardo-hannover.de/ | +49 511 14245 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Pommesglück | 30159 | OTHER | - | -/- | https://pommesglueck.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Praga Grill | 30419 | GREEK | - | -/- | https://www.pargagrill-hannover.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Presto Zelos | 30459 | PIZZA,DOENER,GREEK | PHONE | L/- | https://prestozelos.de/ | +49 511 89814051 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Raj | 30519 | INDIAN | PHONE,PICKUP | -/A | https://raj-hannover.de/ | +49 511 8991213 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Rembetiko | 30539 | GREEK | PHONE,PICKUP | -/A | https://www.rembetiko-hannover.de/de | +49 511 12374152 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Restaurant & Bar NUOVO | 30659 | BURGER | PHONE | -/A | https://www.nuovo-restaurant.de/ | +49 511 71300792 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Restaurant Achilles | 30163 | GREEK | PHONE,PICKUP | -/A | https://www.www.achilles-hannover.de/ | +49 511 622227 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Restaurant Cafe bellâ ARTE | 30169 | ITALIAN | - | -/- | https://www.bellarte.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Restaurant Donau | 30519 | OTHER | PHONE,PICKUP | -/A | https://restaurant-donau.de/ | +49 511 864003 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Restaurant Hiller | 30159 | OTHER | PHONE,PICKUP | -/A | https://www.restaurant-hiller.de/ | +49 511 321288 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Restaurant im Polizei-Sportverein | 30625 | OTHER | PHONE | -/A | https://psv-hannover.de/ | +49 511 875 6530 | Impressum:ja Kanal:ja PLZ:ja | - |
@@ -478,14 +442,11 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Sushi-Do | 30159 | ASIAN,SUSHI | PHONE | -/A | https://www.sushi-do.de/ | +49 511 2203572 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Symposion | - | GREEK | PHONE,PICKUP | -/A | https://www.symposion-restaurant.de/ | +49 511 816100 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Taj Mahal | 30175 | INDIAN | PHONE | -/A | https://www.tajmahal.de/ | +49 511 3481714 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Takumi | 30159 | OTHER | - | -/- | https://www.takumiramennoodles.com | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tanara | 30625 | OTHER | PHONE,PICKUP | -/A | https://tanara-restaurant.de | +49 511 559371 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tandure | 30167 | TURKISH | PHONE,PICKUP | -/A | https://www.tandure.de/ | +49 172 3007951 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tante Franz | 30167 | OTHER | PHONE,PICKUP | -/A | https://tantefranz.com | +49 511 21576207 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tesoro | 30171 | ITALIAN | PHONE,PICKUP | -/A | https://www.ristorante-tesoro.de/ | +49 511 89931134 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Thai Food in the Box | 30159 | THAI | PHONE,PICKUP | -/A | https://www.thaifood-inthebox.de/ | +49 511 1692245 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | The Harp | - | BURGER | - | -/- | https://www.theharplinden.de | - | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | The Urfa Kebab | 30455 | DOENER,TURKISH | - | -/- | https://theurfakebab.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | The Wild Duck | 30177 | ASIAN | PHONE,PICKUP | -/A | https://thewildduck.de | +49 511 84868464 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tina II | 30655 | GREEK | PHONE | -/A | https://www.restaurant-tina2.de | +49 511 6479400 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Tomo Sushi | 30175 | SUSHI,ASIAN | PHONE,PICKUP | L/A | https://tomosushi.de/ | +49 511 343443 | Impressum:nein Kanal:nein PLZ:nein | - |
@@ -495,11 +456,9 @@ Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste
 | [ ] | Trocadero | 30419 | ITALIAN | PHONE,PICKUP | -/A | https://www.restaurant-trocadero.de/ | +49 511 4754135 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Tru Story | - | ASIAN | PHONE | -/A | https://tru-story.de | +49 511 21552960 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Veraci | - | ITALIAN | PHONE,PICKUP | -/A | https://veraci-hannover.de/ | +49 511 64714598 | Impressum:nein Kanal:nein PLZ:nein | - |
-| [ ] | Vereinsgaststätte Bornumer Holz | - | OTHER | - | -/- | https://www.bornumer-holz.de/ | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Vina 97 Restaurant | - | ASIAN | PHONE,PICKUP | -/A | https://www.vina97restaurant.com/ | +49 511 2102888 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | vino kebab | 30459 | DOENER,PIZZA,TURKISH | PHONE,PICKUP | L/A | https://restaurant-zaza.de/ | +49 511 64710665 | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | vorveg | 30169 | OTHER | PHONE | -/A | https://www.vorveghannover.de | +49 151 57725191 | Impressum:ja Kanal:ja PLZ:ja | - |
-| [ ] | Waldgasthaus Entenfang | 30419 | OTHER | - | -/- | http://www.entenfang-hannover.de | - | Impressum:nein Kanal:nein PLZ:nein | - |
 | [ ] | Werkhof Restaurant | 30167 | OTHER | PHONE | -/A | https://werkhof-hannover.de/restaurant | +49 511 35356380 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Wirtshaus Hannover | 30159 | OTHER | PICKUP,PHONE | -/A | https://wirtshaus-hannover.de/ | +49 511 99999691 | Impressum:ja Kanal:ja PLZ:ja | - |
 | [ ] | Zio Totonno | 30171 | ITALIAN | PHONE,PICKUP | -/A | https://www.zio-totonno.de/ | +49 511 8074418 | Impressum:nein Kanal:nein PLZ:nein | - |

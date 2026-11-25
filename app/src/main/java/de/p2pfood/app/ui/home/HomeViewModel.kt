@@ -68,6 +68,8 @@ class HomeViewModel(
                 val q = filters.query.trim().lowercase()
                 // Link-Out-App: ohne eigene Website kein Eintrag (QS-Regel)
                 r.website != null &&
+                // weder Lieferung noch Abholung -> Telefon nur Reservierung, kein Eintrag (QS-Regel)
+                (r.delivers || r.pickup) &&
                 (q.isEmpty() ||
                     r.name.lowercase().contains(q) ||
                     r.cuisines.any { it.name.lowercase().contains(q) }) &&

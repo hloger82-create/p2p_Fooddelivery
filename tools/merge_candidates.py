@@ -61,6 +61,9 @@ def candidate_to_entry(c: dict, region_id: str, region_name: str, existing_ids: 
     if takeaway and "PICKUP" not in order_types:
         order_types.append("PICKUP")
     delivers = tags.get("delivery") == "yes" or bool(analysis.get("deliveryMentioned"))
+    # QS-Regel: Abholung nur mit Nachweis (OSM takeaway) oder eigener Webshop ohne Lieferung;
+    # reines Telefon ohne Liefer-/Abhol-Nachweis zaehlt NICHT als Abholung (Reservierung!)
+    pickup = takeaway or (channel == "webshop" and not delivers)
 
     base_id = f"{region_id}-{slugify(c['name'])}"
     rid = base_id
@@ -87,7 +90,7 @@ def candidate_to_entry(c: dict, region_id: str, region_name: str, existing_ids: 
         "cuisineSource": c.get("cuisineSource"),
         "openingHours": tags.get("opening_hours") or analysis.get("openingHours"),
         "delivers": delivers,
-        "pickup": takeaway or not delivers,
+        "pickup": pickup,
         "deliveryAreas": analysis.get("deliveryPostcodes", []),
         "minOrderValue": None,
         "deliveryFee": None,
@@ -180,6 +183,10 @@ def main() -> int:
             skipped_dup += 1
             continue
         entry = candidate_to_entry(c, region_id, region_name, existing_ids)
+        # QS-Regel: weder Lieferung noch Abholung -> Telefon vermutlich nur Reservierung -> nicht aufnehmen
+        if not entry["delivers"] and not entry["pickup"]:
+            skipped_reject += 1
+            continue
         if args.auto_verify and c.get("status") == "auto_accept":
             checks = c.get("checks", {})
             if (c.get("analysis", {}).get("orderChannel") == "webshop"
