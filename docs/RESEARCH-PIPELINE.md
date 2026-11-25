@@ -16,7 +16,7 @@ python3 tools/research_pipeline.py --region data/regions/hannover/region.json \
    - Redirect-Check der Bestell-Links gegen `platformBlocklist` -> Plattform-only = `reject`.
    - Impressum-Check (§ 5 DDG Pflichtangaben).
    - Bestellkanal: eigener Webshop / Telefon (JSON-LD + Keyword-Heuristik). Kontakt-/Reservierungsformulare zaehlen nicht als Bestellformular.
-   - Telefon, Oeffnungszeiten, Kueche aus JSON-LD; Liefergebiet via Keywords + PLZ-Praefix.
+   - Telefon, Oeffnungszeiten, Kueche aus JSON-LD; Liefergebiet via Keywords + PLZ aus der Regionsliste (`postcodes`).
 4. Scoring: `auto_accept` / `review` / `reject` mit Begruendungen -> `candidates.json`.
 
 ## Uebernahme in den Datensatz
@@ -37,3 +37,8 @@ Schema: `data/schema/restaurant.schema.json`. App-Assets aktualisieren nicht ver
 ## Rechtlicher Rahmen
 
 Nur oeffentliche Seiten; robots.txt; Rate-Limit; keine Plattform-Inhalte; keine personenbezogenen Daten. Siehe `docs/LEGAL.md` Abschnitt 4.
+
+## QS-Backlog (erst spaeter im Verifizierungsprozess)
+
+- **Kuechen-Pruefung**: Ist die angebotene Kueche auf der Webseite nicht konkret angegeben, wird sie im manuellen Review geprueft: Analyse der angebotenen Speisen und eigene Schlussfolgerung (kein blosses Raten). Nicht Teil der Pipeline.
+- **Region-Pruefung**: Kandidaten mit `addr:postcode` ausserhalb der Regions-PLZ (`postcodes` in `region.json`) werden bereits in der Pipeline mit `reject` markiert (`inRegionPostcode`-Check); in der App weist ein Hinweis unter dem PLZ-Feld auf PLZ ausserhalb der Region hin.

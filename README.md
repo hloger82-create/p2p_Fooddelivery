@@ -14,7 +14,7 @@ Android-App (v1: Region **Hannover**), die lokale Restaurants mit **eigener Lief
 ```
 data/
   schema/                 JSON-Schema fuer Region + Restaurant-Dataset
-  regions/hannover/       region.json (BBox, PLZ-Praefixe, Plattform-Blocklist) + restaurants.json (Seed)
+  regions/hannover/       region.json (BBox, explizite PLZ-Liste, Plattform-Blocklist) + restaurants.json (Seed)
 docs/
   LEGAL.md                Checkliste rechtssichere Umsetzung
   MONETIZATION.md         gepruefte Monetarisierungsoptionen
@@ -75,7 +75,7 @@ Hinweis: Das Gradle-Wrapper-Jar ist nicht eingecheckt. Einmalig lokal erzeugen m
 
 ## Neue Region hinzufuegen
 
-1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, postcodePrefixes, platformBlocklist).
+1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, `postcodes` = explizite PLZ-Liste der Region, platformBlocklist). Kandidaten mit PLZ außerhalb der Liste werden von der Pipeline automatisch als `reject` markiert.
 2. Pipeline laufen lassen (`--region data/regions/<stadt>/region.json`), Kandidaten pruefen, `restaurants.json` befuellen.
 3. Beides nach `app/src/main/assets/regions/<stadt>/` kopieren und `<stadt>` in `app/src/main/assets/regions/index.json` eintragen.
 

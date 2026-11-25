@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
@@ -18,12 +19,20 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.toArgb
@@ -97,6 +106,7 @@ fun MapScreen(
             },
         )
         val legendCuisines = withCoords.flatMap { it.cuisines }.distinct().sorted()
+        var legendExpanded by remember { mutableStateOf(true) }
         if (legendCuisines.isNotEmpty()) {
             Surface(
                 modifier = Modifier
@@ -106,20 +116,44 @@ fun MapScreen(
                 shadowElevation = 2.dp,
                 shape = RoundedCornerShape(8.dp),
             ) {
-                FlowRow(
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .widthIn(max = 200.dp),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
-                    verticalArrangement = Arrangement.spacedBy(4.dp),
-                ) {
-                    legendCuisines.forEach { cuisine ->
-                        Row(
-                            verticalAlignment = Alignment.CenterVertically,
-                            horizontalArrangement = Arrangement.spacedBy(4.dp),
+                Column {
+                    Row(
+                        modifier = Modifier.padding(start = 8.dp, top = 4.dp, end = 4.dp, bottom = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    ) {
+                        Text(
+                            stringResource(R.string.legend),
+                            style = MaterialTheme.typography.labelMedium,
+                        )
+                        IconButton(
+                            onClick = { legendExpanded = !legendExpanded },
+                            modifier = Modifier.size(24.dp),
                         ) {
-                            Box(Modifier.size(10.dp).background(cuisine.color(), CircleShape))
-                            Text(cuisine.label(), style = MaterialTheme.typography.labelSmall)
+                            Icon(
+                                imageVector = if (legendExpanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
+                                contentDescription = null,
+                                modifier = Modifier.size(18.dp),
+                            )
+                        }
+                    }
+                    if (legendExpanded) {
+                        FlowRow(
+                            modifier = Modifier
+                                .padding(8.dp)
+                                .widthIn(max = 200.dp),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            verticalArrangement = Arrangement.spacedBy(4.dp),
+                        ) {
+                            legendCuisines.forEach { cuisine ->
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                                ) {
+                                    Box(Modifier.size(10.dp).background(cuisine.color(), CircleShape))
+                                    Text(cuisine.label(), style = MaterialTheme.typography.labelSmall)
+                                }
+                            }
                         }
                     }
                 }

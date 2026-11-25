@@ -9,14 +9,18 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DarkMode
+import androidx.compose.material.icons.filled.HelpOutline
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
+import androidx.compose.material3.Button
+import androidx.compose.material3.Dialog
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -56,12 +60,16 @@ fun HomeScreen(
 ) {
     val state by viewModel.uiState.collectAsState()
     var selectedTab by remember { mutableStateOf(0) }
+    var showHelp by remember { mutableStateOf(false) }
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text(state.region?.name ?: stringResource(R.string.app_name)) },
                 actions = {
+                    IconButton(onClick = { showHelp = true }) {
+                        Icon(Icons.Default.HelpOutline, contentDescription = stringResource(R.string.help))
+                    }
                     IconButton(onClick = onToggleTheme) {
                         Icon(Icons.Default.DarkMode, contentDescription = stringResource(R.string.toggle_theme))
                     }
@@ -134,6 +142,16 @@ fun HomeScreen(
                             )
                         }
                     }
+                    val plz = state.filters.postcode.trim()
+                    val regionCfg = state.region
+                    if (plz.length == 5 && regionCfg?.postcodes?.isNotEmpty() == true && plz !in regionCfg.postcodes) {
+                        Text(
+                            text = stringResource(R.string.plz_outside_region, regionCfg.name),
+                            color = MaterialTheme.colorScheme.error,
+                            style = MaterialTheme.typography.labelSmall,
+                            modifier = Modifier.padding(start = 12.dp, end = 12.dp, bottom = 4.dp),
+                        )
+                    }
                     FilterBar(
                         cuisines = state.restaurants.flatMap { it.cuisines }.distinct().sorted(),
                         selectedCuisines = state.filters.cuisines,
@@ -170,6 +188,35 @@ fun HomeScreen(
                     )
                     1 -> state.region?.let { region ->
                         MapScreen(region, state.filtered, onOpenDetail)
+                    }
+                }
+            }
+        }
+    }
+    if (showHelp) {
+        Dialog(onDismissRequest = { showHelp = false }) {
+            Surface(
+                shape = RoundedCornerShape(16.dp),
+                color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f),
+                tonalElevation = 6.dp,
+            ) {
+                Column(Modifier.padding(16.dp)) {
+                    Text(
+                        stringResource(R.string.help_title),
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    Text(
+                        stringResource(R.string.help_body),
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier.padding(top = 8.dp),
+                    )
+                    Button(
+                        onClick = { showHelp = false },
+                        modifier = Modifier
+                            .align(Alignment.End)
+                            .padding(top = 12.dp),
+                    ) {
+                        Text(stringResource(R.string.understood))
                     }
                 }
             }

@@ -19,7 +19,11 @@
       "maxItems": 4
     },
     "osmAreaName": { "type": ["string", "null"] },
-    "postcodePrefixes": { "type": "array", "items": { "type": "string" } },
+    "postcodes": {
+      "type": "array",
+      "description": "explizite PLZ-Liste der Region (statt Praefixen); Kandidaten mit PLZ ausserhalb -> reject",
+      "items": { "type": "string", "pattern": "^[0-9]{5}$" }
+    },
     "platformBlocklist": { "type": "array", "items": { "type": "string" } },
     "datasetUrl": { "type": ["string", "null"], "format": "uri" },
     "chainDomains": { "type": "array", "items": { "type": "string" } }

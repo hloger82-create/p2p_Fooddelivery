@@ -11,7 +11,7 @@ Automatisiert die Suche nach geeigneten Restaurant-Eintraegen fuer eine Region.
    - Impressum-Check (Links auf /impressum etc., Pflichtangaben gemaess § 5 TMG).
    - Bestellkanal-Erkennung: eigener Webshop (WooCommerce/Shopify/simplywebshop/...) oder nur Telefon. (Reine Kontakt-/Reservierungsformulare zaehlen nicht als Bestellkanal.)
    - Extraktion von Telefon, Oeffnungszeiten und Kueche aus JSON-LD (`schema.org/Restaurant`).
-   - Liefergebiet: Keywords + PLZ mit Regions-Praefix.
+   - Liefergebiet: Keywords + PLZ aus der Regionsliste (`postcodes`).
 4. **Scoring**: `auto_accept` (alle Checks bestanden), `review` (manuelle Pruefung noetig), `reject` (Plattform-Redirect / kein Kanal).
 
 ## Nutzung
@@ -76,6 +76,6 @@ Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Web
 
 ## Neue Region
 
-1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, PLZ-Praefixe, Blocklist).
+1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, `postcodes` = explizite PLZ-Liste, Blocklist).
 2. Pipeline laufen lassen, Kandidaten manuell pruefen, `restaurants.json` befuellen.
 3. Beides nach `app/src/main/assets/regions/<stadt>/` kopieren und `<stadt>` in `app/src/main/assets/regions/index.json` eintragen.

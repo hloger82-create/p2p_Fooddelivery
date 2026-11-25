@@ -79,7 +79,7 @@ data class RegionConfig(
     val zoom: Double = 12.0,
     val bbox: List<Double>? = null,
     val osmAreaName: String? = null,
-    val postcodePrefixes: List<String> = emptyList(),
+    val postcodes: List<String> = emptyList(),
     val platformBlocklist: List<String> = emptyList(),
     val datasetUrl: String? = null,
 )

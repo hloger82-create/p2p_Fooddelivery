@@ -256,8 +256,12 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     if any(h in low for h in DELIVERY_HINTS):
         result["deliveryMentioned"] = True
     prefixes = region.get("postcodePrefixes", [])
+    plz_list = set(region.get("postcodes", []))
     plzs = set(re.findall(r"\b(\d{5})\b", html))
-    result["deliveryPostcodes"] = sorted(p for p in plzs if any(p.startswith(pre) for pre in prefixes))
+    if plz_list:
+        result["deliveryPostcodes"] = sorted(p for p in plzs if p in plz_list)
+    else:
+        result["deliveryPostcodes"] = sorted(p for p in plzs if any(p.startswith(pre) for pre in prefixes))
     return result
 
 
@@ -357,6 +361,15 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
         "hasOrderChannel": analysis.get("orderChannel") is not None,
         "inRegionPostcode": True,
     }
+    plz = tags.get("addr:postcode", "")
+    plz_list = set(region.get("postcodes", []))
+    prefixes = region.get("postcodePrefixes", [])
+    if plz_list:
+        checks["inRegionPostcode"] = (not plz) or (plz in plz_list)
+    elif prefixes:
+        checks["inRegionPostcode"] = (not plz) or any(plz.startswith(pre) for pre in prefixes)
+    if not checks["inRegionPostcode"]:
+        reasons.append(f"PLZ {plz} nicht in Region {region.get('id')}")
     if not checks["hasWebsite"]:
         reasons.append("keine Website in OSM hinterlegt")
     if checks["hasWebsite"] and not checks["homepageReachable"]:
@@ -366,9 +379,9 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
     if analysis.get("orderRedirectsToPlatform"):
         reasons.append(f"Bestell-Link fuehrt zu Plattform: {analysis.get('platformHit')}")
     if not checks["hasOrderChannel"]:
-        reasons.append("kein eigener Bestellkanal erkannt (Webshop/Formular/Telefon)")
+        reasons.append("kein eigener Bestellkanal erkannt (Webshop/Telefon)")
 
-    if chain_blocked or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"]):
+    if chain_blocked or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"]) or not checks["inRegionPostcode"]:
         status = "reject"
     elif all(checks.values()):
         status = "auto_accept"
