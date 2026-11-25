@@ -7,8 +7,13 @@ Usage: python3 tools/validate_data.py   (im Repo-Root ausfuehren)
 import glob
 import json
 import sys
+from urllib.parse import urlparse
 
 import jsonschema
+
+
+def host_of(url: str) -> str:
+    return urlparse(url).netloc.lower().removeprefix("www.")
 
 
 def main() -> int:
@@ -42,6 +47,16 @@ def main() -> int:
                 plz = (r.get("address") or {}).get("postcode")
                 if plz and plz not in plz_list:
                     errors.append(f"{rest_path}: {r.get('id')} hat PLZ {plz} (Stadt {(r.get('address') or {}).get('city')}), liegt nicht in postcodes von {region_path}")
+        # App ist reines Link-Out: ohne Website ist ein Eintrag nicht zulaessig (QS-Regel)
+        blocklist = set(region.get("platformBlocklist", []))
+        for r in dataset.get("restaurants", []):
+            web = r.get("website")
+            if not web:
+                errors.append(f"{rest_path}: {r.get('id')} hat keine website -> Ausschluss (Link-Out-App)")
+            else:
+                h = host_of(web)
+                if any(h == b or h.endswith("." + b) for b in blocklist):
+                    errors.append(f"{rest_path}: {r.get('id')} verlinkt auf Plattform-Domain {web} -> Ausschluss")
         # Assets-Mirror: data/ und app/assets muessen identisch sein
         for name in ("region.json", "restaurants.json"):
             asset_path = f"app/src/main/assets/regions/{region['id']}/{name}"

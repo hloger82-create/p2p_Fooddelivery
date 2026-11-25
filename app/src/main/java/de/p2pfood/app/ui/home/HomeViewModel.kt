@@ -66,6 +66,8 @@ class HomeViewModel(
             filters = filters,
             filtered = restaurants.filter { r ->
                 val q = filters.query.trim().lowercase()
+                // Link-Out-App: ohne eigene Website kein Eintrag (QS-Regel)
+                r.website != null &&
                 (q.isEmpty() ||
                     r.name.lowercase().contains(q) ||
                     r.cuisines.any { it.name.lowercase().contains(q) }) &&

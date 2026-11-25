@@ -71,6 +71,11 @@ IMPRINT_HINTS = [
     "ust-idnr", "umsatzsteuer-id", "geschäftsführer", "inhaber",
 ]
 ORDER_LINK_HINTS = ["bestellen", "bestellung", "order", "webshop", "shop", "lieferservice", "lieferdienst", "bringdienst", "menu", "speisekarte"]
+# Starke Shop-Hinweise (echte Bestellung) vs. Gutscheine-only (kein Webshop!)
+STRONG_ORDER_HINTS = ["bestellen", "warenkorb", "checkout", "bestellshop", "in den warenkorb", "add to cart"]
+GUTSCHEIN_HINTS = ["gutschein", "voucher", "geschenkkarte"]
+# Plattform-betriebene "eigene" Seiten (z. B. "betrieben und verwaltet durch Lieferando.de")
+PLATFORM_MANAGED_HINTS = ["betrieben und verwaltet durch", "betrieben und verwaltet von", "powered by", "bereitgestellt von"]
 DELIVERY_HINTS = ["liefergebiet", "liefern wir", "wir liefern", "delivery area", "liefern nach"]
 RESERVATION_HINTS = ["reservier", "tischreserv", "opentable", "bookatable", "quandoo", "resmio", "formitable"]
 FOOD_ORDER_HINTS = ["bestellen", "warenkorb", "speisekarte", "cart", "checkout", "liefern", "abholen", "lieferservice", "bringdienst", "webshop"]
@@ -232,6 +237,12 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     result["orderLinks"] = order_links
     platform_hit = None
     own_shop = False
+    platform_managed = None
+    for h in PLATFORM_MANAGED_HINTS:
+        if h in low:
+            platform_managed = next((d for d in session.blocklist if d in low), h)
+            break
+    result["platformManaged"] = platform_managed
     for link in order_links[:6]:
         chain, final, blocked = redirect_chain(session, link, delay)
         if blocked and is_blocked(blocked, session.blocklist):
@@ -248,12 +259,20 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
             own_shop = True
     if any(h in low for h in WEBSHOP_HINTS):
         own_shop = True
+    # Gutscheine-only-Seite ist KEIN Webshop (z. B. nur "Gutschein" + Warenkorb fuer Gutscheine)
+    if any(h in low for h in GUTSCHEIN_HINTS) and not any(h in low for h in STRONG_ORDER_HINTS):
+        own_shop = False
     reservation = any(h in low for h in RESERVATION_HINTS)
     food_order = any(h in low for h in FOOD_ORDER_HINTS)
     if own_shop and reservation and not food_order:
         own_shop = False
 
-    if platform_hit:
+    if platform_managed:
+        result["orderRedirectsToPlatform"] = True
+        result["platformHit"] = platform_managed
+        result["platformManaged"] = platform_managed
+        result["orderChannel"] = "platform_only"
+    elif platform_hit:
         result["orderRedirectsToPlatform"] = True
         result["platformHit"] = platform_hit
         result["orderChannel"] = "platform_only"
@@ -387,7 +406,7 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
     if not checks["inRegionPostcode"]:
         reasons.append(f"PLZ {plz} nicht in Region {region.get('id')}")
     if not checks["hasWebsite"]:
-        reasons.append("keine Website in OSM hinterlegt")
+        reasons.append("keine Website -> Ausschluss (App ist reines Link-Out: ohne Website kann der User sich das Restaurant nirgends ansehen)")
     if checks["hasWebsite"] and not checks["homepageReachable"]:
         reasons.append("Website nicht erreichbar")
     if not checks["imprintFound"]:
@@ -397,7 +416,11 @@ def score_candidate(tags: dict, analysis: dict, region: dict) -> dict:
     if not checks["hasOrderChannel"]:
         reasons.append("kein eigener Bestellkanal erkannt (Webshop/Telefon)")
 
-    if chain_blocked or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"]) or not checks["inRegionPostcode"]:
+    if (chain_blocked
+            or not checks["hasWebsite"]
+            or analysis.get("platformManaged")
+            or (analysis.get("orderRedirectsToPlatform") and not checks["notPlatformOnly"])
+            or not checks["inRegionPostcode"]):
         status = "reject"
     elif all(checks.values()):
         status = "auto_accept"

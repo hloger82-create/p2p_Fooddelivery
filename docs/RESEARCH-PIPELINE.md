@@ -47,11 +47,14 @@ Nur oeffentliche Seiten; robots.txt; Rate-Limit; keine Plattform-Inhalte; keine 
 Jeder `pending_review`-Eintrag wird vor dem Umstellen auf `verified` manuell geprueft (Reihenfolge):
 
 1. **Region**: `addr:postcode` in `postcodes` der Region, Adresse/Koordinaten im BBox. (In der Pipeline bereits als `inRegionPostcode`-Check mit `reject` vorgelagert; in der App weist ein Hinweis unter dem PLZ-Feld auf PLZ ausserhalb der Region hin.)
-2. **Rechtlich/Kanal**: Impressum gefunden, eigener Bestellkanal (Webshop/Telefon), kein Plattform-Redirect.
-3. **Kuechen-Pruefung**: Ist die Kueche auf OSM/Website angegeben (`cuisineSource: "stated"` aus der Pipeline), wird sie uebernommen. **Ist sie nicht angegeben**: Speisekarte bzw. angebotene Speisen analysieren und eine eigene Schlussfolgerung ziehen (z. B. Pizza/Pasta -> `PIZZA` + `ITALIAN`), dann `cuisines` entsprechend setzen, `cuisineSource: "derived"` und kurzer Vermerk in `notes` (z. B. "Kueche aus Speisekarte abgeleitet"). Kein blosses Raten. Die App kennzeichnet abgeleitete Kuechen mit einem kleinen Hinweis im Detail-Screen.
-4. **Lieferung/Abholung nur mit Nachweis**: `delivers` nur bei expliziter Lieferangabe; `pickup` nur bei OSM `takeaway=yes/only`, expliziter Abholmption oder Telefon/eigener Shop ohne Lieferung.
-5. `lastVerified` = Datum setzen, `status: "verified"`.
+2. **Rechtlich/Kanal**: Impressum gefunden, eigener Bestellkanal (Webshop/Telefon), kein Plattform-Redirect. **Plattform-betriebene "eigene" Seiten** (z. B. "Diese Website wird betrieben und verwaltet durch Lieferando.de") zaehlen als Plattform-only -> Ausschluss (in der Pipeline automatisch erkannt via `platformManaged`). **WEBSHOP nur mit echtem Shop-Nachweis** — Gutscheine-only-Seiten zaehlen nicht (Pipeline: `GUTSCHEIN_HINTS` ohne `STRONG_ORDER_HINTS` -> kein Webshop).
+3. **Website-Pflicht**: Kein Website-Eintrag = Ausschluss (die App ist reines Link-Out; ohne Website kann sich der User das Restaurant nirgends ansehen). Pipeline: `hasWebsite=false` -> `reject`; `validate_data.py` prueft es als Cross-Check; die App filtert Eintraege ohne Website zusaetzlich heraus.
+4. **Kuechen-Pruefung**: Ist die Kueche auf OSM/Website angegeben (`cuisineSource: "stated"` aus der Pipeline), wird sie uebernommen. **Ist sie nicht angegeben**: Speisekarte bzw. angebotene Speisen analysieren und eine eigene Schlussfolgerung ziehen (z. B. Pizza/Pasta -> `PIZZA` + `ITALIAN`), dann `cuisines` entsprechend setzen, `cuisineSource: "derived"` und kurzer Vermerk in `notes` (z. B. "Kueche aus Speisekarte abgeleitet"). Kein blosses Raten. Die App kennzeichnet abgeleitete Kuechen mit einem kleinen Hinweis im Detail-Screen.
+5. **Lieferung/Abholung nur mit Nachweis**: `delivers` nur bei expliziter Lieferangabe; `pickup` nur bei OSM `takeaway=yes/only`, expliziter Abholmption/Mitnahme auf der Seite oder Telefon/eigener Shop ohne Lieferung.
+6. `lastVerified` = Datum setzen, `status: "verified"`.
 
 ## QS-Backlog
 
-- (leer — Kuechen-Pruefung ist oben im Verifizierungsprozess verankert)
+- (leer — Kuechen-Pruefung und Website-Pflicht sind oben im Verifizierungsprozess verankert)
+
+QS-Runde 2026-11-25 (Beispiele): 11A (WEBSHOP nur Gutscheine, PICKUP ohne Hinweis -> beides entfernt, bleibt PHONE), Asia Cong (Seite wird von Lieferando betrieben -> entfernt), #Dreieck (keine Website -> entfernt; Regel: alle 82 Eintraege ohne Website entfernt), 1 Eintrag mit Plattform-Domain als Website entfernt, 20x PICKUP ohne Nachweis entfernt, 2x WEBSHOP ohne Shop-Nachweis entfernt. Datensatz: 608 -> 524 Eintraege.
