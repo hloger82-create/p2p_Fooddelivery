@@ -41,6 +41,9 @@ class RestaurantRepository(
                 val conn = URL(url).openConnection() as HttpURLConnection
                 conn.connectTimeout = 10_000
                 conn.readTimeout = 10_000
+                // nie gecachte Antworten verwenden - sonst bleibt ein alter Datensatz haengen
+                conn.setUseCaches(false)
+                conn.setRequestProperty("Cache-Control", "no-cache")
                 conn.inputStream.bufferedReader().use { it.readText() }
             }
             val dataset = AppJson.instance.decodeFromString<RestaurantDataset>(text)
@@ -59,6 +62,8 @@ class RestaurantRepository(
 
     fun observeRestaurants(regionId: String): Flow<List<Restaurant>> =
         dao.observeByRegion(regionId).map { list -> list.map { it.toModel() } }
+
+    fun observeCount(regionId: String): Flow<Int> = dao.observeCount(regionId)
 
     suspend fun getRestaurant(id: String): Restaurant? = dao.getById(id)?.toModel()
 

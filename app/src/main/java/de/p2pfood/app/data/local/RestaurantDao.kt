@@ -15,6 +15,9 @@ interface RestaurantDao {
     @Query("SELECT COUNT(*) FROM restaurants WHERE regionId = :regionId")
     suspend fun count(regionId: String): Int
 
+    @Query("SELECT COUNT(*) FROM restaurants WHERE regionId = :regionId")
+    fun observeCount(regionId: String): Flow<Int>
+
     @Query("SELECT * FROM restaurants WHERE id = :id")
     suspend fun getById(id: String): RestaurantEntity?
 

@@ -37,4 +37,5 @@
     <string name="legend">Legende</string>
     <string name="plz_outside_region">Diese PLZ liegt nicht in %1$s.</string>
     <string name="cuisine_derived">Küche aus der Speisekarte abgeleitet (eigene Einschätzung)</string>
+    <string name="about_dataset">Datensatz in der App: %1$d Einträge</string>
 </resources>

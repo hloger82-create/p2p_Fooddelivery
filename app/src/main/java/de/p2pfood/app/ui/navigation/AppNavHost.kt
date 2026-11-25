@@ -1,6 +1,8 @@
 package de.p2pfood.app.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
@@ -44,7 +46,9 @@ fun AppNavHost(container: AppContainer, onToggleTheme: () -> Unit) {
             )
         }
         composable("about") {
-            AboutScreen(onBack = { navController.popBackStack() })
+            val regionId = container.regionCatalog.availableRegionIds().first()
+            val datasetCount by container.restaurantRepository.observeCount(regionId).collectAsState(initial = -1)
+            AboutScreen(datasetCount = datasetCount, onBack = { navController.popBackStack() })
         }
     }
 }

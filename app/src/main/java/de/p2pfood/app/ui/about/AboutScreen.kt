@@ -26,7 +26,7 @@ import de.p2pfood.app.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AboutScreen(onBack: () -> Unit) {
+fun AboutScreen(datasetCount: Int = -1, onBack: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -56,6 +56,13 @@ fun AboutScreen(onBack: () -> Unit) {
             )
             Text(stringResource(R.string.disclaimer), style = MaterialTheme.typography.bodySmall)
             Text(stringResource(R.string.financing), style = MaterialTheme.typography.bodySmall)
+            if (datasetCount >= 0) {
+                Text(
+                    stringResource(R.string.about_dataset, datasetCount),
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
             Text(
                 stringResource(R.string.osm_attribution) + " — openstreetmap.org/copyright",
                 style = MaterialTheme.typography.bodySmall,
