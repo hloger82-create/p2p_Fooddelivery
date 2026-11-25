@@ -15,7 +15,7 @@ python3 tools/research_pipeline.py --region data/regions/hannover/region.json \
 3. Website-Analyse der **eigenen Restaurant-Domain** (robots.txt, Rate-Limit, eigener UA):
    - Redirect-Check der Bestell-Links gegen `platformBlocklist` -> Plattform-only = `reject`.
    - Impressum-Check (§ 5 DDG Pflichtangaben).
-   - Bestellkanal: eigener Webshop / Formular / Telefon (JSON-LD + Keyword-Heuristik).
+   - Bestellkanal: eigener Webshop / Telefon (JSON-LD + Keyword-Heuristik). Kontakt-/Reservierungsformulare zaehlen nicht als Bestellformular.
    - Telefon, Oeffnungszeiten, Kueche aus JSON-LD; Liefergebiet via Keywords + PLZ-Praefix.
 4. Scoring: `auto_accept` / `review` / `reject` mit Begruendungen -> `candidates.json`.
 

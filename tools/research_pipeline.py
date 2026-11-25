@@ -55,7 +55,6 @@ WEBSHOP_HINTS = [
     "restablo", "woocommerce", "xt:commerce", "modified", "oxid",
     "warenkorb", "cart", "checkout", "bestellshop", "webshop",
 ]
-FORM_HINTS = ["bestellformular", "kontaktformular", "mailto:", "anfrageformular", "bestellung per formular"]
 IMPRINT_HINTS = [
     "impressum", "imprint", "legal notice", "angaben gemäß", "angaben gemaess",
     "§ 5 tmg", "5 tmg", "§ 5 ddg", "5 ddg", "digitale-dienste-gesetz", "ddg",
@@ -224,7 +223,6 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
     result["orderLinks"] = order_links
     platform_hit = None
     own_shop = False
-    form_only = False
     for link in order_links[:6]:
         chain, final, blocked = redirect_chain(session, link, delay)
         if blocked and is_blocked(blocked, session.blocklist):
@@ -239,12 +237,8 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
         page.close()
         if any(h in body for h in WEBSHOP_HINTS):
             own_shop = True
-        if any(h in body for h in FORM_HINTS):
-            form_only = True
     if any(h in low for h in WEBSHOP_HINTS):
         own_shop = True
-    if any(h in low for h in FORM_HINTS):
-        form_only = True
     reservation = any(h in low for h in RESERVATION_HINTS)
     food_order = any(h in low for h in FOOD_ORDER_HINTS)
     if own_shop and reservation and not food_order:
@@ -256,8 +250,6 @@ def analyze_website(session: requests.Session, website: str, region: dict, delay
         result["orderChannel"] = "platform_only"
     elif own_shop:
         result["orderChannel"] = "webshop"
-    elif form_only:
-        result["orderChannel"] = "form"
     elif result["phone"]:
         result["orderChannel"] = "phone"
 

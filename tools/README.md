@@ -9,7 +9,7 @@ Automatisiert die Suche nach geeigneten Restaurant-Eintraegen fuer eine Region.
 3. **Website-Analyse** (nur die eigene Domain des Restaurants, `robots.txt` wird respektiert, Rate-Limit via `--delay`):
    - Redirect-Check aller Bestell-Links: landet die Kette auf einer Domain der `platformBlocklist` (Lieferando, Wolt, Uber Eats, Volt, ... sowie reine Aggregator-Portale wie pizza.de), wird der Kandidat als `reject` markiert.
    - Impressum-Check (Links auf /impressum etc., Pflichtangaben gemaess § 5 TMG).
-   - Bestellkanal-Erkennung: eigener Webshop (WooCommerce/Shopify/simplywebshop/...), Bestellformular, oder nur Telefon.
+   - Bestellkanal-Erkennung: eigener Webshop (WooCommerce/Shopify/simplywebshop/...) oder nur Telefon. (Reine Kontakt-/Reservierungsformulare zaehlen nicht als Bestellkanal.)
    - Extraktion von Telefon, Oeffnungszeiten und Kueche aus JSON-LD (`schema.org/Restaurant`).
    - Liefergebiet: Keywords + PLZ mit Regions-Praefix.
 4. **Scoring**: `auto_accept` (alle Checks bestanden), `review` (manuelle Pruefung noetig), `reject` (Plattform-Redirect / kein Kanal).
@@ -63,7 +63,7 @@ python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json
     --out data/regions/hannover/review-queue.md
 ```
 
-Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop/Formular, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
+Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
 
 ## Review-Queue
 
@@ -72,7 +72,7 @@ python3 tools/review_queue.py --candidates data/regions/hannover/candidates.json
     --out data/regions/hannover/review-queue.md
 ```
 
-Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop/Formular, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
+Sortiert die `review`-Kandidaten nach Score (delivery/takeaway-Tags, eigener Webshop, Impressum, Koordinaten) — Top of the list zuerst manuell pruefen und in `restaurants.json` auf `verified` setzen oder loeschen.
 
 ## Neue Region
 

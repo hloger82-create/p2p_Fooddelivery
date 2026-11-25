@@ -36,8 +36,8 @@
         "orderUrl": { "type": ["string", "null"], "format": "uri" },
         "orderTypes": {
           "type": "array",
-          "items": { "enum": ["WEBSHOP", "FORM", "PHONE", "PICKUP"] },
-          "minItems": 1
+          "items": { "enum": ["WEBSHOP", "PHONE", "PICKUP"] },
+          "minItems": 0
         },
         "cuisines": {
           "type": "array",

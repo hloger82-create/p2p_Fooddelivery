@@ -22,7 +22,6 @@ from urllib.parse import urlparse
 
 CHANNEL_TO_TYPES = {
     "webshop": ["WEBSHOP"],
-    "form": ["FORM"],
     "phone": ["PHONE"],
 }
 

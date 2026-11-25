@@ -6,7 +6,6 @@ import kotlinx.serialization.Serializable
 @Serializable
 enum class OrderType {
     WEBSHOP,
-    FORM,
     PHONE,
     PICKUP,
 }

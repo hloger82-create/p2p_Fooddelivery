@@ -24,7 +24,6 @@ fun Cuisine.label(): String = when (this) {
 
 fun OrderType.label(): String = when (this) {
     OrderType.WEBSHOP -> "Online-Shop"
-    OrderType.FORM -> "Formular"
     OrderType.PHONE -> "Telefon"
     OrderType.PICKUP -> "Abholung"
 }

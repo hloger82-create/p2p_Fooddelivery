@@ -18,7 +18,8 @@
       "website": "https://www.11a-restaurant.de/",
       "orderUrl": "https://www.11a-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -51,7 +52,8 @@
       "website": "https://6sinne-hannover.de/",
       "orderUrl": "https://6sinne-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -154,7 +156,8 @@
       "orderUrl": "https://agorino.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -221,7 +224,8 @@
       "website": "https://www.alba-restaurant.de/",
       "orderUrl": "https://www.alba-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -254,7 +258,7 @@
       "website": "https://www.alexander-hannover.de/",
       "orderUrl": "https://www.alexander-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -287,7 +291,7 @@
       "website": "https://spanier-hannover.de/",
       "orderUrl": "https://spanier-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -320,7 +324,8 @@
       "website": "https://www.pension-altgarbsen.de/",
       "orderUrl": "https://www.pension-altgarbsen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -386,7 +391,8 @@
       "website": "https://alte-ricklinger-bierquelle.de/",
       "orderUrl": "https://alte-ricklinger-bierquelle.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -520,7 +526,7 @@
       "website": "https://appetito-garbsen.com/",
       "orderUrl": "https://appetito-garbsen.com/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -553,7 +559,8 @@
       "website": "https://www.aresto.de/",
       "orderUrl": "https://www.aresto.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -584,7 +591,8 @@
       "website": "https://asia-dr-wok-hannover.jimdofree.com/",
       "orderUrl": "https://asia-dr-wok-hannover.jimdofree.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -754,7 +762,8 @@
       "website": "https://www.asianativ.de/",
       "orderUrl": "https://www.asianativ.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -787,7 +796,7 @@
       "website": "https://www.a-mura.de/",
       "orderUrl": "https://www.a-mura.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -819,15 +828,13 @@
       "phone": null,
       "website": "https://restaurant-baba.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "DOENER"
       ],
       "openingHours": null,
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -852,7 +859,8 @@
       "orderUrl": "https://www.bacchus-restaurant.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -889,7 +897,7 @@
       "website": "https://www.bahnhof-leinhausen.de/",
       "orderUrl": "https://www.bahnhof-leinhausen.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -922,7 +930,8 @@
       "website": "https://www.balkan-house.de",
       "orderUrl": "https://www.balkan-house.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -955,7 +964,8 @@
       "website": "https://www.asiabambus.de/",
       "orderUrl": "https://www.asiabambus.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -991,7 +1001,7 @@
       "website": "https://www.bambus-garden-kirchrode.de/",
       "orderUrl": "https://www.bambus-garden-kirchrode.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "CHINESE"
@@ -1024,7 +1034,8 @@
       "website": "https://www.bar-anejo.com",
       "orderUrl": "https://www.bar-anejo.com",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1057,7 +1068,7 @@
       "website": "https://www.basil.de/",
       "orderUrl": "https://www.basil.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1121,7 +1132,7 @@
       "website": "https://www.beckmanns-weinhaus.de/",
       "orderUrl": "https://www.beckmanns-weinhaus.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -1152,7 +1163,8 @@
       "website": "https://www.beefandreef.de/",
       "orderUrl": "https://www.beefandreef.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1186,7 +1198,8 @@
       "orderUrl": "http://restaurant-ranko.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1220,7 +1233,8 @@
       "website": "https://www.restaurant-beim-wildschuetz.de/",
       "orderUrl": "https://www.restaurant-beim-wildschuetz.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1251,7 +1265,7 @@
       "website": "https://berenbosteler-terrassen.de/",
       "orderUrl": "https://berenbosteler-terrassen.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1284,7 +1298,8 @@
       "website": "https://www.berggasthaus-niedersachsen.de/",
       "orderUrl": "https://www.berggasthaus-niedersachsen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1317,7 +1332,8 @@
       "website": "https://www.bestia.pizza",
       "orderUrl": "https://www.bestia.pizza",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -1349,7 +1365,8 @@
       "orderUrl": "https://www.rossini-gmbh.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -1383,7 +1400,8 @@
       "orderUrl": "https://www.bringdienst-da-toni.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -1449,7 +1467,8 @@
       "website": "https://bodega-argentina.de/",
       "orderUrl": "https://bodega-argentina.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1515,7 +1534,8 @@
       "website": "https://www.brauhaus.net/",
       "orderUrl": "https://www.brauhaus.net/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1548,7 +1568,8 @@
       "website": "https://www.broyhanhaus.de/",
       "orderUrl": "https://www.broyhanhaus.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1581,7 +1602,8 @@
       "website": "https://restaurantbrunnenhof.de",
       "orderUrl": "https://restaurantbrunnenhof.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1614,7 +1636,7 @@
       "website": "https://www.bullskitchen.de/",
       "orderUrl": "https://www.bullskitchen.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -1648,7 +1670,8 @@
       "orderUrl": "https://burgerhannover.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -1683,7 +1706,8 @@
       "orderUrl": "https://burgermeister.com/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -1747,7 +1771,7 @@
       "website": "https://celona.de/cafe-bar-celona-hannover-altstadt",
       "orderUrl": "https://celona.de/cafe-bar-celona-hannover-altstadt",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -1781,7 +1805,7 @@
       "website": "https://www.zoo-hannover.de/location-kifaru",
       "orderUrl": "https://www.zoo-hannover.de/location-kifaru",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER",
@@ -1848,7 +1872,8 @@
       "website": "https://www.castello-hannover.de/",
       "orderUrl": "https://www.castello-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -1881,7 +1906,8 @@
       "website": "https://www.cavallo-reithalle.de",
       "orderUrl": "https://www.cavallo-reithalle.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -1945,7 +1971,8 @@
       "website": "https://www.chinarestaurantmo.de/",
       "orderUrl": "https://www.chinarestaurantmo.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "CHINESE"
@@ -1978,7 +2005,8 @@
       "website": "https://thuyphat.de/",
       "orderUrl": "https://thuyphat.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -2011,7 +2039,8 @@
       "website": "https://www.comviethannover.de/",
       "orderUrl": "https://www.comviethannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -2044,7 +2073,8 @@
       "website": "https://www.costas-taverne.de/",
       "orderUrl": "https://www.costas-taverne.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -2077,7 +2107,8 @@
       "website": "https://www.curryculum.de/",
       "orderUrl": "https://www.curryculum.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -2110,7 +2141,8 @@
       "website": "https://dagennaro.de/",
       "orderUrl": "https://dagennaro.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -2145,7 +2177,8 @@
       "orderUrl": "http://ristorante.dalello.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -2178,7 +2211,8 @@
       "website": "https://www.da-luca.eu/",
       "orderUrl": "https://www.da-luca.eu/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2218,7 +2252,7 @@
       "website": "https://www.dasding-restaurant.de",
       "orderUrl": "https://www.dasding-restaurant.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -2252,7 +2286,8 @@
       "orderUrl": "https://deananddavid.com/lister-meile-hannover/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2286,7 +2321,8 @@
       "orderUrl": "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -2319,7 +2355,7 @@
       "website": "https://eckiswirts.haus/",
       "orderUrl": "https://eckiswirts.haus/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2350,7 +2386,8 @@
       "website": "https://elgreco-hannover.de/",
       "orderUrl": "https://elgreco-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -2450,8 +2487,8 @@
       "website": "https://www.eliniko-hannover.de/",
       "orderUrl": "https://www.eliniko-hannover.de/",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -2486,7 +2523,8 @@
       "orderUrl": "https://pizza-station-empelde.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -2519,7 +2557,8 @@
       "website": "https://entevonpeking.de/",
       "orderUrl": "https://entevonpeking.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "CHINESE"
@@ -2553,7 +2592,8 @@
       "orderUrl": "https://www.pizzaenzo-hannover.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -2601,7 +2641,8 @@
       "website": "https://esskultur-hannover.de",
       "orderUrl": "https://esskultur-hannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2634,7 +2675,8 @@
       "website": "https://www.bestwestern.de/hotels/Hannover/BEST-WESTERN-Hotel-Der-Foehrenhof/gastronomie",
       "orderUrl": "https://www.bestwestern.de/hotels/Hannover/BEST-WESTERN-Hotel-Der-Foehrenhof/gastronomie",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2698,7 +2740,8 @@
       "website": "https://www.restaurant-fasanenkrug.de/",
       "orderUrl": "https://www.restaurant-fasanenkrug.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2731,7 +2774,7 @@
       "website": "https://www.finca-hannover.de/",
       "orderUrl": "https://www.finca-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2763,15 +2806,13 @@
       "phone": null,
       "website": "https://www.fluegelsrestaurant.de/",
       "orderUrl": "https://www.fluegelsrestaurant.de/",
-      "orderTypes": [
-        "FORM"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "openingHours": "Tu-Su 11:30+",
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [
         "30926"
       ],
@@ -2797,7 +2838,7 @@
       "website": "https://de.dussmann.de/foodbreak20",
       "orderUrl": "https://de.dussmann.de/foodbreak20",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2831,7 +2872,8 @@
       "orderUrl": "https://www.francesca-fratelli.de/pizzamanufaktur-in-hannover/list/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -2866,7 +2908,8 @@
       "website": "https://frisch-haus.de",
       "orderUrl": "https://frisch-haus.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2929,8 +2972,8 @@
       "website": "https://frittenwerk.com/hannover.php",
       "orderUrl": "https://frittenwerk.com/hannover.php",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -2996,7 +3039,8 @@
       "website": "https://galeria-restaurant.de/standorte/",
       "orderUrl": "https://galeria-restaurant.de/standorte/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3060,7 +3104,7 @@
       "website": "https://gastwirtschaft-rust.de/",
       "orderUrl": "https://gastwirtschaft-rust.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3093,7 +3137,8 @@
       "website": "https://ristorante-gianni.com/",
       "orderUrl": "https://ristorante-gianni.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -3126,7 +3171,8 @@
       "website": "https://ginkgo-hannover.de",
       "orderUrl": "https://ginkgo-hannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "CHINESE"
@@ -3159,7 +3205,8 @@
       "website": "https://gorkha-restaurant.de/",
       "orderUrl": "https://gorkha-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "INDIAN"
@@ -3192,7 +3239,7 @@
       "website": "https://handwerk-hannover.com/",
       "orderUrl": "https://handwerk-hannover.com/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3225,7 +3272,7 @@
       "website": "https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/",
       "orderUrl": "https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -3259,7 +3306,8 @@
       "orderUrl": "http://www.happykumpir.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3358,7 +3406,8 @@
       "orderUrl": "https://www.hdmona-hannover.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3391,7 +3440,8 @@
       "website": "https://heim-w.de",
       "orderUrl": "https://heim-w.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER",
@@ -3494,7 +3544,8 @@
       "website": "https://hikari-hannover.de/",
       "orderUrl": "https://hikari-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -3529,7 +3580,8 @@
       "website": "https://hindenburgklassik.de/",
       "orderUrl": "https://hindenburgklassik.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3562,7 +3614,8 @@
       "website": "https://www.hoflokal.de/",
       "orderUrl": "https://www.hoflokal.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3595,7 +3648,8 @@
       "website": "https://hokkai.do/",
       "orderUrl": "https://hokkai.do/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -3630,7 +3684,8 @@
       "website": "https://www.hotel-oehlers.de/restaurant.html",
       "orderUrl": "https://www.hotel-oehlers.de/restaurant.html",
       "orderTypes": [
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3661,7 +3716,8 @@
       "website": "https://stern-hotel.com/",
       "orderUrl": "https://stern-hotel.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3692,7 +3748,8 @@
       "website": "https://www.imori-bistro.com/",
       "orderUrl": "https://www.imori-bistro.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -3725,7 +3782,8 @@
       "website": "https://www.ilmercato-restaurant.de/",
       "orderUrl": "https://www.ilmercato-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -3759,7 +3817,8 @@
       "orderUrl": "https://mein-immergruen.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3792,7 +3851,7 @@
       "website": "https://inos-taverne.de/",
       "orderUrl": "https://inos-taverne.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -3825,7 +3884,8 @@
       "website": "https://www.inselbeachclub.de/",
       "orderUrl": "https://www.inselbeachclub.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3858,7 +3918,7 @@
       "website": "https://www.restaurant-ischia-misburg.de/",
       "orderUrl": "https://www.restaurant-ischia-misburg.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -3925,7 +3985,8 @@
       "website": "https://www.jos-food-craft.de/",
       "orderUrl": "https://www.jos-food-craft.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -3958,7 +4019,7 @@
       "website": "https://www.joergs-bulettenschmiede.de",
       "orderUrl": "https://www.joergs-bulettenschmiede.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -3991,7 +4052,8 @@
       "website": "https://kailua-hannover.de/",
       "orderUrl": "https://kailua-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -4024,7 +4086,8 @@
       "website": "https://www.kale-restaurant.de",
       "orderUrl": "https://www.kale-restaurant.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "TURKISH"
@@ -4057,7 +4120,8 @@
       "website": "https://kalimera-hannover.de/",
       "orderUrl": "https://kalimera-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK",
@@ -4091,7 +4155,8 @@
       "website": "https://kaminstube-garbsen.de/",
       "orderUrl": "https://kaminstube-garbsen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -4124,7 +4189,8 @@
       "website": "https://kazumi-sushi.de/",
       "orderUrl": "https://kazumi-sushi.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "SUSHI"
@@ -4190,7 +4256,8 @@
       "website": "https://kenibo-ramen.de/",
       "orderUrl": "https://kenibo-ramen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -4256,7 +4323,8 @@
       "website": "https://cafekleinesglueck.jimdofree.com/",
       "orderUrl": "https://cafekleinesglueck.jimdofree.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -4321,7 +4389,7 @@
       "website": "https://restaurant-konstantinos.de/",
       "orderUrl": "https://restaurant-konstantinos.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -4354,7 +4422,8 @@
       "website": "https://korfu-langenhagen.de/",
       "orderUrl": "https://korfu-langenhagen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -4387,7 +4456,8 @@
       "website": "https://www.kostas-langenhagen.de",
       "orderUrl": "https://www.kostas-langenhagen.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK",
@@ -4430,7 +4500,8 @@
       "website": "https://www.kostas-garbsen.de/",
       "orderUrl": "https://www.kostas-garbsen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -4505,7 +4576,8 @@
       "orderUrl": "https://www.kretagrill-hannover.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER",
@@ -4582,7 +4654,8 @@
       "website": "https://kumkapi-hannover.de/",
       "orderUrl": "https://kumkapi-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GRILL",
@@ -4616,7 +4689,8 @@
       "website": "https://kytaro-der-grieche.de",
       "orderUrl": "https://kytaro-der-grieche.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -4683,7 +4757,7 @@
       "website": "https://www.labuca.de/",
       "orderUrl": "https://www.labuca.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -4716,7 +4790,8 @@
       "website": "http://restaurante-lacasa.de/",
       "orderUrl": "http://restaurante-lacasa.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -4747,7 +4822,8 @@
       "website": "https://www.ristorante-la-favola.de/",
       "orderUrl": "https://www.ristorante-la-favola.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -4778,7 +4854,7 @@
       "website": "https://www.forchetta-hannover.de/",
       "orderUrl": "https://www.forchetta-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -4811,7 +4887,8 @@
       "website": "https://www.restaurant-galleria.de",
       "orderUrl": "https://www.restaurant-galleria.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -4844,8 +4921,8 @@
       "website": "https://www.la-lucania2.de",
       "orderUrl": "https://www.la-lucania2.de",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -4878,7 +4955,7 @@
       "website": "https://www.la-piazzetta-gehrden.de/",
       "orderUrl": "https://www.la-piazzetta-gehrden.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -4911,7 +4988,8 @@
       "website": "https://spanier-la-plaza-hannover-linden.de/",
       "orderUrl": "https://spanier-la-plaza-hannover-linden.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -4944,7 +5022,8 @@
       "website": "https://lavita-hannover.de/",
       "orderUrl": "https://lavita-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -5011,7 +5090,8 @@
       "website": "https://www.lasall-hannover.de/",
       "orderUrl": "https://www.lasall-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5042,7 +5122,8 @@
       "website": "https://layalina-restaurant.de/",
       "orderUrl": "https://layalina-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5108,7 +5189,7 @@
       "website": "http://www.levante-hannover.de/",
       "orderUrl": "http://www.levante-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5141,7 +5222,7 @@
       "website": "https://lieblingsbar.de/",
       "orderUrl": "https://lieblingsbar.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5174,7 +5255,7 @@
       "website": "https://lindener-bergterrassen.eatbu.com/?lang=de",
       "orderUrl": "https://lindener-bergterrassen.eatbu.com/?lang=de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "GRILL",
@@ -5209,7 +5290,8 @@
       "orderUrl": "https://liners-lecker.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -5240,7 +5322,7 @@
       "website": "http://www.ratskeller-gehrden.de/",
       "orderUrl": "http://www.ratskeller-gehrden.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5273,7 +5355,8 @@
       "website": "https://listerliebe.de/",
       "orderUrl": "https://listerliebe.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -5307,7 +5390,8 @@
       "website": "https://little-cortile.de/",
       "orderUrl": "https://little-cortile.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -5340,7 +5424,7 @@
       "website": "https://locanta.eatbu.com/?lang=de",
       "orderUrl": "https://locanta.eatbu.com/?lang=de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER",
@@ -5411,7 +5495,7 @@
       "website": "https://www.lukullus-hannover.de",
       "orderUrl": "https://www.lukullus-hannover.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -5445,7 +5529,8 @@
       "orderUrl": "https://maloa.com/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5550,7 +5635,8 @@
       "orderUrl": "https://mantu-garbsen.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5581,7 +5667,8 @@
       "website": "https://www.maremonte.de/",
       "orderUrl": "https://www.maremonte.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -5647,7 +5734,8 @@
       "website": "https://marys-hannover.de/",
       "orderUrl": "https://marys-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5680,7 +5768,8 @@
       "website": "https://www.masa-hannover.de/",
       "orderUrl": "https://www.masa-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5714,7 +5803,8 @@
       "orderUrl": "https://max-walloschke.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5745,7 +5835,7 @@
       "website": "https://www.restaurant-maxes.de",
       "orderUrl": "https://www.restaurant-maxes.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5779,7 +5869,8 @@
       "orderUrl": "https://www.mekonghannover.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -5811,15 +5902,13 @@
       "phone": null,
       "website": "https://www.gymnasium-isernhagen.de/mensa/",
       "orderUrl": "https://www.gymnasium-isernhagen.de/mensa/",
-      "orderTypes": [
-        "FORM"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "openingHours": "Mo-Fr 13:15-14:15",
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [
         "30916"
       ],
@@ -5845,8 +5934,8 @@
       "website": "https://www.studentenwerk-hannover.de/essen/mensen-und-cafes/Mensa%20HMTMH",
       "orderUrl": "https://www.studentenwerk-hannover.de/essen/mensen-und-cafes/Mensa%20HMTMH",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -5880,7 +5969,7 @@
       "website": "https://restaurant-milazzo.de",
       "orderUrl": "https://restaurant-milazzo.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -5914,7 +6003,8 @@
       "website": "https://www.mimis-thaikitchen.de/",
       "orderUrl": "https://www.mimis-thaikitchen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "THAI"
@@ -5947,7 +6037,8 @@
       "website": "https://misurfa.de/",
       "orderUrl": "https://misurfa.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "TURKISH"
@@ -5981,7 +6072,8 @@
       "website": "http://moes-hannover.de/",
       "orderUrl": "http://moes-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -6048,7 +6140,8 @@
       "website": "https://marche-restaurants.de/standort/cafe-kroepcke/",
       "orderUrl": "https://marche-restaurants.de/standort/cafe-kroepcke/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6081,7 +6174,8 @@
       "website": "https://namastelinden.de/",
       "orderUrl": "https://namastelinden.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "INDIAN"
@@ -6115,7 +6209,8 @@
       "orderUrl": "https://www.nemviethannover.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -6147,15 +6242,13 @@
       "phone": null,
       "website": "http://www.niki-restaurant.de/",
       "orderUrl": "http://www.niki-restaurant.de/",
-      "orderTypes": [
-        "FORM"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "GREEK"
       ],
       "openingHours": "Mo,We,Th 17:00-22:30; Fr,Sa 17:00-23:00; Su,PH 12:00-14:30,17:00-22:30; Tu off",
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [
         "30880"
       ],
@@ -6181,7 +6274,8 @@
       "website": "https://nikopolis.net",
       "orderUrl": "https://nikopolis.net",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -6213,7 +6307,8 @@
       "orderUrl": "https://noosou.de/locatons/noosou-hannover-bemerode-asian-fresh-kitchen/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -6250,7 +6345,8 @@
       "orderUrl": "https://www.nordsee.com/de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6280,15 +6376,13 @@
       "phone": null,
       "website": "https://www.ntv09.de/clubgaststaette.cfm",
       "orderUrl": "https://www.ntv09.de/clubgaststaette.cfm",
-      "orderTypes": [
-        "FORM"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "openingHours": null,
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [
         "30165"
       ],
@@ -6345,7 +6439,8 @@
       "website": "https://www.odysseus-gehrden.de/",
       "orderUrl": "https://www.odysseus-gehrden.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -6378,7 +6473,8 @@
       "website": "https://olavs-kitchen.de/",
       "orderUrl": "https://olavs-kitchen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -6412,7 +6508,8 @@
       "orderUrl": "https://www.ongtao.net/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -6445,7 +6542,8 @@
       "website": "https://www.outbaxspirit.de/",
       "orderUrl": "https://www.outbaxspirit.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6478,7 +6576,8 @@
       "website": "https://palladion-hannover.de",
       "orderUrl": "https://palladion-hannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -6511,7 +6610,8 @@
       "website": "https://www.pan-over.de/",
       "orderUrl": "https://www.pan-over.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "AMERICAN"
@@ -6579,7 +6679,8 @@
       "orderUrl": "https://peterpane.de/standorte/#!/l/hannover/lange-laube-6/3087001",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -6612,7 +6713,8 @@
       "website": "https://www.pfannkuchenhaus.de/",
       "orderUrl": "https://www.pfannkuchenhaus.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6643,7 +6745,8 @@
       "website": "https://www.pfefferkornhannover.de",
       "orderUrl": "https://www.pfefferkornhannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6677,7 +6780,8 @@
       "orderUrl": "https://www.phamskitchen.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -6710,7 +6814,8 @@
       "website": "https://www.phamysushihannover.de/",
       "orderUrl": "https://www.phamysushihannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -6746,7 +6851,8 @@
       "website": "https://lapiazzaitaliana.com/",
       "orderUrl": "https://lapiazzaitaliana.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -6779,7 +6885,8 @@
       "website": "https://www.pier51.de/",
       "orderUrl": "https://www.pier51.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -6880,7 +6987,8 @@
       "orderUrl": "https://www.haus-pizza.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -6921,7 +7029,8 @@
       "website": "https://pizzahut.de/de/store-locator/pizza_hut_hannover_hauptbahnhof",
       "orderUrl": "https://pizzahut.de/de/store-locator/pizza_hut_hannover_hauptbahnhof",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -6954,7 +7063,8 @@
       "website": "https://www.pizza-lust-hannover.de/",
       "orderUrl": "https://www.pizza-lust-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -7000,7 +7110,8 @@
       "website": "https://www.pizzeria-night.de/",
       "orderUrl": "https://www.pizzeria-night.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -7048,7 +7159,8 @@
       "orderUrl": "https://www.pizzanumberonehannover.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -7082,7 +7194,8 @@
       "orderUrl": "https://pizzapazza.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -7192,7 +7305,8 @@
       "website": "https://www.pizzamax.de/hannover/",
       "orderUrl": "https://www.pizzamax.de/hannover/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -7271,7 +7385,8 @@
       "orderUrl": "https://www.pizzeriamalbat.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -7341,7 +7456,8 @@
       "website": "https://www.play-off-hannover.de/",
       "orderUrl": "https://www.play-off-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "AMERICAN",
@@ -7376,7 +7492,8 @@
       "orderUrl": "https://pommes-helden.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7407,7 +7524,8 @@
       "website": "https://restaurant-radieschen.de/",
       "orderUrl": "https://restaurant-radieschen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7440,7 +7558,8 @@
       "website": "https://www.raffaeles-hannover.de",
       "orderUrl": "https://www.raffaeles-hannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -7473,7 +7592,8 @@
       "website": "https://rasoi-hannover.de/",
       "orderUrl": "https://rasoi-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "INDIAN"
@@ -7506,7 +7626,8 @@
       "website": "https://www.reimanns-eck.de",
       "orderUrl": "https://www.reimanns-eck.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7539,7 +7660,7 @@
       "website": "https://reislandgarbsen.de",
       "orderUrl": "https://reislandgarbsen.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "SUSHI",
@@ -7571,7 +7692,7 @@
       "website": "https://www.nuovo-restaurant.de/",
       "orderUrl": "https://www.nuovo-restaurant.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -7637,7 +7758,7 @@
       "website": "https://psv-hannover.de/",
       "orderUrl": "https://psv-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7671,7 +7792,7 @@
       "website": "https://restaurant-am-sportpark.eatbu.com/?lang=de",
       "orderUrl": "https://restaurant-am-sportpark.eatbu.com/?lang=de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "BURGER",
@@ -7707,7 +7828,8 @@
       "website": "https://www.restaurantmarie.de",
       "orderUrl": "https://www.restaurantmarie.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7740,7 +7862,7 @@
       "website": "https://www.restaurant-otts.de/",
       "orderUrl": "https://www.restaurant-otts.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7773,7 +7895,8 @@
       "website": "https://www.vienna-restaurant.de/",
       "orderUrl": "https://www.vienna-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7806,7 +7929,8 @@
       "website": "https://www.ristorante-fellini.de/",
       "orderUrl": "https://www.ristorante-fellini.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -7839,8 +7963,8 @@
       "website": "https://www.restaurant-perschia.de/",
       "orderUrl": "https://www.restaurant-perschia.de/",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7873,7 +7997,8 @@
       "website": "https://www.restaurant-retro.net",
       "orderUrl": "https://www.restaurant-retro.net",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7906,7 +8031,8 @@
       "website": "https://www.riasbaixas-2.de",
       "orderUrl": "https://www.riasbaixas-2.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -7939,7 +8065,7 @@
       "website": "https://ricenroll-garbsen.eatbu.com/?lang=de#",
       "orderUrl": "https://ricenroll-garbsen.eatbu.com/?lang=de#",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "SUSHI",
@@ -7976,7 +8102,8 @@
       "website": "https://richards-restaurant.de/",
       "orderUrl": "https://richards-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8010,7 +8137,8 @@
       "orderUrl": "https://www.anno1901-ricklingen.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8043,7 +8171,7 @@
       "website": "https://www.botticelli-hannover.de",
       "orderUrl": "https://www.botticelli-hannover.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -8076,7 +8204,8 @@
       "website": "https://www.ledavi-hannover.de",
       "orderUrl": "https://www.ledavi-hannover.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -8140,7 +8269,8 @@
       "website": "https://www.schnitzel-paradies.de/",
       "orderUrl": "https://www.schnitzel-paradies.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8171,7 +8301,8 @@
       "website": "https://www.rodizio-baumhaus.de/",
       "orderUrl": "https://www.rodizio-baumhaus.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8204,8 +8335,8 @@
       "website": "https://www.roys-hannover.de/",
       "orderUrl": "https://www.roys-hannover.de/",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -8238,7 +8369,7 @@
       "website": "https://www.ruenthai.de/",
       "orderUrl": "https://www.ruenthai.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -8271,7 +8402,8 @@
       "website": "https://www.ruepel.bar/",
       "orderUrl": "https://www.ruepel.bar/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8338,7 +8470,8 @@
       "website": "https://saigon-hannover.de/",
       "orderUrl": "https://saigon-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -8404,7 +8537,8 @@
       "website": "https://salonikiseelze.de/",
       "orderUrl": "https://salonikiseelze.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -8478,7 +8612,8 @@
       "orderUrl": "https://saporiitaliani-hannover.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -8512,7 +8647,8 @@
       "website": "https://www.pizza-saycheese.de",
       "orderUrl": "https://www.pizza-saycheese.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -8581,7 +8717,8 @@
       "website": "https://schorse-im-leineschloss.de",
       "orderUrl": "https://schorse-im-leineschloss.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8612,7 +8749,7 @@
       "website": "https://schuetzenhaus-anderten.de",
       "orderUrl": "https://schuetzenhaus-anderten.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8645,7 +8782,8 @@
       "website": "https://www.schuetzenverein-kaltenweide.de/",
       "orderUrl": "https://www.schuetzenverein-kaltenweide.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8676,7 +8814,8 @@
       "website": "https://seehaus-isernhagen.de/",
       "orderUrl": "https://seehaus-isernhagen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8710,7 +8849,8 @@
       "orderUrl": "https://www.shalimar-hannover.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "INDIAN"
@@ -8777,7 +8917,8 @@
       "website": "https://www.shinebar.de/",
       "orderUrl": "https://www.shinebar.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8808,7 +8949,8 @@
       "website": "https://www.siam-thai-restaurant.de/",
       "orderUrl": "https://www.siam-thai-restaurant.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "THAI"
@@ -8842,7 +8984,8 @@
       "orderUrl": "https://www.sissiundfranz.eu/hannover/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "BURGER"
@@ -8875,7 +9018,8 @@
       "website": "https://smokingbianco.de",
       "orderUrl": "https://smokingbianco.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -8909,7 +9053,7 @@
       "website": "http://soulkitchen-linden.de/",
       "orderUrl": "http://soulkitchen-linden.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -8942,7 +9086,8 @@
       "website": "https://spazzo.eu",
       "orderUrl": "https://spazzo.eu",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -8975,7 +9120,7 @@
       "website": "https://speiserei-hannover.de/",
       "orderUrl": "https://speiserei-hannover.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9008,7 +9153,7 @@
       "website": "https://www.spoon-hannover.de",
       "orderUrl": "https://www.spoon-hannover.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -9042,7 +9187,8 @@
       "website": "https://www.sporthof-stelingen.de/",
       "orderUrl": "https://www.sporthof-stelingen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9075,7 +9221,7 @@
       "website": "https://www.spaetzlehaus.de",
       "orderUrl": "https://www.spaetzlehaus.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9144,7 +9290,8 @@
       "website": "https://steakhouse-kampe.de",
       "orderUrl": "https://steakhouse-kampe.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9176,7 +9323,8 @@
       "orderUrl": "https://www.steuerndieb.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9240,7 +9388,8 @@
       "website": "https://staev-hannover.de/",
       "orderUrl": "https://staev-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9307,7 +9456,8 @@
       "website": "https://supperclub34.de/",
       "orderUrl": "https://supperclub34.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9406,7 +9556,7 @@
       "website": "https://www.sushi-do.de/",
       "orderUrl": "https://www.sushi-do.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -9441,7 +9591,8 @@
       "orderUrl": "https://www.ai-sushi.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "SUSHI"
@@ -9472,7 +9623,8 @@
       "website": "https://www.tai-pai.de/",
       "orderUrl": "https://www.tai-pai.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "CHINESE"
@@ -9538,7 +9690,8 @@
       "website": "https://india-tandoori-haus.de/",
       "orderUrl": "https://india-tandoori-haus.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "INDIAN"
@@ -9571,7 +9724,7 @@
       "website": "https://www.tapasbarlorenzo.de/",
       "orderUrl": "https://www.tapasbarlorenzo.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9637,7 +9790,8 @@
       "website": "https://www.tavernaasteria.de/",
       "orderUrl": "https://www.tavernaasteria.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -9670,7 +9824,8 @@
       "website": "https://www.teichhues.de/",
       "orderUrl": "https://www.teichhues.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9703,7 +9858,8 @@
       "website": "https://theliving.eu/",
       "orderUrl": "https://theliving.eu/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9735,7 +9891,8 @@
       "orderUrl": "http://www.thepizzafactory.de/",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -9799,7 +9956,8 @@
       "website": "https://www.tob-restaurant.com/",
       "orderUrl": "https://www.tob-restaurant.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -9830,7 +9988,8 @@
       "website": "https://toscanini-hannover.de/",
       "orderUrl": "https://toscanini-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -9863,7 +10022,8 @@
       "website": "https://www.trattoria-il-padrino.de",
       "orderUrl": "https://www.trattoria-il-padrino.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -9929,7 +10089,7 @@
       "website": "https://tru-story.de",
       "orderUrl": "https://tru-story.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -9963,7 +10123,8 @@
       "orderUrl": "https://urfadeluxe.de",
       "orderTypes": [
         "WEBSHOP",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "TURKISH"
@@ -9996,7 +10157,8 @@
       "website": "https://va-bene-hannover.de/",
       "orderUrl": "https://va-bene-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN",
@@ -10030,7 +10192,8 @@
       "website": "https://www.kgv-flora.de/vereinsheim",
       "orderUrl": "https://www.kgv-flora.de/vereinsheim",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -10063,7 +10226,8 @@
       "website": "https://vegan-village.com/",
       "orderUrl": "https://vegan-village.com/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -10096,7 +10260,8 @@
       "website": "https://tus-vahrenwald.de/unser-verein/vereinsgaststaette/",
       "orderUrl": "https://tus-vahrenwald.de/unser-verein/vereinsgaststaette/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10160,7 +10325,8 @@
       "website": "https://www.restaurant-vierjahreszeiten.de/",
       "orderUrl": "https://www.restaurant-vierjahreszeiten.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10193,7 +10359,8 @@
       "website": "https://vietal-kitchen.de/hannover/",
       "orderUrl": "https://vietal-kitchen.de/hannover/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "VIETNAMESE"
@@ -10226,7 +10393,8 @@
       "website": "https://viethouse-garbsen.de/",
       "orderUrl": "https://viethouse-garbsen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN"
@@ -10259,7 +10427,8 @@
       "website": "https://vince-trattoria.de/",
       "orderUrl": "https://vince-trattoria.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ITALIAN"
@@ -10292,7 +10461,8 @@
       "website": "https://voi-hannover.de/",
       "orderUrl": "https://voi-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "ASIAN",
@@ -10326,7 +10496,7 @@
       "website": "https://www.vorveghannover.de",
       "orderUrl": "https://www.vorveghannover.de",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10359,7 +10529,7 @@
       "website": "https://werkhof-hannover.de/restaurant",
       "orderUrl": "https://werkhof-hannover.de/restaurant",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10392,7 +10562,7 @@
       "website": "https://wiesendachhaus-laatzen.de/",
       "orderUrl": "https://wiesendachhaus-laatzen.de/",
       "orderTypes": [
-        "FORM"
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10425,8 +10595,8 @@
       "website": "https://wirtshaus-hannover.de/",
       "orderUrl": "https://wirtshaus-hannover.de/",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10459,7 +10629,8 @@
       "website": "https://www.wirtshaus-wuelfel.de",
       "orderUrl": "https://www.wirtshaus-wuelfel.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10492,7 +10663,8 @@
       "website": "https://wrapper-hannover.de/",
       "orderUrl": "https://wrapper-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "TURKISH"
@@ -10525,7 +10697,8 @@
       "website": "https://www.yourpizza-express.de",
       "orderUrl": "https://www.yourpizza-express.de",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "PIZZA"
@@ -10596,8 +10769,8 @@
       "website": "https://www.zorbas-in-hannover.de/",
       "orderUrl": "https://www.zorbas-in-hannover.de/",
       "orderTypes": [
-        "FORM",
-        "PICKUP"
+        "PICKUP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -10630,7 +10803,8 @@
       "website": "https://www.zumkamin-hannover.de/",
       "orderUrl": "https://www.zumkamin-hannover.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10663,7 +10837,8 @@
       "website": "https://www.storchennest-hemmingen.de/",
       "orderUrl": "https://www.storchennest-hemmingen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "OTHER"
@@ -10728,7 +10903,8 @@
       "website": "https://www.oez-antalya.de/",
       "orderUrl": "https://www.oez-antalya.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "TURKISH"
@@ -12034,14 +12210,12 @@
       "phone": null,
       "website": "https://bab-al-yemen-modern.de/speisekarte/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -12129,15 +12303,13 @@
       "phone": null,
       "website": "https://www.ojilong.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "SUSHI",
         "ASIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -13889,14 +14061,12 @@
       "phone": null,
       "website": "https://adriatic-hotel.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -13920,14 +14090,12 @@
       "phone": null,
       "website": "https://www.misik-hannover.com/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -13983,14 +14151,12 @@
       "phone": null,
       "website": "https://www.nasimbanoo-hannover.com/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "INDIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -14408,14 +14574,12 @@
       "phone": null,
       "website": "https://www.asia-regent.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "ASIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -14472,14 +14636,12 @@
       "phone": null,
       "website": "https://www.bornumer-holz.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -14503,14 +14665,12 @@
       "phone": null,
       "website": "https://www.gaststaette-kaiser.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -16664,14 +16824,12 @@
       "phone": null,
       "website": "https://pommesglueck.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -16695,14 +16853,12 @@
       "phone": null,
       "website": "https://www.restaurant-chois.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "ASIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -16726,15 +16882,13 @@
       "phone": null,
       "website": "https://theurfakebab.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "DOENER",
         "TURKISH"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -16758,14 +16912,12 @@
       "phone": null,
       "website": "https://www.konig-restaurant-hannover.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -17403,14 +17555,12 @@
       "phone": null,
       "website": "https://www.bellarte.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "ITALIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20707,14 +20857,12 @@
       "phone": null,
       "website": "https://funky.kitchen/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20738,14 +20886,12 @@
       "phone": null,
       "website": "http://www.ido-kebap.de",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "DOENER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20769,14 +20915,12 @@
       "phone": null,
       "website": "http://www.entenfang-hannover.de",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20800,14 +20944,12 @@
       "phone": null,
       "website": "http://thanhan.gruetze.eu",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "ASIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20863,14 +21005,12 @@
       "phone": null,
       "website": "https://www.pargagrill-hannover.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "GREEK"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20894,14 +21034,12 @@
       "phone": null,
       "website": "https://www.pizzamaster-in-hannover.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "PIZZA"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20925,14 +21063,12 @@
       "phone": null,
       "website": "https://aram-kebab-haus.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "DOENER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20956,14 +21092,12 @@
       "phone": null,
       "website": "https://mosaik.cafe/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -20987,14 +21121,12 @@
       "phone": null,
       "website": "https://www.takumiramennoodles.com",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21083,14 +21215,12 @@
       "phone": null,
       "website": "https://www.greekkitchen-ellada.de/griechisches-restaurant-christos-im-zimmermann-in-hannover-junkersstrasse-1/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "GREEK"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21114,14 +21244,12 @@
       "phone": null,
       "website": "https://www.theharplinden.de",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "BURGER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21145,14 +21273,12 @@
       "phone": null,
       "website": "https://hannover.meandallhotels.com/esskultur",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21176,14 +21302,12 @@
       "phone": null,
       "website": "https://www.sportcenter-empelde.de/bistro-classico",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "ITALIAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21207,15 +21331,13 @@
       "phone": null,
       "website": "https://kleefood.de",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "BURGER",
         "PIZZA"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21239,14 +21361,12 @@
       "phone": null,
       "website": "https://www.sc-schwarz-gold.de/vereinsheim.html",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21270,14 +21390,12 @@
       "phone": null,
       "website": "https://damn-dog.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "AMERICAN"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21301,15 +21419,13 @@
       "phone": null,
       "website": "https://brudis-db.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "BURGER",
         "DOENER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21333,14 +21449,12 @@
       "phone": null,
       "website": "https://www.happyfries.nl/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21364,14 +21478,12 @@
       "phone": null,
       "website": "https://artemis-restaurant-hannover.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "GREEK"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21395,14 +21507,12 @@
       "phone": null,
       "website": "https://alex1903.de/index.php/gastronomie/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21426,14 +21536,12 @@
       "phone": null,
       "website": "http://www.donatos-der-imbiss.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21457,15 +21565,13 @@
       "phone": null,
       "website": "https://www.burgerimbiss-hannover.de/",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "BURGER",
         "OTHER"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,
@@ -21489,14 +21595,12 @@
       "phone": null,
       "website": "https://www.mantilove.de",
       "orderUrl": null,
-      "orderTypes": [
-        "PICKUP"
-      ],
+      "orderTypes": [],
       "cuisines": [
         "TURKISH"
       ],
       "delivers": false,
-      "pickup": true,
+      "pickup": false,
       "deliveryAreas": [],
       "minOrderValue": null,
       "deliveryFee": null,

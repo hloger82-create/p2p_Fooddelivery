@@ -5,7 +5,7 @@ Android-App (v1: Region **Hannover**), die lokale Restaurants mit **eigener Lief
 ## Funktionen (v1)
 
 - Listen- und Kartenansicht (OpenStreetMap via OSMdroid, mit ODbL-Namensnennung)
-- Filter: Kueche (Pizza, Doener, Asiatisch, Sushi, ...) und Bestellmoeglichkeit (Online-Shop, Formular, Telefon, Abholung) sowie „Liefert"
+- Filter: Kueche (Pizza, Doener, Asiatisch, Sushi, ...) und Bestellmoeglichkeit (Online-Shop, Telefon, Abholung) sowie „Liefert"
 - Detailseite mit Adresse, Telefon (tap-to-call), Liefergebiet, „Zum Restaurant"-Button (öffnet externen Link)
 - Regionsbasiert: neue Stadt = neue Config + neues Dataset, kein Code-Eingriff
 
