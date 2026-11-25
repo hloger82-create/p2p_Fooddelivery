@@ -70,6 +70,32 @@ QS-Checkliste pro Fall (siehe auch `docs/RESEARCH-PIPELINE.md` Abschnitt "Manuel
 3. **Kueche**: `cuisineSource=stated` uebernehmen; nicht angegeben -> Speisen analysieren, eigene Schlussfolgerung (`cuisineSource=derived` + Vermerk in `notes`),
 4. delivers/pickup nur mit Nachweis, 5. `status=verified` + `lastVerified` setzen.
 
+### Re-Run (neue Kandidaten holen) — Windows PowerShell
+
+```powershell
+cd C:\Users\braun\LewisApp\p2p_Fooddelivery
+git pull
+python -m pip install -r tools\requirements.txt
+
+# alte Queue sichern (Ausschlussliste), Pipeline erneut laufen
+# (Cache candidates.json.cache.json wird wiederverwendet -> bekannte Domains werden nicht erneut analysiert)
+Copy-Item data\regions\hannover\review-queue.md data\regions\hannover\review-queue-old.md
+python tools\research_pipeline.py --region data\regions\hannover\region.json --out data\regions\hannover\candidates.json --max 0 --delay 1.0
+
+# Queue mit nur NEUEN Faellen (bekannte Domains aus restaurants.json + alte Queue ausschliessen)
+python tools\review_queue.py --candidates data\regions\hannover\candidates.json --restaurants data\regions\hannover\restaurants.json --exclude-queue data\regions\hannover\review-queue-old.md --out data\regions\hannover\review-queue.md
+
+# neue Faelle manuell reviewen (QS-Checkliste im Queue-Header), dann NUR diese mergen:
+python tools\merge_candidates.py --candidates data\regions\hannover\candidates.json --out data\regions\hannover\restaurants.json --region data\regions\hannover\region.json --only-queue data\regions\hannover\review-queue.md
+python tools\validate_data.py
+Copy-Item data\regions\hannover\restaurants.json app\src\main\assets\regions\hannover\restaurants.json
+git add -A
+git commit -m "Pipeline-Re-Run Hannover: neue Kandidaten reviewed/merged"
+git push
+```
+
+Wichtig: Beim Merge `--only-queue` mit der NEUEN Queue verwenden, sonst landen bereits abgelehnte Kandidaten erneut als `pending_review` im Datensatz. Ohne `--only-queue` waeren beim letzten Stand z. B. 101 alte Rejects wieder dazugekommen.
+
 ## Neue Region
 
 1. `data/regions/<stadt>/region.json` anlegen (bbox oder osmAreaName, `postcodes` = explizite PLZ-Liste, Blocklist).

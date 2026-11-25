@@ -34,6 +34,10 @@ cp data/regions/hannover/restaurants.json app/src/main/assets/regions/hannover/r
 
 Schema: `data/schema/restaurant.schema.json`. App-Assets aktualisieren nicht vergessen — alternativ greift die App zur Laufzeit auf `datasetUrl` (raw.githubusercontent .../main/...) zu.
 
+## Re-Run (neue Kandidaten)
+
+Komplette PowerShell-Anleitung siehe `tools/README.md` Abschnitt "Re-Run". Kernpunkte: Pipeline erneut mit gleichem `--out` laufen lassen (Cache `candidates.json.cache.json` wird wiederverwendet), dann `review_queue.py` mit `--restaurants` + `--exclude-queue` (alte Queue) aufrufen, sodass nur NEUE Faelle in der Queue landen, und beim Merge `merge_candidates.py --only-queue <neue Queue>` verwenden, damit bereits abgelehnte Kandidaten nicht erneut uebernommen werden.
+
 ## Rechtlicher Rahmen
 
 Nur oeffentliche Seiten; robots.txt; Rate-Limit; keine Plattform-Inhalte; keine personenbezogenen Daten. Siehe `docs/LEGAL.md` Abschnitt 4.

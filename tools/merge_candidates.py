@@ -104,7 +104,36 @@ def main() -> int:
     ap.add_argument("--region", default=None, help="region.json fuer Regionsname (optional)")
     ap.add_argument("--min-status", default="review", choices=["auto_accept", "review"],
                     help="nur Kandidaten ab diesem Status mergen (auto_accept = nur automatisch bestandene Checks)")
+    ap.add_argument("--only-queue", default=None,
+                    help="nur Kandidaten mergen, die in dieser review-queue.md stehen (Website-Domain oder Name+PLZ); fuer Re-Runs nach manueller Pruefung der NEUEN Queue")
     args = ap.parse_args()
+
+    allowed_fn = None
+    if args.only_queue:
+        allowed_domains = set()
+        allowed_names = set()
+        with open(args.only_queue, encoding="utf-8") as f:
+            for line in f:
+                if not line.startswith("|") or line.startswith("| #") or line.startswith("|---"):
+                    continue
+                cells = [c.strip() for c in line.strip().strip("|").split("|")]
+                if len(cells) < 9:
+                    continue
+                web = cells[8]
+                if web.startswith("http"):
+                    allowed_domains.add(domain(web))
+                allowed_names.add((cells[2].lower(), cells[5]))
+
+        def allowed_fn(c: dict) -> bool:
+            web = c.get("website") or ""
+            if str(web).startswith("http") and domain(str(web)) in allowed_domains:
+                return True
+            tags = c.get("osmTags", {})
+            plz = tags.get("addr:postcode") or ""
+            if not plz and c.get("address"):
+                m = re.search(r"\b(\d{5})\b", c["address"])
+                plz = m.group(1) if m else ""
+            return (str(c.get("name", "")).lower(), plz) in allowed_names
 
     all_candidates = []
     region_id = "unknown"
@@ -128,10 +157,13 @@ def main() -> int:
     existing_ids = {r["id"] for r in dataset["restaurants"]}
     existing_domains = {domain(r.get("website")) for r in dataset["restaurants"]} - {None}
 
-    added, skipped_dup, skipped_reject = 0, 0, 0
+    added, skipped_dup, skipped_reject, skipped_queue = 0, 0, 0, 0
     rank = {"auto_accept": 2, "review": 1, "reject": 0}
     min_rank = rank[args.min_status]
     for c in all_candidates:
+        if allowed_fn is not None and not allowed_fn(c):
+            skipped_queue += 1
+            continue
         status = c.get("status")
         if rank.get(status, 0) < min_rank:
             skipped_reject += 1
@@ -152,7 +184,8 @@ def main() -> int:
         json.dump(dataset, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    print(f"added={added} skipped_duplicates={skipped_dup} skipped_reject/no_website={skipped_reject} -> {args.out}")
+    print(f"added={added} skipped_duplicates={skipped_dup} skipped_reject/no_website={skipped_reject} "
+          f"skipped_not_in_queue={skipped_queue} -> {args.out}")
     return 0
 
 
