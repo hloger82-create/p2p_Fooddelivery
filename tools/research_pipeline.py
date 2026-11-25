@@ -500,6 +500,12 @@ def main():
     if os.path.exists(cache_path):
         with open(cache_path, encoding="utf-8") as f:
             cache = json.load(f)
+        # Cache-Invalidierung: Analysen ohne neue Felder (platformLinkOnHomepage/platformManaged)
+        # stammen von einem aelteren Pipeline-Stand und werden neu analysiert
+        stale = [d for d, a in cache.items() if "platformLinkOnHomepage" not in a]
+        if stale:
+            print(f"      Cache-Invalidierung: {len(stale)} alte Analysen werden neu geholt")
+            cache = {d: a for d, a in cache.items() if "platformLinkOnHomepage" in a}
         print(f"      Analyse-Cache geladen: {len(cache)} Domains")
 
     candidates = []
