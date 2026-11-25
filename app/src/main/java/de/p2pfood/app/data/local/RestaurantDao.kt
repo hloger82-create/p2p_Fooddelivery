@@ -20,4 +20,10 @@ interface RestaurantDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsertAll(items: List<RestaurantEntity>)
+
+    @Query("DELETE FROM restaurants WHERE regionId = :regionId AND id NOT IN (:keepIds)")
+    suspend fun deleteNotIn(regionId: String, keepIds: List<String>)
+
+    @Query("DELETE FROM restaurants WHERE regionId = :regionId")
+    suspend fun deleteByRegion(regionId: String)
 }

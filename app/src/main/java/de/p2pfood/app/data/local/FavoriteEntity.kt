@@ -27,4 +27,7 @@ interface FavoriteDao {
 
     @Query("DELETE FROM favorites WHERE restaurantId = :id")
     suspend fun remove(id: String)
+
+    @Query("DELETE FROM favorites WHERE restaurantId NOT IN (SELECT id FROM restaurants)")
+    suspend fun deleteOrphans()
 }

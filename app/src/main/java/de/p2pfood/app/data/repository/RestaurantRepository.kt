@@ -26,10 +26,11 @@ class RestaurantRepository(
 
     suspend fun ensureRegionSeeded(regionId: String) {
         withContext(Dispatchers.IO) {
-            if (dao.count(regionId) == 0) {
-                val entities = catalog.loadRestaurantSeed(regionId).map { it.toEntity() }
-                dao.upsertAll(entities)
-            }
+            // Immer aus den gebündelten Assets aktualisieren und veraltete Eintraege entfernen,
+            // damit ein App-Update auch ohne Netzwerk den Datensatz bereinigt.
+            val entities = catalog.loadRestaurantSeed(regionId).map { it.toEntity() }
+            dao.upsertAll(entities)
+            replaceMissing(regionId, entities.map { it.id })
         }
     }
 
@@ -43,10 +44,17 @@ class RestaurantRepository(
                 conn.inputStream.bufferedReader().use { it.readText() }
             }
             val dataset = AppJson.instance.decodeFromString<RestaurantDataset>(text)
+            // Replace-Semantik: remote ist massgeblich - entfernte Eintraege (z. B. QS-Ausschluesse) muessen lokal verschwinden
             dao.upsertAll(dataset.restaurants.map { it.toEntity() })
+            replaceMissing(regionId, dataset.restaurants.map { it.id })
+            favoriteDao.deleteOrphans()
         } catch (e: Exception) {
             // offline oder URL nicht erreichbar -> lokale Assets bleiben aktiv
         }
+    }
+
+    private suspend fun replaceMissing(regionId: String, keepIds: List<String>) {
+        if (keepIds.isEmpty()) dao.deleteByRegion(regionId) else dao.deleteNotIn(regionId, keepIds)
     }
 
     fun observeRestaurants(regionId: String): Flow<List<Restaurant>> =
