@@ -3425,7 +3425,8 @@
       "website": "https://hellas-wettbergen.de/",
       "orderUrl": "https://hellas-wettbergen.de/",
       "orderTypes": [
-        "WEBSHOP"
+        "WEBSHOP",
+        "PHONE"
       ],
       "cuisines": [
         "GREEK"
@@ -3438,10 +3439,10 @@
       ],
       "minOrderValue": null,
       "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/1847997661; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "eigene Website hellas-wettbergen.de mit Impressum; eigener Shop (White-Label metro.rest) + Telefon 0511 462822; In der Rehre 22, 30457 Wettbergen"
     },
     {
       "id": "hannover-hendl-und-glut",
@@ -16773,6 +16774,40 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; keine Tel. in OSM"
+    },
+    {
+      "id": "hannover-pizza-tornado-ricklingen",
+      "regionId": "hannover",
+      "name": "Pizza Tornado Ricklingen",
+      "address": {
+        "street": "Ricklinger Stadtweg 37",
+        "postcode": "30459",
+        "city": "Hannover"
+      },
+      "lat": 52.346115,
+      "lon": 9.724144,
+      "phone": "+49 511 421187",
+      "website": "https://www.tornadopizza.de/",
+      "orderUrl": "https://tornado.simplywebshop.de/",
+      "orderTypes": [
+        "WEBSHOP",
+        "PHONE"
+      ],
+      "cuisines": [
+        "PIZZA",
+        "BURGER",
+        "ITALIAN"
+      ],
+      "delivers": true,
+      "pickup": true,
+      "deliveryAreas": [],
+      "minOrderValue": null,
+      "deliveryFee": null,
+      "openingHours": null,
+      "status": "verified",
+      "lastVerified": "2026-11-24",
+      "source": "manual_review",
+      "notes": "eigene Domain tornadopizza.de mit Impressum + eigener Webshop (tornado.simplywebshop.de); lokale Mini-Kette (MIRI UG, 6 Filialen Hannover/Langenhagen); auch Wolt/Lieferando/Uber -> Link-out eigener Shop"
     }
   ]
 }
