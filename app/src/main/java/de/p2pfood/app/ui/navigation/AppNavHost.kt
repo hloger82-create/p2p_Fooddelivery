@@ -48,7 +48,8 @@ fun AppNavHost(container: AppContainer, onToggleTheme: () -> Unit) {
         composable("about") {
             val regionId = container.regionCatalog.availableRegionIds().first()
             val datasetCount by container.restaurantRepository.observeCount(regionId).collectAsState(initial = -1)
-            AboutScreen(datasetCount = datasetCount, onBack = { navController.popBackStack() })
+            val donateUrl = container.regionCatalog.loadRegion(regionId).donateUrl
+            AboutScreen(datasetCount = datasetCount, donateUrl = donateUrl, onBack = { navController.popBackStack() })
         }
     }
 }

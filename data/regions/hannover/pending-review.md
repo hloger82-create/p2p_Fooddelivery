@@ -2,7 +2,7 @@
 
 Badge "Verifizierung offen" verschwindet in der App, wenn im Eintrag gesetzt: `"status": "verified"` + `"lastVerified": "<heute>"`.
 QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), 3) Kueche: stated uebernehmen, sonst Speisen analysieren -> `cuisineSource: "derived"` + Vermerk in notes, 4) delivers/pickup nur mit Nachweis, 5) status=verified + lastVerified.
-Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste danach neu erzeugen (Snapshot).
+Danach: `python tools\validate_data.py` -> Assets spiegeln -> commit/push. Liste danach neu erzeugen (Snapshot). Mit --flag 'PICKUP?' z. B. nur die PICKUP-Zweifelsfaelle listen.
 
 QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein takeaway/abhol-Nachweis | LIEFERT? = kein Liefer-Nachweis. Flags manuell pruefen!
 

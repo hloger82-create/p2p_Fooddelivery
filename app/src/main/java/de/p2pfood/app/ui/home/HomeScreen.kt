@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.HelpOutline
 import androidx.compose.material.icons.filled.Info
@@ -20,6 +21,8 @@ import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.Button
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
@@ -32,6 +35,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -67,6 +71,29 @@ fun HomeScreen(
             TopAppBar(
                 title = { Text(state.region?.name ?: stringResource(R.string.app_name)) },
                 actions = {
+                    if (viewModel.regionIds.size > 1) {
+                        var regionMenuExpanded by remember { mutableStateOf(false) }
+                        Box {
+                            TextButton(onClick = { regionMenuExpanded = true }) {
+                                Text(state.region?.name ?: viewModel.regionIds.first())
+                                Icon(Icons.Default.ArrowDropDown, contentDescription = null)
+                            }
+                            DropdownMenu(
+                                expanded = regionMenuExpanded,
+                                onDismissRequest = { regionMenuExpanded = false },
+                            ) {
+                                viewModel.regionIds.forEach { id ->
+                                    DropdownMenuItem(
+                                        text = { Text(viewModel.regionNames[id] ?: id) },
+                                        onClick = {
+                                            viewModel.selectRegion(id)
+                                            regionMenuExpanded = false
+                                        },
+                                    )
+                                }
+                            }
+                        }
+                    }
                     IconButton(onClick = { showHelp = true }) {
                         Icon(Icons.Default.HelpOutline, contentDescription = stringResource(R.string.help))
                     }

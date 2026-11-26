@@ -15,18 +15,21 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import de.p2pfood.app.R
+import de.p2pfood.app.util.openExternal
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AboutScreen(datasetCount: Int = -1, onBack: () -> Unit) {
+fun AboutScreen(datasetCount: Int = -1, donateUrl: String? = null, onBack: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -56,6 +59,15 @@ fun AboutScreen(datasetCount: Int = -1, onBack: () -> Unit) {
             )
             Text(stringResource(R.string.disclaimer), style = MaterialTheme.typography.bodySmall)
             Text(stringResource(R.string.financing), style = MaterialTheme.typography.bodySmall)
+            if (donateUrl != null) {
+                val ctx = LocalContext.current
+                OutlinedButton(
+                    onClick = { ctx.openExternal(donateUrl) },
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(stringResource(R.string.donate))
+                }
+            }
             if (datasetCount >= 0) {
                 Text(
                     stringResource(R.string.about_dataset, datasetCount),

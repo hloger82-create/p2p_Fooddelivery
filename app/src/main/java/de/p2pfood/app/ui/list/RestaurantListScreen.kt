@@ -169,6 +169,11 @@ fun RestaurantCard(
                 modifier = Modifier.padding(top = 6.dp),
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
+                if (restaurant.featured) {
+                    Badge(containerColor = MaterialTheme.colorScheme.primaryContainer) {
+                        Text(stringResource(R.string.featured_badge))
+                    }
+                }
                 if (restaurant.delivers) Badge { Text(stringResource(R.string.delivers)) }
                 if (restaurant.pickup) Badge { Text(stringResource(R.string.pickup)) }
                 if (restaurant.status != VerificationStatus.VERIFIED) {

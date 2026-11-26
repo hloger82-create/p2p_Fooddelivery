@@ -47,6 +47,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Checkliste aller pending_review-Eintraege")
     ap.add_argument("--restaurants", required=True)
     ap.add_argument("--candidates", default=None, help="candidates.json der Pipeline ( fuer QS-Flags: WEBSHOP?/PICKUP?/LIEFERT? )")
+    ap.add_argument("--flag", default=None, help="nur Eintraege mit diesem QS-Flag listen (z. B. --flag 'PICKUP?')")
     ap.add_argument("--out", default=None, help="optionale Markdown-Ausgabe (sonst stdout)")
     args = ap.parse_args()
 
@@ -55,6 +56,7 @@ def main() -> int:
     region_id = data.get("regionId", "?")
     pending = [r for r in data.get("restaurants", []) if r.get("status") != "verified"]
     pending.sort(key=lambda r: (0 if "WEBSHOP" in r.get("orderTypes", []) else 1, r.get("name", "").lower()))
+    flag_filter = args.flag
 
     # candidates.json fuer QS-Flags (Match ueber osmId aus notes oder Website-Domain)
     by_osm, by_dom = {}, {}
@@ -98,14 +100,16 @@ def main() -> int:
             flags.append("LIEFERT?")
         return ",".join(flags) or "-"
 
+    if flag_filter:
+        pending = [r for r in pending if flag_filter in qs_flags(r)]
     lines = [
-        f"# Pending Review {region_id} ({len(pending)} Eintraege, WEBSHOP zuerst, dann Name)",
+        f"# Pending Review {region_id} ({len(pending)} Eintraege" + (f", Flag {flag_filter}" if flag_filter else "") + ", WEBSHOP zuerst, dann Name)",
         "",
         "Badge \"Verifizierung offen\" verschwindet in der App, wenn im Eintrag gesetzt: `\"status\": \"verified\"` + `\"lastVerified\": \"<heute>\"`.",
         "QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), "
         "3) Kueche: stated uebernehmen, sonst Speisen analysieren -> `cuisineSource: \"derived\"` + Vermerk in notes, "
         "4) delivers/pickup nur mit Nachweis, 5) status=verified + lastVerified.",
-        "Danach: `python tools\\validate_data.py` -> Assets spiegeln -> commit/push. Liste danach neu erzeugen (Snapshot).",
+        "Danach: `python tools\\validate_data.py` -> Assets spiegeln -> commit/push. Liste danach neu erzeugen (Snapshot). Mit --flag 'PICKUP?' z. B. nur die PICKUP-Zweifelsfaelle listen.",
         "",
         "QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein takeaway/abhol-Nachweis | LIEFERT? = kein Liefer-Nachweis. Flags manuell pruefen!",
         "",

@@ -39,4 +39,7 @@
     <string name="cuisine_derived">Küche aus der Speisekarte abgeleitet (eigene Einschätzung)</string>
     <string name="about_dataset">Datensatz in der App: %1$d Einträge</string>
     <string name="report_restaurant">Restaurant melden</string>
+    <string name="featured_badge">Featured</string>
+    <string name="donate">App unterstützen (freiwillige Spende)</string>
+    <string name="share">Teilen</string>
 </resources>

@@ -31,6 +31,11 @@
       "format": "uri",
       "description": "Link-Out fuer 'Restaurant melden' (z. B. GitHub-Issue-Template mit vorausgefuelltem Titel/Body via Query-Parameter)"
     },
+    "donateUrl": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Link-Out fuer freiwillige Unterstuetzung ('App unterstuetzen' im About-Screen); null = wird nicht angezeigt (siehe docs/MONETIZATION.md)"
+    },
     "chainDomains": { "type": "array", "items": { "type": "string" } }
   }
 }

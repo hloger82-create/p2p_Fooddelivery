@@ -20,6 +20,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Flag
 import androidx.compose.material.icons.filled.OpenInBrowser
+import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.StarBorder
 import androidx.compose.material3.AssistChip
@@ -49,6 +50,7 @@ import de.p2pfood.app.data.model.Restaurant
 import de.p2pfood.app.ui.components.label
 import de.p2pfood.app.util.callNumber
 import de.p2pfood.app.util.openExternal
+import de.p2pfood.app.util.shareText
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
@@ -71,6 +73,18 @@ fun RestaurantDetailScreen(
                 },
                 actions = {
                     val isFavorite by viewModel.isFavorite.collectAsState()
+                    IconButton(onClick = {
+                        val r0 = restaurant
+                        if (r0 != null) {
+                            val text = buildString {
+                                append(r0.name)
+                                r0.website?.let { append("\n").append(it) }
+                            }
+                            context.shareText(text)
+                        }
+                    }) {
+                        Icon(Icons.Default.Share, contentDescription = stringResource(R.string.share))
+                    }
                     IconButton(onClick = { viewModel.toggleFavorite() }) {
                         Icon(
                             imageVector = if (isFavorite) Icons.Default.Star else Icons.Default.StarBorder,

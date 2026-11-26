@@ -51,6 +51,9 @@ class HomeViewModel(
     private val _selectedRegionId = MutableStateFlow(regions.keys.first())
     val selectedRegionId: StateFlow<String> = _selectedRegionId.asStateFlow()
 
+    val regionIds: List<String> = regions.keys.sorted()
+    val regionNames: Map<String, String> = regions.mapValues { it.value.name }
+
     private val _filters = MutableStateFlow(Filters())
 
     val uiState: StateFlow<HomeUiState> = combine(

@@ -66,6 +66,7 @@ data class Restaurant(
     val deliveryFee: Double? = null,
     val status: VerificationStatus = VerificationStatus.PENDING_REVIEW,
     val lastVerified: String? = null,
+    val featured: Boolean = false,
     val source: String = "manual",
     val notes: String? = null,
 )
@@ -84,4 +85,5 @@ data class RegionConfig(
     val platformBlocklist: List<String> = emptyList(),
     val datasetUrl: String? = null,
     val reportUrl: String? = null,
+    val donateUrl: String? = null,
 )

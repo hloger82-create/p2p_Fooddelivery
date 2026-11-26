@@ -57,6 +57,11 @@
         "deliveryFee": { "type": ["number", "null"], "minimum": 0 },
         "status": { "enum": ["verified", "pending_review", "rejected"] },
         "lastVerified": { "type": ["string", "null"], "format": "date" },
+        "featured": {
+          "type": "boolean",
+          "default": false,
+          "description": "bezahlter, klar als 'Featured' gekennzeichneter Eintrag (B2B-Jahresbeitrag, siehe docs/MONETIZATION.md); darf die organische Sortierung nicht veraendern"
+        },
         "source": { "type": "string" },
         "notes": { "type": ["string", "null"] }
       }
