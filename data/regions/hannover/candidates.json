@@ -3,8 +3,8 @@
   "generatedAt": "2026-11-26",
   "legalNote": "Nur oeffentliche Geschaeftsdaten; robots.txt respektiert; keine Plattform-Inhalte ausgelesen. Manuelle Endpruefung vor Veroeffentlichung erforderlich.",
   "summary": {
-    "auto_accept": 178,
-    "review": 76,
+    "auto_accept": 176,
+    "review": 78,
     "reject": 1107
   },
   "candidates": [
@@ -2031,12 +2031,12 @@
       },
       "analysis": {
         "website": "https://www.aegi-dner-hannover.de/",
-        "homepageReachable": true,
+        "homepageReachable": false,
         "imprintFound": false,
         "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
-        "platformLinkOnHomepage": "lieferando.de",
+        "platformLinkOnHomepage": null,
         "platformManaged": null,
         "analysisVersion": 3,
         "phone": null,
@@ -2052,7 +2052,7 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
+        "homepageReachable": false,
         "imprintFound": false,
         "notPlatformOnly": false,
         "hasOrderChannel": false,
@@ -2060,11 +2060,11 @@
         "hasDistanceOrder": true
       },
       "reasons": [
-        "Startseite verlinkt auf Plattform lieferando.de und kein eigener Webshop -> Ausschluss",
+        "Website nicht erreichbar",
         "kein Impressum gefunden (oder nicht erreichbar)",
         "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
       ],
-      "status": "reject",
+      "status": "review",
       "chainBlocked": false
     },
     {
@@ -7876,25 +7876,20 @@
       },
       "analysis": {
         "website": "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-        "homepageReachable": true,
-        "imprintFound": true,
-        "orderChannel": "webshop",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
         "platformManaged": null,
         "analysisVersion": 3,
-        "phone": "051121906834",
+        "phone": null,
         "openingHours": null,
         "servesCuisine": [],
-        "deliveryMentioned": true,
-        "deliveryPostcodes": [
-          "30175"
-        ],
-        "orderLinks": [
-          "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-          "https://liefersoft.de/?utm_source=webshop&amp;utm_medium=footer&amp;utm_campaign=doydoys-pizza-30175-e0"
-        ]
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
       },
       "cuisines": [
         "PIZZA"
@@ -7902,15 +7897,19 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
-        "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": true,
         "hasDistanceOrder": true
       },
-      "reasons": [],
-      "status": "auto_accept",
+      "reasons": [
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
+      ],
+      "status": "review",
       "chainBlocked": false
     },
     {
@@ -8151,25 +8150,20 @@
       },
       "analysis": {
         "website": "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-        "homepageReachable": true,
-        "imprintFound": true,
-        "orderChannel": "webshop",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
         "platformManaged": null,
         "analysisVersion": 3,
-        "phone": "051121906834",
+        "phone": null,
         "openingHours": null,
         "servesCuisine": [],
-        "deliveryMentioned": true,
-        "deliveryPostcodes": [
-          "30175"
-        ],
-        "orderLinks": [
-          "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-          "https://liefersoft.de/?utm_source=webshop&amp;utm_medium=footer&amp;utm_campaign=doydoys-pizza-30175-e0"
-        ]
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
       },
       "cuisines": [
         "PIZZA"
@@ -8177,15 +8171,18 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
-        "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": false,
         "hasDistanceOrder": true
       },
       "reasons": [
-        "PLZ 30823 nicht in Region hannover"
+        "PLZ 30823 nicht in Region hannover",
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
       ],
       "status": "reject",
       "chainBlocked": false
@@ -18136,7 +18133,7 @@
           "30175"
         ],
         "orderLinks": [
-          "https://va-bene-hannover.de/wp-content/themes/budigital-child/shortcodes/budi-menu-filter/budi-menu-filter.css?ver=1795649477"
+          "https://va-bene-hannover.de/wp-content/themes/budigital-child/shortcodes/budi-menu-filter/budi-menu-filter.css?ver=1795682601"
         ]
       },
       "cuisines": [
@@ -18564,7 +18561,7 @@
         "website": "https://www.tai-pai.de/",
         "homepageReachable": true,
         "imprintFound": true,
-        "orderChannel": "webshop",
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
@@ -18598,13 +18595,16 @@
         "hasWebsite": true,
         "homepageReachable": true,
         "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": true,
-        "hasDistanceOrder": true
+        "hasDistanceOrder": false
       },
-      "reasons": [],
-      "status": "auto_accept",
+      "reasons": [
+        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
+      ],
+      "status": "reject",
       "chainBlocked": false
     },
     {
@@ -22040,9 +22040,9 @@
       },
       "analysis": {
         "website": "https://www.aresto.de/",
-        "homepageReachable": false,
-        "imprintFound": false,
-        "orderChannel": null,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "orderChannel": "webshop",
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
@@ -22061,20 +22061,15 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": false,
-        "imprintFound": false,
-        "notPlatformOnly": false,
-        "hasOrderChannel": false,
+        "homepageReachable": true,
+        "imprintFound": true,
+        "notPlatformOnly": true,
+        "hasOrderChannel": true,
         "inRegionPostcode": true,
-        "hasDistanceOrder": false
+        "hasDistanceOrder": true
       },
-      "reasons": [
-        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss",
-        "Website nicht erreichbar",
-        "kein Impressum gefunden (oder nicht erreichbar)",
-        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
-      ],
-      "status": "reject",
+      "reasons": [],
+      "status": "auto_accept",
       "chainBlocked": false
     },
     {
@@ -24868,7 +24863,7 @@
           "30159"
         ],
         "orderLinks": [
-          "https://restaurant-galleria.de/uploads/10941795503849-WGrNdW6I/silvestermenu-26-27.pdf",
+          "https://restaurant-galleria.de/uploads/10941795674258-CGihhd0P/silvestermenu-26-27-2.pdf",
           "https://restaurant-galleria.de/uploads/10941787059867-qJ7YdSuJ/menuekarte-august-2026.pdf"
         ]
       },
@@ -26606,7 +26601,7 @@
       "osmId": "node/5477967499",
       "name": "Hanoi Bun Pho",
       "website": "https://shop.liefersoft.de/hanoibunpho-00000-21",
-      "phone": "051121906834",
+      "phone": null,
       "address": "30 Walsroder Straße, 30851, Langenhagen",
       "lat": 52.4345249,
       "lon": 9.7314842,
@@ -26620,25 +26615,20 @@
       },
       "analysis": {
         "website": "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-        "homepageReachable": true,
-        "imprintFound": true,
-        "orderChannel": "webshop",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
         "platformManaged": null,
         "analysisVersion": 3,
-        "phone": "051121906834",
+        "phone": null,
         "openingHours": null,
         "servesCuisine": [],
-        "deliveryMentioned": true,
-        "deliveryPostcodes": [
-          "30175"
-        ],
-        "orderLinks": [
-          "https://shop.liefersoft.de/doydoys-pizza-30175-e0",
-          "https://liefersoft.de/?utm_source=webshop&amp;utm_medium=footer&amp;utm_campaign=doydoys-pizza-30175-e0"
-        ]
+        "deliveryMentioned": false,
+        "deliveryPostcodes": [],
+        "orderLinks": []
       },
       "cuisines": [
         "VIETNAMESE"
@@ -26646,15 +26636,19 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
-        "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": false,
-        "hasDistanceOrder": true
+        "hasDistanceOrder": false
       },
       "reasons": [
-        "PLZ 30851 nicht in Region hannover"
+        "PLZ 30851 nicht in Region hannover",
+        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss",
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
       ],
       "status": "reject",
       "chainBlocked": false
@@ -32223,7 +32217,7 @@
       "osmId": "node/11065641820",
       "name": "Eckis Wirtshaus",
       "website": "https://eckiswirts.haus/",
-      "phone": "017683189901",
+      "phone": null,
       "address": "10 Egestorffstraße, 30449, Hannover",
       "lat": 52.36703,
       "lon": 9.7123757,
@@ -32237,15 +32231,15 @@
       },
       "analysis": {
         "website": "https://eckiswirts.haus/",
-        "homepageReachable": true,
-        "imprintFound": true,
-        "orderChannel": "phone",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
         "platformManaged": null,
         "analysisVersion": 3,
-        "phone": "017683189901",
+        "phone": null,
         "openingHours": null,
         "servesCuisine": [],
         "deliveryMentioned": false,
@@ -32258,15 +32252,18 @@
       "cuisineSource": null,
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
-        "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": true,
         "hasDistanceOrder": false
       },
       "reasons": [
-        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss"
+        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss",
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
       ],
       "status": "reject",
       "chainBlocked": false
@@ -36775,9 +36772,9 @@
       },
       "analysis": {
         "website": "https://60secondstonapoli.de/standort/hannover/",
-        "homepageReachable": true,
-        "imprintFound": true,
-        "orderChannel": "webshop",
+        "homepageReachable": false,
+        "imprintFound": false,
+        "orderChannel": null,
         "orderRedirectsToPlatform": false,
         "platformHit": null,
         "platformLinkOnHomepage": null,
@@ -36787,14 +36784,8 @@
         "openingHours": null,
         "servesCuisine": [],
         "deliveryMentioned": false,
-        "deliveryPostcodes": [
-          "30159"
-        ],
-        "orderLinks": [
-          "https://60secondstonapoli.de/online-bestellen/",
-          "https://60secondstonapoli.de/menue/",
-          "https://60secondstonapoli.de/wp-content/uploads/elementor/css/custom-pro-widget-nav-menu.min.css?ver=1795526951"
-        ]
+        "deliveryPostcodes": [],
+        "orderLinks": []
       },
       "cuisines": [
         "PIZZA"
@@ -36802,15 +36793,20 @@
       "cuisineSource": "stated",
       "checks": {
         "hasWebsite": true,
-        "homepageReachable": true,
-        "imprintFound": true,
-        "notPlatformOnly": true,
-        "hasOrderChannel": true,
+        "homepageReachable": false,
+        "imprintFound": false,
+        "notPlatformOnly": false,
+        "hasOrderChannel": false,
         "inRegionPostcode": true,
-        "hasDistanceOrder": true
+        "hasDistanceOrder": false
       },
-      "reasons": [],
-      "status": "auto_accept",
+      "reasons": [
+        "weder Lieferung noch Abholung nachweisbar (Telefon vermutlich nur Reservierung) -> Ausschluss",
+        "Website nicht erreichbar",
+        "kein Impressum gefunden (oder nicht erreichbar)",
+        "kein eigener Bestellkanal erkannt (Webshop/Telefon)"
+      ],
+      "status": "reject",
       "chainBlocked": false
     },
     {
