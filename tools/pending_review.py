@@ -125,8 +125,8 @@ def main() -> int:
         "",
         "QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein takeaway/abhol-Nachweis | LIEFERT? = kein Liefer-Nachweis. Flags manuell pruefen!",
         "",
-        "| [ ] | Name | PLZ | Kueche | Kanal | Lief./Abh. | Website | Tel | Pipeline: Impres./Kanal/PLZ | QS-Flags | Reasons |",
-        "|-----|------|-----|-------|-------|-----------|---------|-----|---------------------------|----------|---------|",
+        "| [ ] | ID | Name | PLZ | Kueche | Kanal | Lief./Abh. | Website | Tel | Pipeline: Impres./Kanal/PLZ | QS-Flags | Reasons |",
+        "|-----|------|----|-----|-------|-------|-----------|---------|-----|---------------------------|----------|---------|",
     ]
     for r in pending:
         addr = r.get("address") or {}
@@ -144,7 +144,7 @@ def main() -> int:
         rsn = "; ".join(reasons)[:60] or "-"
         name = r.get("name", "?").replace("|", "\\|")
         web = web.replace("|", "\\|")
-        lines.append(f"| [ ] | {name} | {plz} | {cuisines} | {kanal} | {lief_abh} | {web} | {tel} | {pipe} | {qs_flags(r)} | {rsn} |")
+        lines.append(f"| [ ] | {r.get('id','?')} | {name} | {plz} | {cuisines} | {kanal} | {lief_abh} | {web} | {tel} | {pipe} | {qs_flags(r)} | {rsn} |")
 
     out = "\n".join(lines) + "\n"
     if args.out:

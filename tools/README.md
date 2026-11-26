@@ -115,7 +115,8 @@ python tools\pending_review.py --restaurants data\regions\hannover\restaurants.j
 
 Die Spalte **QS-Flags** markiert Zweifelsfaelle gegen die aktuellen Regeln (WEBSHOP? = Pipeline sieht nur Telefon, PICKUP? = kein takeaway/abhol-Nachweis, LIEFERT? = kein Liefer-Nachweis) — manuell pruefen, korrigieren oder loeschen.
 
-- `data\regions\hannover\pending-review.md` oeffnen (in Android Studio/VS Code): abhakbare Tabelle, WEBSHOP-Eintraege zuerst, inkl. Website/Tel und den Pipeline-Flags (Impressum/Kanal/PLZ aus den notes).
+- `data\regions\hannover\pending-review.md` oeffnen (in Android Studio/VS Code): abhakbare Tabelle mit ID-Spalte, WEBSHOP-Eintraege zuerst, inkl. Website/Tel, Pipeline-Flags und QS-Flags (WEBSHOP?/PICKUP?/LIEFERT?). Nur Flag-Gruppe: `--flag "PICKUP?"`.
+- Abhaken direkt in der md: **`[x]`** = verifizieren, **`[r]`** = entfernen. Anwenden mit `python tools\review_apply.py --queue data\regions\hannover\pending-review.md --restaurants data\regions\hannover\restaurants.json` (setzt `status=verified` + `lastVerified`, spiegelt die Assets automatisch; `--dry-run` zeigt die Aenderungen vorher).
 - Pro Eintrag Website aufrufen und die QS-Checkliste abarbeiten (steht im Header der Liste; Details in `docs/RESEARCH-PIPELINE.md` "Manuelle Verifizierung"): PLZ in Region, Impressum + eigener Kanal, Kueche (stated uebernehmen / sonst ableiten mit `cuisineSource: "derived"` + notes-Vermerk), delivers/pickup nur mit Nachweis.
 - In `restaurants.json` pro geprueftem Eintrag setzen: `"status": "verified"`, `"lastVerified": "<heute>"` (Badge verschwindet bei `status == verified`, siehe `RestaurantListScreen.kt`). Ablehnen = Eintrag loeschen.
 - Danach: `python tools\validate_data.py` (ALL DATA OK), `Copy-Item data\regions\hannover\restaurants.json app\src\main\assets\regions\hannover\restaurants.json`, commit + push. Checkliste bei Bedarf neu erzeugen (Snapshot).
