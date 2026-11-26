@@ -102,8 +102,20 @@ def main() -> int:
 
     if flag_filter:
         pending = [r for r in pending if flag_filter in qs_flags(r)]
+    flag_summary = ""
+    if args.candidates:
+        from collections import Counter
+        fc = Counter()
+        for r in data.get("restaurants", []):
+            if r.get("status") == "verified":
+                continue
+            for f in qs_flags(r).split(","):
+                if f != "-":
+                    fc[f] += 1
+        if fc:
+            flag_summary = " | Flags gesamt: " + ", ".join(f"{k}={v}" for k, v in sorted(fc.items()))
     lines = [
-        f"# Pending Review {region_id} ({len(pending)} Eintraege" + (f", Flag {flag_filter}" if flag_filter else "") + ", WEBSHOP zuerst, dann Name)",
+        f"# Pending Review {region_id} ({len(pending)} Eintraege" + (f", Flag {flag_filter}" if flag_filter else "") + ", WEBSHOP zuerst, dann Name)" + flag_summary,
         "",
         "Badge \"Verifizierung offen\" verschwindet in der App, wenn im Eintrag gesetzt: `\"status\": \"verified\"` + `\"lastVerified\": \"<heute>\"`.",
         "QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), "
