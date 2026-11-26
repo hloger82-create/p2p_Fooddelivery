@@ -63,6 +63,16 @@ def main() -> int:
             # QS-Regel: weder Lieferung noch Abholung -> Telefon vermutlich nur Reservierung -> Ausschluss
             if not r.get("delivers") and not r.get("pickup"):
                 errors.append(f"{rest_path}: {r.get('id')} bietet weder Lieferung noch Abholung -> Ausschluss")
+        # Duplikate: gleiche id = Fehler; gleiche Website-Domain = Warnung (Filialen duerfen sie teilen)
+        ids = [r.get("id") for r in dataset.get("restaurants", [])]
+        dup_ids = {i for i in ids if ids.count(i) > 1}
+        for i in dup_ids:
+            errors.append(f"{rest_path}: doppelte id {i}")
+        from collections import Counter
+        doms = Counter(host_of(r.get("website")) for r in dataset.get("restaurants", []) if r.get("website"))
+        for d, c in doms.items():
+            if c > 1:
+                print(f"WARN {rest_path}: Domain {d} bei {c} Eintraegen (Filialen ok, sonst deduplizieren)")
         # Assets-Mirror: data/ und app/assets muessen identisch sein
         for name in ("region.json", "restaurants.json"):
             asset_path = f"app/src/main/assets/regions/{region['id']}/{name}"

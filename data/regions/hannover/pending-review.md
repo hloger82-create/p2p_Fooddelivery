@@ -1,4 +1,4 @@
-# Pending Review hannover (439 Eintraege, WEBSHOP zuerst, dann Name)
+# Pending Review hannover (436 Eintraege, WEBSHOP zuerst, dann Name) | Flags gesamt: LIEFERT?=20, PICKUP?=206, WEBSHOP?=8
 
 Badge "Verifizierung offen" verschwindet in der App, wenn im Eintrag gesetzt: `"status": "verified"` + `"lastVerified": "<heute>"`.
 QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), 3) Kueche: stated uebernehmen, sonst Speisen analysieren -> `cuisineSource: "derived"` + Vermerk in notes, 4) delivers/pickup nur mit Nachweis, 5) status=verified + lastVerified.
@@ -414,9 +414,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Spoon | 30161 | ITALIAN,PIZZA (stated) | PHONE | -/A | https://www.spoon-hannover.de | +49 162 3068657 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Spätzle Haus | 30419 | OTHER (stated) | PHONE | -/A | https://www.spaetzlehaus.de | +49 511 795433 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Stadtmauer | 30161 | OTHER | PHONE,PICKUP | -/A | https://www.stadtmauer-hannover.de/ | +49 511 99987454 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Stadtmauer | 30161 | OTHER | PHONE,PICKUP | -/A | https://stadtmauer-hannover.de/index3.php | +49 511 99987454 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Stadtmauer | 30161 | OTHER | PHONE,PICKUP | -/A | https://stadtmauer-hannover.de/ | +49 511 99987454 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Stadtmauer | 30161 | OTHER | PHONE,PICKUP | -/A | https://www.stadtmauer-hannover.de/index2.php | +49 511 99987454 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Stromboli | 30163 | ITALIAN (stated) | PHONE | -/A | https://ristorantino-stromboli.de/ | +49 511 87949392 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Suppenhandlung | 30167 | OTHER (stated) | PHONE,PICKUP | -/A | https://www.suppenhandlung.de/ | +49 051134083630 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Sushi Gim | 30169 | ASIAN,SUSHI (stated) | PHONE,PICKUP | -/A | https://sushi-bar-gim.de/ | +49 511 7000259 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
