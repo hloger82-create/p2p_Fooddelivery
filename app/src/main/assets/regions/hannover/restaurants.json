@@ -205,41 +205,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-adams-kitchen",
-      "regionId": "hannover",
-      "name": "Adam's Kitchen",
-      "address": {
-        "street": null,
-        "postcode": "30657",
-        "city": "Hannover"
-      },
-      "lat": 52.4011132,
-      "lon": 9.823425,
-      "phone": "+49 511 89829576",
-      "website": "https://www.adamskitchen.de/",
-      "orderUrl": null,
-      "orderTypes": [
-        "PHONE",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "BURGER",
-        "ITALIAN",
-        "PIZZA"
-      ],
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "openingHours": "Tu-Th 11:30-22:00; Fr 11:30-22:30; Sa 12:00-22:30; Su 12:00-21:30",
-      "status": "pending_review",
-      "lastVerified": "2026-11-24",
-      "source": "manual_review",
-      "notes": "Eigene Website (adamskitchen.de), Bestellkanal nur telefonisch; Bothfeld",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-adesso",
       "regionId": "hannover",
       "name": "Adesso",
@@ -442,40 +407,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-alexander",
-      "regionId": "hannover",
-      "name": "Alexander",
-      "address": {
-        "street": "Prinzenstraße 10",
-        "postcode": "30159",
-        "city": "Hannover"
-      },
-      "lat": 52.3733481,
-      "lon": 9.7446238,
-      "phone": "+49 511 325826",
-      "website": "https://www.alexander-hannover.de/",
-      "orderUrl": "https://www.alexander-hannover.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": "Mo-Th 11:30-01:00; Fr 11:30-03:00; Sa 17:00-03:00; Su 17:00-01:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30159"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/539069162; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -3026,41 +2957,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-com-viet",
-      "regionId": "hannover",
-      "name": "Com Viet",
-      "address": {
-        "street": "Lister Kirchweg 84",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3959143,
-      "lon": 9.7581953,
-      "phone": "+49 511 64660344",
-      "website": "https://www.comviethannover.de/",
-      "orderUrl": "https://www.comviethannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "VIETNAMESE"
-      ],
-      "openingHours": "Tu-Su 11:30-15:30, 17:30-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30177"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/1993639343; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-costas-greek-taverna",
       "regionId": "hannover",
       "name": "Costas Greek Taverna",
@@ -3469,38 +3365,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-das-nest",
-      "regionId": "hannover",
-      "name": "Das Nest",
-      "address": {
-        "street": "Scheidestr. 15",
-        "postcode": "30625",
-        "city": "Hannover"
-      },
-      "lat": 52.3726556,
-      "lon": 9.7844005,
-      "phone": "+49 051137391271",
-      "website": "https://dasnest-hannover.de/",
-      "orderUrl": null,
-      "orderTypes": [
-        "PHONE",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "openingHours": null,
-      "status": "pending_review",
-      "lastVerified": "2026-11-24",
-      "source": "manual_review",
-      "notes": "Bistro Kleefeld; kein Lieferdienst"
-    },
-    {
       "id": "hannover-das-vikings",
       "regionId": "hannover",
       "name": "Das Vikings",
@@ -3827,41 +3691,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-el-greco",
-      "regionId": "hannover",
-      "name": "El Greco",
-      "address": {
-        "street": "Lehrter Straße 59",
-        "postcode": "30559",
-        "city": "Hannover"
-      },
-      "lat": 52.3589295,
-      "lon": 9.8567461,
-      "phone": "+49 511 528924",
-      "website": "https://elgreco-hannover.de/",
-      "orderUrl": "https://elgreco-hannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "12:00-14:30,17:00-22:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30559"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11890955936; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-el-pais",
       "regionId": "hannover",
       "name": "El Pais",
@@ -3926,41 +3755,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/14277936974; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-elektra-bringdienst",
-      "regionId": "hannover",
-      "name": "Elektra-Bringdienst",
-      "address": {
-        "street": "Hannover",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.451494,
-      "lon": 9.739518,
-      "phone": null,
-      "website": "https://www.elektrabringdienst.de/",
-      "orderUrl": "https://www.elektrabringdienst.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "GREEK"
-      ],
-      "openingHours": "off",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [
-        "30853"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/12778176016; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -4030,42 +3824,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/798406257; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-empelder-pizza-station-464633-465498",
-      "regionId": "hannover",
-      "name": "Empelder Pizza Station 464633 465498",
-      "address": {
-        "street": "Hannover",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3456532,
-      "lon": 9.6687219,
-      "phone": "+49 511 464633; +49 511 465498",
-      "website": "https://pizza-station-empelde.de/",
-      "orderUrl": "https://pizza-station-empelde.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "PIZZA"
-      ],
-      "openingHours": "Mo-Fr 11:30-21:00; Sa 14:00-23:00; Su 14:00-21:00",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [
-        "30952"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline way/1194744436; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -4696,39 +4454,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-galaxia",
-      "regionId": "hannover",
-      "name": "Galaxia",
-      "address": {
-        "street": "Sedanstraße 75",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3786964,
-      "lon": 9.7491637,
-      "phone": null,
-      "website": "https://www.cafebarrestaurant-galaxia.de/",
-      "orderUrl": "https://www.cafebarrestaurant-galaxia.de/",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30161"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/14271463475; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]"
-    },
-    {
       "id": "hannover-galeria-restaurant",
       "regionId": "hannover",
       "name": "Galeria Restaurant",
@@ -5324,40 +5049,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-hans-im-gluck",
-      "regionId": "hannover",
-      "name": "Hans im Glück",
-      "address": {
-        "street": "Limburgstraße 2",
-        "postcode": "30159",
-        "city": "Hannover"
-      },
-      "lat": 52.3739817,
-      "lon": 9.7353471,
-      "phone": "+49 511 27789677",
-      "website": "https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/",
-      "orderUrl": "https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "BURGER"
-      ],
-      "openingHours": "Mo-Th 12:00-22:00; Fr-Sa 12:00-23:00; Su 12:00-21:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30159"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/10285291808; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -6591,41 +6282,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-kp-pizza",
-      "regionId": "hannover",
-      "name": "KP Pizza",
-      "address": {
-        "street": "Kugelfangtrift 91",
-        "postcode": "30657",
-        "city": "Hannover"
-      },
-      "lat": 52.4166471,
-      "lon": 9.7767496,
-      "phone": "+49 511 27084654",
-      "website": "https://www.kp-pizza.de",
-      "orderUrl": "https://www.kp-pizza.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "PIZZA",
-        "BURGER",
-        "ITALIAN"
-      ],
-      "openingHours": "Mo,Mi,Do,Fr-So 15:00-22:00/23:00, Di Ruhetag",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "verified",
-      "lastVerified": "2026-11-24",
-      "source": "manual_review",
-      "notes": "Eigene Online-Bestellplattform mit Warenkorb auf eigener Domain; manuell verifiziert. | QS-Runde: PICKUP entfernt (kein takeaway/abhol-Nachweis)",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-kreta-grill",
       "regionId": "hannover",
       "name": "Kreta Grill",
@@ -7010,40 +6666,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/677374183; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-la-forchetta",
-      "regionId": "hannover",
-      "name": "La Forchetta",
-      "address": {
-        "street": "Geibelplatz 1",
-        "postcode": "30173",
-        "city": "Hannover"
-      },
-      "lat": 52.3627699,
-      "lon": 9.7618627,
-      "phone": "+49 511 8503808",
-      "website": "https://www.forchetta-hannover.de/",
-      "orderUrl": "https://www.forchetta-hannover.de/",
-      "orderTypes": [
-        "PHONE"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "We-Su 17:00-22:30",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30173"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/568640002; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -8493,42 +8115,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-mekong-asia-bistro",
-      "regionId": "hannover",
-      "name": "Mekong Asia Bistro",
-      "address": {
-        "street": "Engelbosteler Damm 42",
-        "postcode": "30167",
-        "city": "Hannover"
-      },
-      "lat": 52.3852939,
-      "lon": 9.7247777,
-      "phone": "+49 511 1698495",
-      "website": "https://www.mekonghannover.de/",
-      "orderUrl": "https://www.mekonghannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ASIAN"
-      ],
-      "openingHours": "Mo-Su 11:30-21:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30167"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/321722773; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-mel-s-diner",
       "regionId": "hannover",
       "name": "Mel's Diner",
@@ -9171,42 +8757,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Seite (Info); Lieferdienst telefonisch 0172 1658651 | QS-Runde: PICKUP entfernt (kein takeaway/abhol-Nachweis)",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-nem-viet",
-      "regionId": "hannover",
-      "name": "Nem Viet",
-      "address": {
-        "street": "Hornemannweg 11",
-        "postcode": "30167",
-        "city": "Hannover"
-      },
-      "lat": 52.3877073,
-      "lon": 9.7216058,
-      "phone": "+49 511 702101",
-      "website": "https://www.nemviethannover.de/",
-      "orderUrl": "https://www.nemviethannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "VIETNAMESE"
-      ],
-      "openingHours": "Mo off; Tu-Fr 11:30-21:00; Sa 17:00-21:00; Su,PH 12:00-21:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30167"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/2845713335; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -9893,44 +9443,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-phamy-sushi",
-      "regionId": "hannover",
-      "name": "Phamy Sushi",
-      "address": {
-        "street": "Davenstedter Straße 104",
-        "postcode": "30453",
-        "city": "Hannover"
-      },
-      "lat": 52.3657578,
-      "lon": 9.6958818,
-      "phone": "+49 511 35365688;+49 511 35365689",
-      "website": "https://www.phamysushihannover.de/",
-      "orderUrl": "https://www.phamysushihannover.de/",
-      "orderTypes": [
-        "WEBSHOP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "ASIAN",
-        "CHINESE",
-        "SUSHI",
-        "THAI"
-      ],
-      "openingHours": "Mo-Th 11:30-20:30; Fr 16:00-20:30; Sa,Su off",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30453"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/13903880598; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-pharos",
       "regionId": "hannover",
       "name": "Pharos",
@@ -10333,75 +9845,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-pizza-frischdienst",
-      "regionId": "hannover",
-      "name": "Pizza Frischdienst",
-      "address": {
-        "street": "Hannover",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3593351,
-      "lon": 9.826909,
-      "phone": null,
-      "website": "https://www.pizza-frischdienst-hannover.de",
-      "orderUrl": "https://www.pizza-frischdienst-hannover.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "Mo-Sa 12:00-14:00,17:00-22:00; Su,PH 17:00-22:00",
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30559"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/11084175498; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-pizza-garten-hannover",
-      "regionId": "hannover",
-      "name": "Pizza Garten  Hannover",
-      "address": {
-        "street": "Steinfeldstraße 2",
-        "postcode": "30453",
-        "city": "Hannover"
-      },
-      "lat": 52.3805452,
-      "lon": 9.6821836,
-      "phone": null,
-      "website": "https://www.pizzagartenhannover.de/",
-      "orderUrl": "https://www.pizzagartenhannover.de/",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "PIZZA"
-      ],
-      "openingHours": "Mo off; Tu-Th 11:30-21:45; Fr 16:30-21:45; Sa 12:00-21:45; Su,PH 12:00-20:45",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30453"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/12677329286; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-pizza-grande",
       "regionId": "hannover",
       "name": "Pizza Grande",
@@ -10743,42 +10186,6 @@
       "lastVerified": null,
       "source": "pipeline",
       "notes": "pipeline node/8221898632; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-pizza-number-one",
-      "regionId": "hannover",
-      "name": "Pizza Number One",
-      "address": {
-        "street": "Hannover",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3704309,
-      "lon": 9.7504429,
-      "phone": "+4951135385353",
-      "website": "https://www.pizzanumberonehannover.de",
-      "orderUrl": "https://www.pizzanumberonehannover.de",
-      "orderTypes": [
-        "WEBSHOP",
-        "PICKUP",
-        "PHONE"
-      ],
-      "cuisines": [
-        "PIZZA"
-      ],
-      "openingHours": "Mo-Th 16:00-01:00, Fr-Sa 16:00-03:00, Su,PH 12:00-22:30",
-      "delivers": true,
-      "pickup": true,
-      "deliveryAreas": [
-        "30159"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/2728795532; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {
@@ -12839,47 +12246,6 @@
       "cuisineSource": "stated"
     },
     {
-      "id": "hannover-san-marino",
-      "regionId": "hannover",
-      "name": "San Marino",
-      "address": {
-        "street": "Friesenstraße 13",
-        "postcode": "30161",
-        "city": "Hannover"
-      },
-      "lat": 52.3806372,
-      "lon": 9.7438327,
-      "phone": null,
-      "website": "https://www.pizzeria-sanmarino.de/",
-      "orderUrl": "https://www.pizzeria-sanmarino.de/",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "ITALIAN"
-      ],
-      "openingHours": "Mo-Su,PH 11:00-22:30",
-      "delivers": true,
-      "pickup": false,
-      "deliveryAreas": [
-        "30159",
-        "30161",
-        "30163",
-        "30165",
-        "30167",
-        "30171",
-        "30175",
-        "30177"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/5679496721; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
-      "cuisineSource": "stated"
-    },
-    {
       "id": "hannover-sapori-italiani",
       "regionId": "hannover",
       "name": "Sapori Italiani",
@@ -13187,39 +12553,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-shahr-raz",
-      "regionId": "hannover",
-      "name": "Shahr Raz",
-      "address": {
-        "street": "Apenrader Straße 50",
-        "postcode": "30165",
-        "city": "Hannover"
-      },
-      "lat": 52.4024522,
-      "lon": 9.7300846,
-      "phone": "+49 511 67660313",
-      "website": "https://www.shahr-raz-persisches-restaurant-hannover.de/",
-      "orderUrl": null,
-      "orderTypes": [
-        "PHONE",
-        "PICKUP"
-      ],
-      "cuisines": [
-        "OTHER"
-      ],
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "openingHours": "Mo, We-Su 12:00-22:00",
-      "status": "pending_review",
-      "lastVerified": "2026-11-24",
-      "source": "manual_review",
-      "notes": "eigene Website mit Impressum (persisch)",
       "cuisineSource": "stated"
     },
     {
@@ -14571,40 +13904,6 @@
       "lastVerified": "2026-11-24",
       "source": "manual_review",
       "notes": "eigene Website; telefonische Bestellung",
-      "cuisineSource": "stated"
-    },
-    {
-      "id": "hannover-taste-of-india",
-      "regionId": "hannover",
-      "name": "Taste of India",
-      "address": {
-        "street": "Hannover",
-        "postcode": null,
-        "city": "Hannover"
-      },
-      "lat": 52.3677958,
-      "lon": 9.7203286,
-      "phone": null,
-      "website": "https://www.taste-of-india-hannover.de",
-      "orderUrl": "https://www.taste-of-india-hannover.de",
-      "orderTypes": [
-        "WEBSHOP"
-      ],
-      "cuisines": [
-        "INDIAN"
-      ],
-      "openingHours": null,
-      "delivers": false,
-      "pickup": true,
-      "deliveryAreas": [
-        "30449"
-      ],
-      "minOrderValue": null,
-      "deliveryFee": null,
-      "status": "pending_review",
-      "lastVerified": null,
-      "source": "pipeline",
-      "notes": "pipeline node/6548522788; checks={\"hasWebsite\": true, \"homepageReachable\": true, \"imprintFound\": true, \"notPlatformOnly\": true, \"hasOrderChannel\": true, \"inRegionPostcode\": true}; reasons=[]",
       "cuisineSource": "stated"
     },
     {

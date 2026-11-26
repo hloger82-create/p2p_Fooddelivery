@@ -1,4 +1,4 @@
-# Pending Review hannover (458 Eintraege, WEBSHOP zuerst, dann Name)
+# Pending Review hannover (439 Eintraege, WEBSHOP zuerst, dann Name)
 
 Badge "Verifizierung offen" verschwindet in der App, wenn im Eintrag gesetzt: `"status": "verified"` + `"lastVerified": "<heute>"`.
 QS pro Eintrag: 1) PLZ in `postcodes` der Region, 2) Impressum + eigener Kanal (kein Plattform-Redirect), 3) Kueche: stated uebernehmen, sonst Speisen analysieren -> `cuisineSource: "derived"` + Vermerk in notes, 4) delivers/pickup nur mit Nachweis, 5) status=verified + lastVerified.
@@ -27,7 +27,7 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Bar Añejo | 30451 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.bar-anejo.com | +4951149537241 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Baratie | 30173 | BURGER (stated) | WEBSHOP,PHONE | L/A | https://www.baratiehannover.de/ | +49 176 82157476 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Beckers | - | OTHER | WEBSHOP | -/A | https://www.beckers-hannover.de | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Beef and Reef | 30171 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.beefandreef.de/ | +49 511 54356738 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Beef and Reef | 30171 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.beefandreef.de/ | +49 511 54356738 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Bei Ranko | 30629 | OTHER (stated) | WEBSHOP,PICKUP,PHONE | -/A | http://restaurant-ranko.de | +49 511 582357 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Bestia Vera Pizza Napoletana | 30159 | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://www.bestia.pizza | +49 511 41088730 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Bistro Emporio | 30453 | ITALIAN (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.rossini-gmbh.de/ | +49 511 423388 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -44,7 +44,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | cavallo - Königliche Reithalle | - | OTHER | WEBSHOP,PHONE | -/A | https://www.cavallo-reithalle.de | 05112889911 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | China-Restaurant Mo | 30457 | CHINESE (stated) | WEBSHOP,PHONE | -/A | https://www.chinarestaurantmo.de/ | +49 511 434370 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Chiuy Phat | 30161 | VIETNAMESE (stated) | WEBSHOP,PHONE | -/A | https://thuyphat.de/ | 051154534773 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Com Viet | - | VIETNAMESE (stated) | WEBSHOP,PHONE | -/A | https://www.comviethannover.de/ | +49 511 64660344 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Costas Greek Taverna | 30163 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://www.costas-taverne.de/ | +49 511 697103 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Curry Culum | 30159 | BURGER (stated) | WEBSHOP,PHONE | -/A | https://www.curryculum.de/ | +49 511 47399361 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Da Gennaro Trattoria | 30177 | ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | -/A | https://dagennaro.de/ | +49 511 39083833 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -54,21 +53,17 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | doydoy´s | 30175 | PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://shop.liefersoft.de/doydoys-pizza-30175-e0 | +4951121906834 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Döner King 1 | 30519 | DOENER (stated) | WEBSHOP,PHONE | -/A | https://www.donerkinghannover.de | +49 151 62839456 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Ecrin Döner (Bülbül Grill) | 30457 | DOENER (stated) | WEBSHOP,PHONE | L/A | https://buelbuel-grill.9gg.de | +49 179 2031621 | Impressum:nein Kanal:nein PLZ:nein | LIEFERT? | - |
-| [ ] | El Greco | 30559 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://elgreco-hannover.de/ | +49 511 528924 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Elektra-Bringdienst | - | GREEK (stated) | WEBSHOP,PICKUP | L/A | https://www.elektrabringdienst.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Empelder Pizza Station 464633 465498 | - | PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://pizza-station-empelde.de/ | +49 511 464633; +49 511 465498 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Ente von Peking | 30169 | CHINESE (stated) | WEBSHOP,PHONE | -/A | https://entevonpeking.de/ | +49 511 14011 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Enzo’s Pizza | 30165 | PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://www.pizzaenzo-hannover.de | +49 511 3522255 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | EssKultur Hannover | 30163 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://esskultur-hannover.de | +49 511 98425158 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Estragon | 30659 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.bestwestern.de/hotels/Hannover/BEST-WESTERN-Hotel-Der-Foehrenhof/gastronomie | +49 511 61540 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Farina di Nonna | - | PIZZA (stated) | WEBSHOP | -/A | https://farinadinonna.pizza/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Fasanenkrug | 30657 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.restaurant-fasanenkrug.de/ | +49 511 9055532 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Fasanenkrug | 30657 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.restaurant-fasanenkrug.de/ | +49 511 9055532 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Fisch Müller | - | OTHER (stated) | WEBSHOP,PHONE | L/A | https://fisch-mueller.eatbu.com/ | +49 170 5794341 | Impressum:nein Kanal:nein PLZ:nein | LIEFERT? | - |
 | [ ] | Fischerhof Pizza & Döner | - | PIZZA,DOENER (stated) | WEBSHOP | L/- | https://fischerhof-pizza-doener.eatbu.com/?lang=de | - | Impressum:nein Kanal:nein PLZ:nein | LIEFERT? | - |
 | [ ] | Francesca & Fratelli | 30161 | PIZZA (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.francesca-fratelli.de/pizzamanufaktur-in-hannover/list/ | +49 511 20300775 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Frisch-Haus | - | OTHER (stated) | WEBSHOP,PHONE | -/A | https://frisch-haus.de | +49511512215 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Frites Belgique | 30159 | OTHER (stated) | WEBSHOP,PICKUP | -/A | https://frites-belgique.com | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Galaxia | - | OTHER | WEBSHOP | -/A | https://www.cafebarrestaurant-galaxia.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Galeria Restaurant | 30159 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://galeria-restaurant.de/standorte/ | +49 511 3601255 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Ganesha | 30453 | INDIAN (stated) | WEBSHOP,PHONE | -/A | https://restaurantganeshahannover.eatbu.com/?lang=de | +49 511 94067250 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Gartenlokal Kolonie Berggarten | - | OTHER (stated) | WEBSHOP | -/A | http://www.kgvberggartenhannover.de/vereinsheim/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -106,7 +101,7 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | La Casa | 30655 | OTHER (stated) | WEBSHOP,PHONE | -/A | http://restaurante-lacasa.de/ | +49 511 695192 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | La Castagna | 30629 | ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | L/A | https://la-castagna.metro.rest/ | +49 511 581515 | Impressum:nein Kanal:nein PLZ:nein | LIEFERT? | - |
 | [ ] | La Favola | - | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.ristorante-la-favola.de/ | +495119515475 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | La Galleria | 30159 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.restaurant-galleria.de | +49 511 325096 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | La Galleria | 30159 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.restaurant-galleria.de | +49 511 325096 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | La Plaza | 30449 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://spanier-la-plaza-hannover-linden.de/ | +49 511 60499091 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | La Vita | - | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://lavita-hannover.de/ | +49 511 22866120 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | LaSall Weinbar & Restaurant | 30171 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.lasall-hannover.de/ | +49 511 816663 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -122,11 +117,10 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Ma'loa | 30159 | OTHER (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://maloa.com/ | +49 175 4700718 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Mamma Enzo (List) | 30161 | ITALIAN,PIZZA | WEBSHOP,PHONE | L/A | https://mamma-enzo.de/ | +49 511 47574748 | Impressum:nein Kanal:nein PLZ:nein | PICKUP?,LIEFERT? | - |
 | [ ] | Maremonte | 30159 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.maremonte.de/ | +49 511 3632904 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Mary's | 30159 | OTHER | WEBSHOP,PHONE | -/A | https://marys-hannover.de/ | +49 511 3044816 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Mary's | 30159 | OTHER | WEBSHOP,PHONE | -/A | https://marys-hannover.de/ | +49 511 3044816 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Masa | 30159 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.masa-hannover.de/ | +49 511 3530793 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Max Walloschke | 30159 | OTHER (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://max-walloschke.de | +49 511 13607 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Mega Döner | - | BURGER,DOENER (stated) | WEBSHOP,PICKUP | -/A | https://www.mega-doener-hannover.de | - | Impressum:nein Kanal:nein PLZ:nein | - | - |
-| [ ] | Mekong Asia Bistro | 30167 | ASIAN (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.mekonghannover.de/ | +49 511 1698495 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Mephisto (Misburg) | 30629 | BURGER,INDIAN,ITALIAN,MEXICAN (stated) | WEBSHOP,PHONE | L/A | https://www.lieferservice-mephisto.de/ | +49 0511580581 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Mimis Thai Kitchen | 30169 | THAI (stated) | WEBSHOP,PHONE | -/A | https://www.mimis-thaikitchen.de/ | +4951176859736 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Mis Urfa Kebap | 30655 | TURKISH (stated) | WEBSHOP,PHONE | L/- | https://misurfa.de/ | +49 511 84402049 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -134,33 +128,28 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Mövenpick | 30159 | OTHER | WEBSHOP,PHONE | -/A | https://marche-restaurants.de/standort/cafe-kroepcke/ | +49 511 32628445 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Namaste Linden | 30449 | INDIAN (stated) | WEBSHOP,PHONE | -/A | https://namastelinden.de/ | +49 511 53071968 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Nazar | 30159 | TURKISH (stated) | WEBSHOP,PHONE | L/A | https://nazar-hannover.de/ | +49 01733561599 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Nem Viet | 30167 | VIETNAMESE (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.nemviethannover.de/ | +49 511 702101 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Nikopolis | 30163 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://nikopolis.net | +49 511 663193 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | noosou | 30539 | ASIAN,CHINESE,SUSHI,VIETNAMESE (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://noosou.de/locatons/noosou-hannover-bemerode-asian-fresh-kitchen/ | +49 511 39080803 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Olav's Kitchen by Möbelhaus Staude | 30165 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://olavs-kitchen.de/ | +49 511 9379842 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Ong Tao | 30451 | VIETNAMESE (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.ongtao.net/ | +495114500575 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Outbax Spirit | 30655 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.outbaxspirit.de/ | +49511578251 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Palladion | 30559 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://palladion-hannover.de | +49 511 526923 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Palladion | 30559 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://palladion-hannover.de | +49 511 526923 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Panover | 30159 | AMERICAN (stated) | WEBSHOP,PHONE | L/- | https://www.pan-over.de/ | +49 511 79028718 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Panu Pizza & Panuozzo | 30161 | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://panu-pizza.de/ | +49 511 54442942 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Pera | 30161 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://cafepera.eatbu.com/ | +49 511 344934 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Peter Pane | 30159 | BURGER (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://peterpane.de/standorte/#!/l/hannover/lange-laube-6/3087001 | +49 511 33646469 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pfannkuchenhaus | 30169 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.pfannkuchenhaus.de/ | +4951117113 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pfefferkorn | 30163 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.pfefferkornhannover.de | +49 511 660889 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Phamy Sushi | 30453 | ASIAN,CHINESE,SUSHI,THAI (stated) | WEBSHOP,PHONE | -/A | https://www.phamysushihannover.de/ | +49 511 35365688;+49 511 35365689 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Piazza Italiana Trattoria & Artisan Pizza | - | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://lapiazzaitaliana.com/ | +49 511 21906239 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Pier 51 | 30173 | OTHER | WEBSHOP,PHONE | -/A | https://www.pier51.de/ | +49 511 8071800 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Pier 51 | 30173 | OTHER | WEBSHOP,PHONE | -/A | https://www.pier51.de/ | +49 511 8071800 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Pizza 96 | 30419 | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://www.pizzeria96.de/ | +49 511 76363234 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Pizza Eat me | 30657 | PIZZA,ITALIAN,INDIAN (stated) | WEBSHOP,PHONE | L/A | https://pizzaeatme.de/ | +49 511 90883030 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Pizza Frischdienst | - | ITALIAN (stated) | WEBSHOP,PICKUP | -/A | https://www.pizza-frischdienst-hannover.de | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Pizza Garten  Hannover | 30453 | PIZZA (stated) | WEBSHOP | L/- | https://www.pizzagartenhannover.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Grande | 30159 | PIZZA (stated) | WEBSHOP,PHONE | L/A | https://pizza-grande.net/ | +49 511 16921200 | Impressum:nein Kanal:nein PLZ:nein | PICKUP?,LIEFERT? | - |
 | [ ] | Pizza Hannover | 30173 | BURGER,GREEK,ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | L/A | http://www.pizzeriahannover.de/ | +49 0511888488 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Pizza Haus | 30629 | ITALIAN,PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://www.haus-pizza.de | +49 511 5865555 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Hut | - | PIZZA (stated) | WEBSHOP,PHONE | L/- | https://pizzahut.de/de/store-locator/pizza_hut_hannover_hauptbahnhof | +49 157 862 510 50 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Lust | 30559 | PIZZA (stated) | WEBSHOP,PHONE | L/- | https://www.pizza-lust-hannover.de/ | +49 511 62666522 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Night | - | PIZZA (stated) | WEBSHOP,PHONE | L/- | https://www.pizzeria-night.de/ | 05113507610 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Pizza Number One | - | PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://www.pizzanumberonehannover.de | +4951135385353 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Pazza - da Leo | 30539 | ITALIAN,PIZZA (stated) | WEBSHOP,PICKUP,PHONE | L/A | https://pizzapazza.de/ | +49 511 5179394 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Pizza Punks | 30451 | PIZZA | WEBSHOP,PHONE | L/A | https://pizza-punks-hannover.order.app.hd.digital/ | +49 051189938871 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Pizza Service Hannover Vital | 30449 | PIZZA (stated) | WEBSHOP,PHONE | -/A | https://www.vital-pizza-hannover.de/ | +49 511 454102 | Impressum:nein Kanal:nein PLZ:nein | - | - |
@@ -177,7 +166,7 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Raffaele's | - | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.raffaeles-hannover.de | +491784905629 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Rasoi | - | INDIAN (stated) | WEBSHOP,PHONE | -/A | https://rasoi-hannover.de/ | +49 511 693343 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Reimanns Eck | 30161 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.reimanns-eck.de | +49 511 313530 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Restaurant Marie | - | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.restaurantmarie.de | +49 511 65399074 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Restaurant Marie | - | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.restaurantmarie.de | +49 511 65399074 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Restaurant Ofelia | 30419 | GREEK (stated) | WEBSHOP,PHONE | L/A | https://restaurant-ofelia.de/ | +49 511 44454926 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Restaurant Vienna | 30175 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.vienna-restaurant.de/ | +49 511 27900777 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Restaurante Fellini | 30161 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.ristorante-fellini.de/ | +49 511 623760 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -189,7 +178,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | RiX | 30459 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.schnitzel-paradies.de/ | +49 511 64719014 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Rüpel | 30451 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.ruepel.bar/ | +%2049%20(0)%20172%20158%20675%202 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Saigon | 30171 | VIETNAMESE (stated) | WEBSHOP,PHONE | -/A | https://saigon-hannover.de/ | +49 511 37356019 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | San Marino | 30161 | ITALIAN (stated) | WEBSHOP | L/- | https://www.pizzeria-sanmarino.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Sapori Italiani | 30519 | ITALIAN,PIZZA (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://saporiitaliani-hannover.de | +49 511 89911124 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Say Cheese! | 30459 | PIZZA (stated) | WEBSHOP,PHONE | L/- | https://www.pizza-saycheese.de | +49 511 41047777 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Schnitzery | 30161 | OTHER (stated) | WEBSHOP | -/A | https://schnitzery.de/ | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -214,7 +202,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Sushifreunde | 30171 | SUSHI (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://www.ai-sushi.de/ | +49 511 89989994 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | TAI PAI | 30169 | CHINESE (stated) | WEBSHOP,PHONE | -/A | https://www.tai-pai.de/ | +49 511 885230 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Tandoori Haus | 30177 | INDIAN (stated) | WEBSHOP,PHONE | -/A | https://india-tandoori-haus.de/ | +49 511 80761717 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Taste of India | - | INDIAN (stated) | WEBSHOP | -/A | https://www.taste-of-india-hannover.de | - | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Taverna Asteria | 30163 | GREEK (stated) | WEBSHOP,PHONE | -/A | https://www.tavernaasteria.de/ | +49 511 90882723 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Taverne Nikala | 30159 | OTHER (stated) | WEBSHOP,PHONE | L/A | https://www.tavernenikala.de/ | +49 157 33228300 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Teichhûs | 30519 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://www.teichhues.de/ | +49 511 89714893 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -227,7 +214,7 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Trattoria il Padrino | 30659 | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.trattoria-il-padrino.de | +49 511 59206147 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Trattoria Massimo | 30559 | ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | L/A | https://trattoria-massimo.de/ | +49 511 528092 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Urfa Deluxe Holzkohlegrill | 30459 | TURKISH (stated) | WEBSHOP,PICKUP,PHONE | -/A | https://urfadeluxe.de | +49 511 21597010 | Impressum:ja Kanal:ja PLZ:ja | - | - |
-| [ ] | Va Bene | 30175 | ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | -/A | https://va-bene-hannover.de/ | +49511812362 | Impressum:ja Kanal:ja PLZ:ja | - | - |
+| [ ] | Va Bene | 30175 | ITALIAN,PIZZA (stated) | WEBSHOP,PHONE | -/A | https://va-bene-hannover.de/ | +49511812362 | Impressum:ja Kanal:ja PLZ:ja | WEBSHOP? | - |
 | [ ] | Valentino | - | ITALIAN (stated) | WEBSHOP,PHONE | -/A | https://www.kgv-flora.de/vereinsheim | +49 176 21426137 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Vegan Village | 30169 | ASIAN (stated) | WEBSHOP,PHONE | -/A | https://vegan-village.com/ | +49 511 10534296 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | Vereinsgaststätte des TuS Vahrenwald 08 | 30179 | OTHER (stated) | WEBSHOP,PHONE | -/A | https://tus-vahrenwald.de/unser-verein/vereinsgaststaette/ | +49 511635494 | Impressum:ja Kanal:ja PLZ:ja | - | - |
@@ -249,10 +236,8 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | 993 Restaurant & Bar | 30173 | OTHER (stated) | PHONE,PICKUP | -/A | https://993-hannover.de/ | +49 511 56377742 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | [hof:geflüster] | - | OTHER (stated) | PHONE,PICKUP | -/A | http://hofgeflüster.com/ | +49 511 80606630 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Acht & Siebzig | 30169 | OTHER (stated) | PHONE,PICKUP | -/A | https://www.achtundsiebzig.de/ | +49 051194020922 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Adam's Kitchen | 30657 | BURGER,ITALIAN,PIZZA (stated) | PHONE,PICKUP | -/A | https://www.adamskitchen.de/ | +49 511 89829576 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Adesso | 30163 | ITALIAN (stated) | PHONE,PICKUP | -/A | https://adesso-feinkost.de/index.php/start/ | +49 511 54545342 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Alanya | 30659 | TURKISH (stated) | PHONE,PICKUP | -/A | http://alanya-restaurant.de/ | +49 511 69097935 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Alexander | 30159 | OTHER (stated) | PHONE | -/A | https://www.alexander-hannover.de/ | +49 511 325826 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Alioli | 30559 | OTHER (stated) | PHONE | -/A | https://spanier-hannover.de/ | +49 511 37369300 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Alte Hahnenburg | 30559 | OTHER (stated) | PHONE | -/A | https://www.alte-hahnenburg.com | +49 511 526200 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Alter Bahnhof Anderten | 30559 | OTHER (stated) | PHONE | -/A | https://www.alter-bahnhof-anderten.de | +49 511 591710 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
@@ -301,7 +286,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Damar Baba Döner | - | DOENER (stated) | PHONE,PICKUP | -/A | https://damarbabadoner.com/ | +49 163 3516983 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Daniel's | 30161 | OTHER (stated) | PHONE,PICKUP | -/A | https://restaurantdaniels.de/ | +49 511 3362948 | Impressum:nein Kanal:nein PLZ:nein | - | - |
 | [ ] | Das Ding | 30163 | BURGER (stated) | PHONE | -/A | https://www.dasding-restaurant.de | +49 511 392999 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
-| [ ] | Das Nest | 30625 | OTHER | PHONE,PICKUP | -/A | https://dasnest-hannover.de/ | +49 051137391271 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Das Vikings | 30539 | OTHER | PHONE,PICKUP | -/A | https://www.das-vikings.de/ | +49 015201917571 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Doli | 30163 | OTHER (stated) | PHONE,PICKUP | -/A | https://doli.restaurant | +49 176 12223377 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Eckis Wirtshaus | 30449 | OTHER (stated) | PHONE | -/A | https://eckiswirts.haus/ | 017683189901 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
@@ -327,7 +311,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Hamachi | - | SUSHI (stated) | PHONE,PICKUP | -/A | https://www.hamachihannover.de/ | +49 511 37356120 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Handwerk | 30173 | OTHER (stated) | PHONE | -/A | https://handwerk-hannover.com/ | +49 511 26267588 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Hannoi Bites 87 | 30167 | VIETNAMESE (stated) | PHONE,PICKUP | -/A | https:/www.hannoibites87.de | +49 511 89852222 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Hans im Glück | 30159 | BURGER (stated) | PHONE | -/A | https://hansimglueck-burgergrill.de/burger-restaurant/hannover-limhof/ | +49 511 27789677 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Havn Bar und Restaurant | 30163 | SUSHI (stated) | PHONE | -/A | https://havn-hannover.de | +49 511 16653107 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Högers 1910 | 30171 | OTHER (stated) | PHONE,PICKUP | -/A | http://hoegers1910.de | +49 511 5106425 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Ichiban | 30159 | SUSHI (stated) | PHONE,PICKUP | -/A | https://mrphung.de/ichiban-hannover/ | +49 511 2157609 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
@@ -342,7 +325,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | L'Osteria | 30179 | ITALIAN (stated) | PHONE,PICKUP | L/A | https://losteria.net/de/restaurants/restaurant/hannover-vahrenwalder/ | +49 511 67696737 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | La Buca | 30165 | ITALIAN (stated) | PHONE | -/A | https://www.labuca.de/ | +49 511 36587001 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | La Cantina | 30161 | OTHER (stated) | PHONE,PICKUP | -/A | http://tapasparadies.eu/ | +49 511 3880210 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | La Forchetta | 30173 | ITALIAN (stated) | PHONE | -/A | https://www.forchetta-hannover.de/ | +49 511 8503808 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | La Lucania II | 30173 | PIZZA (stated) | PICKUP,PHONE | -/A | https://www.la-lucania2.de | +49 511 22899995 | Impressum:ja Kanal:ja PLZ:ja | - | - |
 | [ ] | La Paella | 30177 | OTHER (stated) | PHONE,PICKUP | -/A | http://www.lapaella.de/ | +49 511 392936 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | La Vida | 30161 | OTHER (stated) | PHONE,PICKUP | -/A | https://lavida-restaurant.de/ | +49 511 35363568 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
@@ -423,7 +405,6 @@ QS-Flags: WEBSHOP? = Pipeline sieht nur Telefon (kein Shop) | PICKUP? = kein tak
 | [ ] | Schlossküche Herrenhausen | 30419 | OTHER (stated) | PHONE,PICKUP | -/A | http://www.schlosskueche-herrenhausen.de | +49 511 2794940 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Schützenhaus Anderten | 30559 | OTHER (stated) | PHONE | -/A | https://schuetzenhaus-anderten.de | +49 511 528644 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Shabba Dee's Kitchen | - | OTHER (stated) | PHONE,PICKUP | -/A | https://www.shabbadeeskitchen.com/ | +49 173 7175042 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
-| [ ] | Shahr Raz | 30165 | OTHER (stated) | PHONE,PICKUP | -/A | https://www.shahr-raz-persisches-restaurant-hannover.de/ | +49 511 67660313 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Shin Ramen | 30159 | ASIAN (stated) | PHONE | -/A | https://www.shin-foods.com/de/ | +495115474240 | Impressum:ja Kanal:ja PLZ:ja | PICKUP? | - |
 | [ ] | Sindo Sushi | 30163 | ASIAN,SUSHI (stated) | PHONE,PICKUP | -/A | https://www.sindo-restaurant.de/ | +49 511 661188 | Impressum:nein Kanal:nein PLZ:nein | PICKUP? | - |
 | [ ] | Siro's Pizza | 30165 | PIZZA,ITALIAN (stated) | PHONE | L/- | https://sirospizza.de/ | +49 511 39084080 | Impressum:nein Kanal:nein PLZ:nein | - | - |
